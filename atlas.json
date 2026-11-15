@@ -1,0 +1,889 @@
+[
+{
+"id": "rbc",
+"name": "Eritrocito",
+"latin": "Hematíe",
+"group": "celulas",
+"aliases": [
+"eritrocito",
+"hematie",
+"hematíe",
+"glóbulo rojo",
+"globulo rojo",
+"rbc"
+],
+"seen": "Fresco, 40×. Más pequeños que un leucocito, sin núcleo.",
+"bullets": [
+"Disco bicóncavo: anillo pálido al centro en foco correcto.",
+"Crenados (bordes en mora) si la orina está concentrada.",
+"Fantasmas: solo el halo, en orina diluida."
+],
+"mimics": "Levaduras (tienen gemación), burbujas, oxalato pequeño, gotas de grasa.",
+"significance": "Sugieren hematuria. Unos pocos pueden ser de la toma de muestra. La forma dismórfica orienta a origen glomerular, pero se confirma mejor en contraste de fase, no en una foto de teléfono.",
+"sample": "orina"
+},
+{
+"id": "rbc-dys",
+"name": "Eritrocito dismórfico",
+"latin": "Acantocito / dismorfia",
+"group": "celulas",
+"aliases": [
+"dismórfico",
+"dismorfico",
+"acantocito",
+"glomerular"
+],
+"seen": "40×, idealmente contraste de fase. Busca blebs y formas irregulares.",
+"bullets": [
+"Contorno irregular, a veces con una o más vesículas.",
+"Tamaños desiguales en el mismo campo.",
+"Convive con eritrocitos normales."
+],
+"mimics": "Eritrocitos crenados (artefacto osmótico, más uniforme) y células mal enfocadas.",
+"significance": "Si predominan, orientan a sangrado glomerular. No lo des por cerrado con una sola foto: el foco y el objetivo cambian la silueta.",
+"sample": "orina"
+},
+{
+"id": "wbc",
+"name": "Leucocito",
+"latin": "Célula de pus",
+"group": "celulas",
+"aliases": [
+"leucocito",
+"piocito",
+"wbc",
+"pus",
+"glóbulo blanco",
+"globulo blanco"
+],
+"seen": "40×. Más grande que el eritrocito, granuloso, núcleo lobulado a veces visible.",
+"bullets": [
+"Redondo, grisáceo, citoplasma granulado.",
+"En fresco puede mostrar movimiento browniano de gránulos (centelleo).",
+"Los piocitos se ven degenerados, hinchados."
+],
+"mimics": "Célula tubular renal, tricomonas inmóviles, protozoos mal enfocados.",
+"significance": "Piuria: inflamación de la vía urinaria. No distingue infección de contaminación, ni bacteria de causa estéril. El cultivo y el cuadro clínico mandan.",
+"sample": "orina"
+},
+{
+"id": "squam",
+"name": "Epitelio escamoso",
+"latin": "Célula escamosa",
+"group": "celulas",
+"aliases": [
+"escamosa",
+"escamoso",
+"epitelio plano"
+],
+"seen": "10× o 40×. Las más grandes del sedimento, a menudo con núcleo pequeño central.",
+"bullets": [
+"Poligonal, bordes finos, aspecto de huevo frito.",
+"Pueden plegarse o venir en láminas.",
+"Abundantes en chorro inicial, sobre todo en mujeres."
+],
+"mimics": "Células transicionales grandes. El escamoso es más plano y ancho.",
+"significance": "Vienen de uretra distal o genital externo. Muchas células escamosas = muestra contaminada, no enfermedad renal.",
+"sample": "orina"
+},
+{
+"id": "trans",
+"name": "Célula transicional",
+"latin": "Urotelio",
+"group": "celulas",
+"aliases": [
+"transicional",
+"urotelial",
+"urotelio",
+"caudada"
+],
+"seen": "40×. Vejiga, uréter, pelvis renal.",
+"bullets": [
+"Redonda, oval o en pera (caudada).",
+"Núcleo más notable que en la escamosa.",
+"Unas pocas son habituales."
+],
+"mimics": "Escamosas y tubulares renales.",
+"significance": "Aumentan con instrumentación, litiasis o inflamación. Racimos o atipia no se juzgan aquí: eso es citología.",
+"sample": "orina"
+},
+{
+"id": "renal",
+"name": "Célula tubular renal",
+"latin": "Epitelio renal",
+"group": "celulas",
+"aliases": [
+"tubular renal",
+"epitelio renal",
+"célula renal",
+"celula renal"
+],
+"seen": "40×. Poco más grande que un leucocito, núcleo excéntrico redondo.",
+"bullets": [
+"Redonda o poliédrica, un núcleo nítido.",
+"A veces en cilindros epiteliales.",
+"Difícil de separar del leucocito sin tinción."
+],
+"mimics": "Leucocitos y transicionales pequeñas. Sternheimer-Malbin ayuda.",
+"significance": "Si son muchas, o dentro de cilindros, sugieren daño tubular. Una sospecha en foto no basta para reportarlo como tal.",
+"sample": "orina"
+},
+{
+"id": "hyaline",
+"name": "Cilindro hialino",
+"latin": "Matriz de Tamm-Horsfall",
+"group": "cilindros",
+"aliases": [
+"hialino",
+"cilindro hialino"
+],
+"seen": "10× con luz baja. Casi transparentes, fáciles de pasar por alto.",
+"bullets": [
+"Extremos paralelos y punta redondeada.",
+"Índice de refracción bajo: baja el condensador.",
+"Sin inclusiones, o solo algún gránulo suelto."
+],
+"mimics": "Fibras (más refringentes, bordes oscuros), mucus, rayones del cubreobjetos.",
+"significance": "Pueden verse tras ejercicio, fiebre o deshidratación. Unos pocos no implican enfermedad renal.",
+"sample": "orina"
+},
+{
+"id": "granular",
+"name": "Cilindro granuloso",
+"latin": "Cilindro granular",
+"group": "cilindros",
+"aliases": [
+"granuloso",
+"granular",
+"cilindro granuloso"
+],
+"seen": "10×–40×. Matriz con gránulos finos o gruesos.",
+"bullets": [
+"Forma de cilindro con contenido granuloso.",
+"Gruesos: gránulos oscuros, a veces «de fango».",
+"Finos: aspecto de polvo dentro de la matriz."
+],
+"mimics": "Cilindros con bacterias o cristales pegados. Mira si la matriz es continua.",
+"significance": "Inespecíficos. Los gruesos, en el contexto correcto, se asocian a necrosis tubular aguda. La foto no hace ese diagnóstico.",
+"sample": "orina"
+},
+{
+"id": "waxy",
+"name": "Cilindro céreo",
+"latin": "Cilindro céreo",
+"group": "cilindros",
+"aliases": [
+"céreo",
+"cereo",
+"waxy"
+],
+"seen": "10×. Bordes muy nítidos, a menudo con grietas o muescas.",
+"bullets": [
+"Homogéneo, alto contraste, extremos cortados o irregulares.",
+"Más anchos si se forman en túbulos dilatados.",
+"Superficie como cera, no granulosa."
+],
+"mimics": "Fibras de tela (no tienen matriz homogénea ni extremos de cilindro).",
+"significance": "Suelen indicar estasis tubular prolongada, más propio de enfermedad renal crónica. Confírmalo al microscopio antes de reportarlo.",
+"sample": "orina"
+},
+{
+"id": "rbc-cast",
+"name": "Cilindro eritrocitario",
+"latin": "Cilindro hemático",
+"group": "cilindros",
+"aliases": [
+"cilindro eritrocitario",
+"cilindro hemático",
+"cilindro de eritrocitos"
+],
+"seen": "40×. Eritrocitos embebidos en matriz, a veces rojo-anaranjado.",
+"bullets": [
+"Se reconocen hematíes dentro del cilindro, no solo color.",
+"Si se degradan, queda un cilindro hemoglobinico parduzco.",
+"Busca en el borde del cubre, con luz baja."
+],
+"mimics": "Cilindro granuloso teñido y acúmulos de eritrocitos sin matriz.",
+"significance": "Es de los hallazgos más específicos de sangrado glomerular o tubular. Aun así, repórtalo solo si la matriz y los hematíes se ven claros.",
+"sample": "orina"
+},
+{
+"id": "wbc-cast",
+"name": "Cilindro leucocitario",
+"latin": "Cilindro de pus",
+"group": "cilindros",
+"aliases": [
+"cilindro leucocitario",
+"cilindro de leucocitos"
+],
+"seen": "40×. Leucocitos dentro de una matriz con bordes definidos.",
+"bullets": [
+"Núcleos o gránulos de leucocito dentro del cilindro.",
+"No basta un grupo de leucocitos sueltos.",
+"La matriz los mantiene alineados."
+],
+"mimics": "Acúmulos de leucocitos y cilindros granulosos.",
+"significance": "Orienta a inflamación renal (pielonefritis, nefritis intersticial), no a una cistitis simple. Confirmar al microscopio.",
+"sample": "orina"
+},
+{
+"id": "caox-di",
+"name": "Oxalato cálcico dihidratado",
+"latin": "Weddellita",
+"group": "cristales",
+"aliases": [
+"oxalato",
+"oxalato de calcio",
+"dihidratado",
+"sobre",
+"weddellita"
+],
+"seen": "40×. El clásico «sobre de carta».",
+"bullets": [
+"Octaedro: cuadrado con una X o cruz.",
+"Incoloro, refringente.",
+"Tamaño variable en el mismo campo."
+],
+"mimics": "Artefactos cuadrados y cristales de ácido úrico atípicos (esos suelen ser más amarillos).",
+"significance": "Muy frecuente y a menudo sin importancia (dieta). No implica litiasis por sí solo.",
+"sample": "orina"
+},
+{
+"id": "caox-mono",
+"name": "Oxalato cálcico monohidratado",
+"latin": "Whewellita",
+"group": "cristales",
+"aliases": [
+"monohidratado",
+"pesa",
+"mancuerna",
+"whewellita",
+"cáñamo"
+],
+"seen": "40×. Ovalos, pesas o formas de semilla de cáñamo.",
+"bullets": [
+"Birrefringente, a menudo en pares o pesas.",
+"Puede verse junto al dihidratado.",
+"Más pleomorfo que el «sobre»."
+],
+"mimics": "Eritrocitos alargados y cristales de ácido úrico.",
+"significance": "También puede ser banal. En el contexto de intoxicación por etilenglicol aparecen en cantidad, con el cuadro clínico: la foto no lo diagnostica.",
+"sample": "orina"
+},
+{
+"id": "uric",
+"name": "Ácido úrico",
+"latin": "Cristal de urato",
+"group": "cristales",
+"aliases": [
+"ácido úrico",
+"acido urico",
+"urato"
+],
+"seen": "40×, orina ácida. Amarillo o pardo, formas de rombo, barril o roseta.",
+"bullets": [
+"Pleomórfico, a menudo ámbar.",
+"Puede disolver al alcalinizar.",
+"Birrefringente con luz polarizada."
+],
+"mimics": "Cistina (incolora, hexagonal regular) y fosfatos.",
+"significance": "Común en orina ácida. Gota o lisis tumoral son contexto clínico, no un hallazgo de la lámina sola.",
+"sample": "orina"
+},
+{
+"id": "struvite",
+"name": "Estruvita",
+"latin": "Fosfato triple / tapa de ataúd",
+"group": "cristales",
+"aliases": [
+"estruvita",
+"fosfato triple",
+"triple fosfato",
+"tapa de ataúd",
+"struvita"
+],
+"seen": "10×–40×, orina alcalina.",
+"bullets": [
+"Prisma como tapa de ataúd, a veces helecho.",
+"Incoloro, grande, muy refringente.",
+"Crece rápido si la muestra espera."
+],
+"mimics": "Otros fosfatos. La forma de ataúd es la pista.",
+"significance": "Asociada a orina alcalina y bacterias productoras de ureasa (Proteus y afines). Orienta, no reemplaza el cultivo.",
+"sample": "orina"
+},
+{
+"id": "cystine",
+"name": "Cistina",
+"latin": "Placa hexagonal",
+"group": "cristales",
+"aliases": [
+"cistina",
+"cistinuria",
+"hexagonal"
+],
+"seen": "40×. Hexágonos incoloros, a menudo apilados.",
+"bullets": [
+"Seis lados regulares, pueden superponerse.",
+"No se disuelven en ácido acético; sí en amonio.",
+"Confirmar con prueba de nitroprusiato si hay duda."
+],
+"mimics": "Ácido úrico (más amarillo e irregular). Un hexágono perfecto e incoloro no se descarta.",
+"significance": "La cistina en orina no es un cristal «normal»: sugiere cistinuria. Confírmalo antes de reportarlo como definitivo.",
+"sample": "orina"
+},
+{
+"id": "cholesterol",
+"name": "Colesterol",
+"latin": "Placa con muesca",
+"group": "cristales",
+"aliases": [
+"colesterol",
+"placa con muesca"
+],
+"seen": "40×, a menudo en orina refrigerada. Placas planas transparentes.",
+"bullets": [
+"Láminas rectangulares con una esquina mellada.",
+"Se apilan.",
+"Acompañan a gotas de grasa y cuerpos ovales grasos."
+],
+"mimics": "Artefactos de cubreobjetos y cristales de otros lípidos.",
+"significance": "Raro. Cuando es real, se ve en síndrome nefrótico. No lo reportes por una esquina dudosa.",
+"sample": "orina"
+},
+{
+"id": "amorphous",
+"name": "Amorfos",
+"latin": "Uratos o fosfatos amorfos",
+"group": "cristales",
+"aliases": [
+"amorfo",
+"uratos amorfos",
+"fosfatos amorfos",
+"amorfos"
+],
+"seen": "10×–40×. Polvo fino que tapa el campo.",
+"bullets": [
+"Uratos: orina ácida; el sedimento macroscópico puede ser rosa.",
+"Fosfatos: orina alcalina, sedimento blanco.",
+"Se disuelven con calor (uratos) o ácido (fosfatos)."
+],
+"mimics": "Bacterias muy finas. Las bacterias suelen moverse o alinearse; los amorfos son granulares e inmóviles.",
+"significance": "Casi nunca son clínicamente importantes. Molestan porque ocultan células.",
+"sample": "orina"
+},
+{
+"id": "bacteria",
+"name": "Bacterias",
+"latin": "Cocos o bacilos",
+"group": "microorganismos",
+"aliases": [
+"bacteria",
+"bacilo",
+"coco",
+"cocos"
+],
+"seen": "40×. Mejor si la muestra es fresca.",
+"bullets": [
+"Bacilos: palitos cortos; cocos: puntos en pares o cadenas.",
+"Si la orina esperó horas a temperatura ambiente, multiplican.",
+"Sin leucocitos, piensa primero en contaminación."
+],
+"mimics": "Amorfos, detritus y foco sucio.",
+"significance": "Bacteriuria significativa se define con cultivo y síntomas, no con una foto. Reporta «bacilos» o «cocos» solo como impresión visual.",
+"sample": "orina"
+},
+{
+"id": "yeast",
+"name": "Levaduras",
+"latin": "Candida y otras",
+"group": "microorganismos",
+"aliases": [
+"levadura",
+"candida",
+"hongo",
+"gemación",
+"gemacion"
+],
+"seen": "40×. Óvalos refringentes, a menudo en gemación.",
+"bullets": [
+"La gemación (célula hija) las separa del eritrocito.",
+"Tamaño desigual, a diferencia del hematíe.",
+"Pueden formar pseudohifas."
+],
+"mimics": "Eritrocitos y grasa. El hematíe no gemina.",
+"significance": "Frecuentes en diabetes, sondas y antibióticos. Pueden ser contaminación genital. El cultivo de hongos lo confirma.",
+"sample": "orina"
+},
+{
+"id": "hyphae",
+"name": "Pseudohifas",
+"latin": "Formas filamentosas",
+"group": "microorganismos",
+"aliases": [
+"pseudohifa",
+"hifa",
+"micelio",
+"filamento"
+],
+"seen": "40×. Tubos segmentados que salen de blastoconidios.",
+"bullets": [
+"Ramificaciones con estrechamientos, no un pelo liso.",
+"Suelen acompañarse de levaduras.",
+"Más largas que una bacteria."
+],
+"mimics": "Fibras, mucus y pelos. Esos no tienen gemas ni septos celulares.",
+"significance": "Sugieren Candida con forma invasiva en otros tejidos; en orina sigue siendo una pista, no una invasión demostrada.",
+"sample": "orina"
+},
+{
+"id": "trich",
+"name": "Trichomonas vaginalis",
+"latin": "Tricomonas",
+"group": "parasitos",
+"aliases": [
+"trichomonas",
+"tricomona",
+"tricomonas",
+"t. vaginalis"
+],
+"seen": "40×, fresco inmediato. La clave es el movimiento, que una foto no tiene.",
+"bullets": [
+"Piriforme, un poco mayor que un leucocito.",
+"Flagelos y membrana ondulante: solo si el foco y el aumento alcanzan.",
+"En muestra fría o vieja se redondean y parecen leucocitos."
+],
+"mimics": "Leucocitos, células transicionales y espermatozoides inmóviles.",
+"significance": "Es el parásito que sí se busca en orina o flujo. Sin ver el movimiento típico (sacudidas) no se confirma. Una foto fija solo puede decir «compatible, no demostrado».",
+"sample": "orina"
+},
+{
+"id": "schisto",
+"name": "Huevo de Schistosoma haematobium",
+"latin": "Esquistosoma urinario",
+"group": "parasitos",
+"aliases": [
+"schistosoma",
+"esquistosoma",
+"haematobium",
+"espina terminal"
+],
+"seen": "10×–40×. Huevo grande, oval, con espina en un polo.",
+"bullets": [
+"Espina terminal (en la punta), no lateral.",
+"A menudo con hematuria en zona endémica.",
+"En México es excepcional salvo antecedente de viaje o residencia en África o Medio Oriente."
+],
+"mimics": "Artefactos ovales, granos de polen y otros huevos. Sin espina terminal clara, no lo llames.",
+"significance": "Si la morfología es inequívoca, es un hallazgo que se reporta y se confirma (más sedimento, a veces biopsia). No lo sugieras por un óvalo cualquiera.",
+"sample": "orina"
+},
+{
+"id": "entero",
+"name": "Huevo de Enterobius vermicularis",
+"latin": "Oxiuros",
+"group": "parasitos",
+"sample": "ambas",
+"aliases": [
+"enterobius",
+"oxiuro",
+"enterobius vermicularis"
+],
+"seen": "10×–40×. Contaminación perineal o fecal, no un parásito de la vejiga.",
+"bullets": [
+"Ovalado, un lado aplanado, como una D.",
+"Larva en su interior a veces visible.",
+"Llega a la orina desde la región perianal."
+],
+"mimics": "Polen, almidón y otros huevos. El lado plano es la pista.",
+"significance": "En heces, o mejor en la cinta de Graham, es el huevo del oxiuro. En orina casi siempre llega por contaminación perineal, no es un parásito de la vejiga."
+},
+{
+"id": "sperm",
+"name": "Espermatozoide",
+"latin": "Espermatozoide",
+"group": "otros",
+"aliases": [
+"espermatozoide",
+"esperma",
+"espermatozoides"
+],
+"seen": "40×. Cabeza oval y cola, si el foco la toma.",
+"bullets": [
+"Cabeza pequeña, cola larga y fina.",
+"Inmóviles si la muestra no es fresca.",
+"Tras eyaculación o en eyaculación retrógrada."
+],
+"mimics": "Tricomonas y fibras con un grumo. La cola única y la cabeza compacta ayudan.",
+"significance": "No es patológico por sí mismo. Puede confundir el recuento si no se reconoce.",
+"sample": "orina"
+},
+{
+"id": "starch",
+"name": "Almidón",
+"latin": "Gránulo de guante",
+"group": "otros",
+"sample": "ambas",
+"aliases": [
+"almidón",
+"almidon",
+"talco",
+"guante"
+],
+"seen": "40×. De polvo de guantes o pañal.",
+"bullets": [
+"Redondo u oval, con un hilio o hendidura.",
+"Con luz polarizada: cruz de Malta.",
+"Refringente, tamaño irregular."
+],
+"mimics": "Huevos, eritrocitos y grasa. La cruz de Malta también la da el colesterol: mira la forma.",
+"significance": "Artefacto. No se reporta como elemento forme."
+},
+{
+"id": "fiber",
+"name": "Fibra",
+"latin": "Artefacto textil",
+"group": "otros",
+"sample": "ambas",
+"aliases": [
+"fibra",
+"artefacto",
+"pelo",
+"hilo",
+"pañal"
+],
+"seen": "Cualquier aumento. Entra del ambiente, la ropa o el pañal.",
+"bullets": [
+"Muy refringente, bordes oscuros, a menudo más larga que el campo.",
+"Puede estar a distinto plano de foco que las células.",
+"No tiene matriz uniforme ni extremos de cilindro."
+],
+"mimics": "Cilindros hialinos o céreos, e hifas.",
+"significance": "No es un elemento del sedimento. Si solo hay fibras, la lectura de cilindros no se sostiene."
+},
+{
+"id": "fat",
+"name": "Gota lipídica",
+"latin": "Grasa libre / cuerpo oval graso",
+"group": "otros",
+"aliases": [
+"grasa",
+"lipido",
+"lípido",
+"cuerpo oval",
+"gota"
+],
+"seen": "40×. Esferas muy refringentes, a veces dentro de células o cilindros.",
+"bullets": [
+"Redondas, brillo fuerte, tamaño variable.",
+"Ésteres de colesterol: cruz de Malta al polarizar.",
+"Triglicéridos: no dan la cruz."
+],
+"mimics": "Burbujas (suelen tener un borde más perfecto y se desplazan) y almidón.",
+"significance": "La lipiduria orienta a síndrome nefrótico cuando hay células o cilindros grasos de verdad. Una burbuja no es grasa.",
+"sample": "orina"
+},
+{
+"id": "fec-wbc",
+"name": "Leucocito fecal",
+"latin": "Polimorfonuclear en heces",
+"group": "celulas",
+"sample": "heces",
+"aliases": [
+"leucocito fecal",
+"piocito fecal",
+"polimorfonuclear",
+"leucocitos en heces"
+],
+"seen": "40×, fresco salino. Varios por campo en disentería.",
+"bullets": [
+"Núcleo lobulado, más chico que un quiste de ameba.",
+"En moco son más fáciles de ver que en materia formada.",
+"No tienen la vacuola ni los núcleos pequeños de un quiste."
+],
+"mimics": "Quistes de ameba y trofozoítos inmóviles.",
+"significance": "Orientan a proceso inflamatorio intestinal. No distinguen bacteria de parásito."
+},
+{
+"id": "fec-rbc",
+"name": "Eritrocito en heces",
+"latin": "Hematíe",
+"group": "celulas",
+"sample": "heces",
+"aliases": [
+"eritrocito en heces",
+"hematie fecal",
+"sangre en heces"
+],
+"seen": "40×, fresco. Más creíbles si hay moco.",
+"bullets": [
+"Discos sin núcleo, más pequeños que un leucocito.",
+"Se lisan si la muestra no está fresca."
+],
+"mimics": "Levaduras, burbujas y quistes pequeños.",
+"significance": "Sugieren sangre fresca en la luz. No localizan la lesión."
+},
+{
+"id": "ascaris",
+"name": "Huevo de Ascaris lumbricoides",
+"latin": "Ascaris lumbricoides",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"ascaris",
+"áscaris",
+"ascaris lumbricoides"
+],
+"seen": "10×. Oval o redondo, de los huevos grandes del frotis.",
+"bullets": [
+"Fértil: cubierta mamelonada parda y una célula dentro.",
+"Infértil: más alargado, cáscara más delgada, interior granuloso.",
+"Decorticado: liso, se parece a otros huevos. No lo cierres si falta la cubierta."
+],
+"mimics": "Polen, restos vegetales y huevo de Fasciola (ese es operculado y más grande).",
+"significance": "Huevo de geohelminto. Una foto no da carga parasitaria ni indica tratamiento."
+},
+{
+"id": "trichuris",
+"name": "Huevo de Trichuris trichiura",
+"latin": "Trichuris trichiura",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"trichuris",
+"tricocefalo",
+"tricocéfalo",
+"trichuris trichiura"
+],
+"seen": "10×–40×. Forma de barril o limón con tapones.",
+"bullets": [
+"Dos tapones hialinos, uno en cada polo.",
+"Cáscara gruesa, color pardo.",
+"Sin los dos tapones no lo nombres."
+],
+"mimics": "Polen y restos vegetales con extremos oscuros.",
+"significance": "Huevo característico. El conteo de Kato-Katz no se hace sobre una foto."
+},
+{
+"id": "hook",
+"name": "Huevo de uncinaria",
+"latin": "Ancylostoma / Necator",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"uncinaria",
+"ancylostoma",
+"necator",
+"hookworm",
+"anquilostoma"
+],
+"seen": "10×–40×. Oval de cáscara fina, interior claro.",
+"bullets": [
+"Cáscara delgada y espacio claro entre ella y el contenido.",
+"Cuatro a ocho blastómeros si está fresco.",
+"El huevo no separa Ancylostoma de Necator."
+],
+"mimics": "Huevos decorticados y burbujas ovales. La larva ya eclosionada se confunde con Strongyloides.",
+"significance": "Reporta «huevo de uncinaria». La especie, si hace falta, no sale del huevo."
+},
+{
+"id": "taenia",
+"name": "Huevo de Taenia",
+"latin": "Taenia spp.",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"taenia",
+"tenia",
+"taenia spp"
+],
+"seen": "10×–40×. Redondo, cáscara gruesa estriada.",
+"bullets": [
+"Embrión hexacanto: ganchos dentro, si el foco da.",
+"La estriación radial de la cáscara es la pista.",
+"El huevo no distingue T. solium de T. saginata."
+],
+"mimics": "Polen y artefactos redondos sin estriación.",
+"significance": "En zona con cisticercosis, T. solium importa, pero esta foto no identifica la especie."
+},
+{
+"id": "nana",
+"name": "Huevo de Hymenolepis nana",
+"latin": "Hymenolepis nana",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"hymenolepis nana",
+"h. nana",
+"himenolepis nana"
+],
+"seen": "40×. Huevo pequeño, dos membranas y filamentos.",
+"bullets": [
+"Filamentos que salen de los engrosamientos polares, entre las dos membranas.",
+"Más chico que H. diminuta.",
+"Sin filamentos, no lo separes de otros himenolepídidos."
+],
+"mimics": "H. diminuta (sin filamentos, más grande) y burbujas.",
+"significance": "Es de las tenias más frecuentes. Confirma con el foco en los filamentos."
+},
+{
+"id": "diminuta",
+"name": "Huevo de Hymenolepis diminuta",
+"latin": "Hymenolepis diminuta",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"hymenolepis diminuta",
+"h. diminuta",
+"himenolepis diminuta"
+],
+"seen": "10×–40×. Más grande que H. nana y sin filamentos.",
+"bullets": [
+"Cáscara gruesa, espacio entre membranas amplio.",
+"No tiene filamentos polares.",
+"Hexacanto en el centro."
+],
+"mimics": "H. nana. El tamaño y la ausencia de filamentos los separan.",
+"significance": "Menos común que H. nana. No lo afirmes si el aumento no deja ver el espacio entre membranas."
+},
+{
+"id": "giardia",
+"name": "Giardia duodenalis",
+"latin": "Giardia duodenalis",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"giardia",
+"giardia lamblia",
+"giardia duodenalis",
+"quiste de giardia"
+],
+"seen": "40×. Quiste oval pequeño; el trofozoíto pide muestra fresca.",
+"bullets": [
+"Quiste: oval, 4 núcleos y axonemas, mejor con lugol.",
+"Trofozoíto: pera, dos núcleos, disco. La motilidad no se ve en una foto.",
+"En materia formada casi solo hay quistes."
+],
+"mimics": "Levaduras, Endolimax y burbujas. Sin núcleos o axonemas, no lo nombres.",
+"significance": "Quiste compatible no es un reporte cerrado. El trofozoíto en foto fija queda como sospecha."
+},
+{
+"id": "blasto",
+"name": "Blastocystis",
+"latin": "Blastocystis spp.",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"blastocystis",
+"blastocystis hominis"
+],
+"seen": "40×. Redondo, con una vacuola que ocupa casi todo.",
+"bullets": [
+"Vacuola central grande y núcleos o gránulos en la orilla.",
+"Tamaño muy variable.",
+"Con lugol la vacuola no se tiñe como el glucógeno de Iodamoeba."
+],
+"mimics": "Quistes de ameba, grasa y burbujas.",
+"significance": "Muy frecuente. Su papel patógeno es discutido: descríbelo, no lo conviertas en diagnóstico."
+},
+{
+"id": "ecoli",
+"name": "Quiste de Entamoeba coli",
+"latin": "Entamoeba coli",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"entamoeba coli",
+"e. coli",
+"ameba coli"
+],
+"seen": "40×, lugol. Quiste maduro con más de cuatro núcleos.",
+"bullets": [
+"Hasta ocho núcleos, cariosoma excéntrico.",
+"Barras cromatoides astilladas, si se ven.",
+"Más grande que Endolimax."
+],
+"mimics": "Complejo E. histolytica/dispar (cuatro núcleos o menos en el quiste maduro).",
+"significance": "Comensal. No se trata. Si no cuentas núcleos, no lo diferencies del complejo histolytica."
+},
+{
+"id": "ehist",
+"name": "Complejo Entamoeba histolytica/dispar",
+"latin": "Entamoeba histolytica / dispar",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"entamoeba histolytica",
+"entamoeba dispar",
+"histolytica",
+"ameba histolytica"
+],
+"seen": "40×, lugol. Quiste con uno a cuatro núcleos.",
+"bullets": [
+"Quiste maduro: cuatro núcleos, cariosoma central.",
+"Barras cromatoides de extremos romos, si aparecen.",
+"La foto no separa E. histolytica de E. dispar ni de E. moshkovskii."
+],
+"mimics": "E. coli (más núcleos), Endolimax (más chica) y leucocitos.",
+"significance": "Di «complejo histolytica/dispar». Hace falta otra prueba para decir cuál es."
+},
+{
+"id": "endolimax",
+"name": "Endolimax nana",
+"latin": "Endolimax nana",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"endolimax",
+"endolimax nana"
+],
+"seen": "40×. Quiste pequeño, oval.",
+"bullets": [
+"Cuatro núcleos diminutos, a veces solo se ven con lugol.",
+"Sin barras cromatoides.",
+"Mucho más chico que E. coli."
+],
+"mimics": "Quiste de Giardia y levaduras.",
+"significance": "Comensal. Fácil de sobrellamar en una foto borrosa: si no hay núcleos, no lo reportes."
+},
+{
+"id": "strongy",
+"name": "Larva de Strongyloides",
+"latin": "Strongyloides stercoralis",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"strongyloides",
+"estrongiloides",
+"larva rhabditoide"
+],
+"seen": "10×–40×, fresco. Larva, no huevo.",
+"bullets": [
+"Larva rabditoide: cavidad bucal corta y primordio genital visible.",
+"La larva de uncinaria tiene cavidad bucal larga.",
+"Si no ves la boca, di «larva de nematodo» y no la especie."
+],
+"mimics": "Larva de uncinaria, fibras y pelos.",
+"significance": "Hallazgo que importa, pero una foto desenfocada no alcanza para nombrar Strongyloides."
+},
+{
+"id": "mansoni",
+"name": "Huevo de Schistosoma mansoni",
+"latin": "Schistosoma mansoni",
+"group": "parasitos",
+"sample": "heces",
+"aliases": [
+"schistosoma mansoni",
+"mansoni",
+"espina lateral"
+],
+"seen": "10×. Huevo grande con espina al costado.",
+"bullets": [
+"Espina lateral, no en la punta.",
+"S. haematobium (espina terminal) es de orina, no de este frotis.",
+"En el sureste de México es poco habitual: exige espina clara."
+],
+"mimics": "Polen, artefactos y otros huevos grandes.",
+"significance": "Sin espina lateral inequívoca, no lo sugieras. No es un hallazgo para «cerrar» por parecerse."
+}
+]
