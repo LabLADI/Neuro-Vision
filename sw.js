@@ -1,5 +1,5 @@
 // Guarda la app para que funcione sin internet. Sube VERSION al publicar cambios.
-const VERSION = 'detector-v3';
+const VERSION = 'detector-v4';
 const ARCHIVOS = ['./', 'index.html', 'app.js', 'manifest.webmanifest', 'atlas.json', 'icon-192.png', 'icon-512.png',
   'vendor/ort.wasm.bundle.min.mjs', 'vendor/ort-wasm-simd-threaded.mjs', 'vendor/ort-wasm-simd-threaded.wasm'];
 
