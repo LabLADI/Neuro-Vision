@@ -4,6 +4,7 @@
 "name": "Eritrocito",
 "latin": "Hematíe",
 "group": "celulas",
+"mark": "rbc",
 "aliases": [
 "eritrocito",
 "hematie",
@@ -27,6 +28,7 @@
 "name": "Eritrocito dismórfico",
 "latin": "Acantocito / dismorfia",
 "group": "celulas",
+"mark": "rbc-dys",
 "aliases": [
 "dismórfico",
 "dismorfico",
@@ -48,6 +50,7 @@
 "name": "Leucocito",
 "latin": "Célula de pus",
 "group": "celulas",
+"mark": "wbc",
 "aliases": [
 "leucocito",
 "piocito",
@@ -71,6 +74,7 @@
 "name": "Epitelio escamoso",
 "latin": "Célula escamosa",
 "group": "celulas",
+"mark": "squam",
 "aliases": [
 "escamosa",
 "escamoso",
@@ -91,6 +95,7 @@
 "name": "Célula transicional",
 "latin": "Urotelio",
 "group": "celulas",
+"mark": "trans",
 "aliases": [
 "transicional",
 "urotelial",
@@ -112,6 +117,7 @@
 "name": "Célula tubular renal",
 "latin": "Epitelio renal",
 "group": "celulas",
+"mark": "renal",
 "aliases": [
 "tubular renal",
 "epitelio renal",
@@ -133,6 +139,7 @@
 "name": "Cilindro hialino",
 "latin": "Matriz de Tamm-Horsfall",
 "group": "cilindros",
+"mark": "hyaline",
 "aliases": [
 "hialino",
 "cilindro hialino"
@@ -152,6 +159,7 @@
 "name": "Cilindro granuloso",
 "latin": "Cilindro granular",
 "group": "cilindros",
+"mark": "granular",
 "aliases": [
 "granuloso",
 "granular",
@@ -172,6 +180,7 @@
 "name": "Cilindro céreo",
 "latin": "Cilindro céreo",
 "group": "cilindros",
+"mark": "waxy",
 "aliases": [
 "céreo",
 "cereo",
@@ -192,6 +201,7 @@
 "name": "Cilindro eritrocitario",
 "latin": "Cilindro hemático",
 "group": "cilindros",
+"mark": "rbc-cast",
 "aliases": [
 "cilindro eritrocitario",
 "cilindro hemático",
@@ -212,6 +222,7 @@
 "name": "Cilindro leucocitario",
 "latin": "Cilindro de pus",
 "group": "cilindros",
+"mark": "wbc-cast",
 "aliases": [
 "cilindro leucocitario",
 "cilindro de leucocitos"
@@ -231,6 +242,7 @@
 "name": "Oxalato cálcico dihidratado",
 "latin": "Weddellita",
 "group": "cristales",
+"mark": "caox",
 "aliases": [
 "oxalato",
 "oxalato de calcio",
@@ -253,6 +265,7 @@
 "name": "Oxalato cálcico monohidratado",
 "latin": "Whewellita",
 "group": "cristales",
+"mark": "dumbbell",
 "aliases": [
 "monohidratado",
 "pesa",
@@ -275,6 +288,7 @@
 "name": "Ácido úrico",
 "latin": "Cristal de urato",
 "group": "cristales",
+"mark": "uric",
 "aliases": [
 "ácido úrico",
 "acido urico",
@@ -295,6 +309,7 @@
 "name": "Estruvita",
 "latin": "Fosfato triple / tapa de ataúd",
 "group": "cristales",
+"mark": "coffin",
 "aliases": [
 "estruvita",
 "fosfato triple",
@@ -317,6 +332,7 @@
 "name": "Cistina",
 "latin": "Placa hexagonal",
 "group": "cristales",
+"mark": "hex",
 "aliases": [
 "cistina",
 "cistinuria",
@@ -337,6 +353,7 @@
 "name": "Colesterol",
 "latin": "Placa con muesca",
 "group": "cristales",
+"mark": "notch",
 "aliases": [
 "colesterol",
 "placa con muesca"
@@ -356,6 +373,7 @@
 "name": "Amorfos",
 "latin": "Uratos o fosfatos amorfos",
 "group": "cristales",
+"mark": "amorph",
 "aliases": [
 "amorfo",
 "uratos amorfos",
@@ -377,6 +395,7 @@
 "name": "Bacterias",
 "latin": "Cocos o bacilos",
 "group": "microorganismos",
+"mark": "bacteria",
 "aliases": [
 "bacteria",
 "bacilo",
@@ -398,6 +417,7 @@
 "name": "Levaduras",
 "latin": "Candida y otras",
 "group": "microorganismos",
+"mark": "yeast",
 "aliases": [
 "levadura",
 "candida",
@@ -420,6 +440,7 @@
 "name": "Pseudohifas",
 "latin": "Formas filamentosas",
 "group": "microorganismos",
+"mark": "hyphae",
 "aliases": [
 "pseudohifa",
 "hifa",
@@ -441,6 +462,7 @@
 "name": "Trichomonas vaginalis",
 "latin": "Tricomonas",
 "group": "parasitos",
+"mark": "trich",
 "aliases": [
 "trichomonas",
 "tricomona",
@@ -462,6 +484,7 @@
 "name": "Huevo de Schistosoma haematobium",
 "latin": "Esquistosoma urinario",
 "group": "parasitos",
+"mark": "schisto",
 "aliases": [
 "schistosoma",
 "esquistosoma",
@@ -483,6 +506,7 @@
 "name": "Huevo de Enterobius vermicularis",
 "latin": "Oxiuros",
 "group": "parasitos",
+"mark": "entero",
 "sample": "ambas",
 "aliases": [
 "enterobius",
@@ -503,6 +527,7 @@
 "name": "Espermatozoide",
 "latin": "Espermatozoide",
 "group": "otros",
+"mark": "sperm",
 "aliases": [
 "espermatozoide",
 "esperma",
@@ -523,6 +548,7 @@
 "name": "Almidón",
 "latin": "Gránulo de guante",
 "group": "otros",
+"mark": "starch",
 "sample": "ambas",
 "aliases": [
 "almidón",
@@ -544,6 +570,7 @@
 "name": "Fibra",
 "latin": "Artefacto textil",
 "group": "otros",
+"mark": "fiber",
 "sample": "ambas",
 "aliases": [
 "fibra",
@@ -566,6 +593,7 @@
 "name": "Gota lipídica",
 "latin": "Grasa libre / cuerpo oval graso",
 "group": "otros",
+"mark": "fat",
 "aliases": [
 "grasa",
 "lipido",
@@ -588,6 +616,7 @@
 "name": "Leucocito fecal",
 "latin": "Polimorfonuclear en heces",
 "group": "celulas",
+"mark": "wbc",
 "sample": "heces",
 "aliases": [
 "leucocito fecal",
@@ -609,6 +638,7 @@
 "name": "Eritrocito en heces",
 "latin": "Hematíe",
 "group": "celulas",
+"mark": "rbc",
 "sample": "heces",
 "aliases": [
 "eritrocito en heces",
@@ -628,6 +658,7 @@
 "name": "Huevo de Ascaris lumbricoides",
 "latin": "Ascaris lumbricoides",
 "group": "parasitos",
+"mark": "ascaris",
 "sample": "heces",
 "aliases": [
 "ascaris",
@@ -648,6 +679,7 @@
 "name": "Huevo de Trichuris trichiura",
 "latin": "Trichuris trichiura",
 "group": "parasitos",
+"mark": "trichuris",
 "sample": "heces",
 "aliases": [
 "trichuris",
@@ -669,6 +701,7 @@
 "name": "Huevo de uncinaria",
 "latin": "Ancylostoma / Necator",
 "group": "parasitos",
+"mark": "hook",
 "sample": "heces",
 "aliases": [
 "uncinaria",
@@ -691,6 +724,7 @@
 "name": "Huevo de Taenia",
 "latin": "Taenia spp.",
 "group": "parasitos",
+"mark": "taenia",
 "sample": "heces",
 "aliases": [
 "taenia",
@@ -711,6 +745,7 @@
 "name": "Huevo de Hymenolepis nana",
 "latin": "Hymenolepis nana",
 "group": "parasitos",
+"mark": "nana",
 "sample": "heces",
 "aliases": [
 "hymenolepis nana",
@@ -731,6 +766,7 @@
 "name": "Huevo de Hymenolepis diminuta",
 "latin": "Hymenolepis diminuta",
 "group": "parasitos",
+"mark": "nana",
 "sample": "heces",
 "aliases": [
 "hymenolepis diminuta",
@@ -751,6 +787,7 @@
 "name": "Giardia duodenalis",
 "latin": "Giardia duodenalis",
 "group": "parasitos",
+"mark": "giardia",
 "sample": "heces",
 "aliases": [
 "giardia",
@@ -772,6 +809,7 @@
 "name": "Blastocystis",
 "latin": "Blastocystis spp.",
 "group": "parasitos",
+"mark": "blasto",
 "sample": "heces",
 "aliases": [
 "blastocystis",
@@ -791,6 +829,7 @@
 "name": "Quiste de Entamoeba coli",
 "latin": "Entamoeba coli",
 "group": "parasitos",
+"mark": "ameba",
 "sample": "heces",
 "aliases": [
 "entamoeba coli",
@@ -811,6 +850,7 @@
 "name": "Complejo Entamoeba histolytica/dispar",
 "latin": "Entamoeba histolytica / dispar",
 "group": "parasitos",
+"mark": "ameba",
 "sample": "heces",
 "aliases": [
 "entamoeba histolytica",
@@ -832,6 +872,7 @@
 "name": "Endolimax nana",
 "latin": "Endolimax nana",
 "group": "parasitos",
+"mark": "ameba",
 "sample": "heces",
 "aliases": [
 "endolimax",
@@ -851,6 +892,7 @@
 "name": "Larva de Strongyloides",
 "latin": "Strongyloides stercoralis",
 "group": "parasitos",
+"mark": "larva",
 "sample": "heces",
 "aliases": [
 "strongyloides",
@@ -871,6 +913,7 @@
 "name": "Huevo de Schistosoma mansoni",
 "latin": "Schistosoma mansoni",
 "group": "parasitos",
+"mark": "mansoni",
 "sample": "heces",
 "aliases": [
 "schistosoma mansoni",

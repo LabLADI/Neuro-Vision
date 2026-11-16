@@ -1,4 +1,4 @@
-# Neuro-Vision
+# NeuroVision
 
 Detector de estructuras en muestras de laboratorio que corre en el celular, sin internet.
 Usa un modelo YOLO11 (ONNX) y ONNX Runtime Web. Es una herramienta educativa y de apoyo: no sustituye la revisión de un profesional.
@@ -8,7 +8,7 @@ Usa un modelo YOLO11 (ONNX) y ONNX Runtime Web. Es una herramienta educativa y d
 **Modelo de heces:** 11 huevos de helmintos (Ascaris, Trichuris, Enterobius, Taenia, Hymenolepis nana y diminuta, Uncinaria, Fasciolopsis, Capillaria, Opisthorchis, Paragonimus). mAP50 0.992 sobre el conjunto de validación de Chula.
 
 ## Archivos
-- `index.html`, `app.js`, `sw.js`, `manifest.webmanifest`, `vendor/`: la app (PWA).
+- `index.html`, `app.css`, `app.js`, `marks.js`, `sw.js`, `manifest.webmanifest`, `vendor/`: la app (PWA).
 - `modelo.onnx` (heces) y `modelo_orina.onnx` (orina): la app los lista en un selector.
 - `atlas.json`: fichas de referencia.
 - `entrenamiento/`: cuadernos de Colab para reentrenar (heces y orina).

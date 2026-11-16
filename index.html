@@ -2,131 +2,150 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0f3d3e">
-<title>Detector de microscopía</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#15956a">
+<title>NeuroVision</title>
+<meta name="description" content="Lectura asistida de heces y orina en fotos de microscopio, sin internet. No es un resultado de laboratorio.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<style>
-  :root { --verde:#0f3d3e; --acento:#d6a860; --fondo:#f4f5f0; --texto:#1d2424; --suave:#5d6b6b; --borde:#d9ddd5; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--fondo); color:var(--texto); }
-  header { background:var(--verde); color:#fff; padding:14px 16px; display:flex; align-items:center; gap:10px; }
-  header img { width:34px; height:34px; border-radius:8px; }
-  header h1 { font-size:1.1rem; margin:0; font-weight:600; }
-  main { max-width:720px; margin:0 auto; padding:14px; }
-  .tarjeta { background:#fff; border:1px solid var(--borde); border-radius:14px; padding:14px; margin-bottom:12px; }
-  .aviso { font-size:.82rem; color:#6b4a12; background:#fbf1de; border:1px solid #edd6a8; border-radius:10px; padding:9px 11px; }
-  .fila { display:flex; gap:8px; flex-wrap:wrap; }
-  .boton { flex:1; min-width:140px; display:flex; align-items:center; justify-content:center; gap:6px; padding:13px; border-radius:11px;
-           border:none; font-size:1rem; font-weight:600; cursor:pointer; background:var(--verde); color:#fff; }
-  .boton.sec { background:#e6ebe4; color:var(--verde); }
-  .boton:disabled { opacity:.45; cursor:default; }
-  input[type=file] { display:none; }
-  label.campo { display:block; font-size:.88rem; color:var(--suave); margin:10px 0 4px; }
-  select, input[type=number] { width:100%; padding:10px; border-radius:9px; border:1px solid var(--borde); font-size:1rem; background:#fff; }
-  input[type=range] { width:100%; }
-  #estadoModelo { font-size:.88rem; color:var(--suave); margin-top:8px; }
-  #estadoModelo.ok { color:#1d6b3a; }
-  #estadoModelo.err { color:#a32020; }
-  canvas { width:100%; height:auto; border-radius:10px; background:#111; display:block; }
-  table { width:100%; border-collapse:collapse; font-size:.92rem; margin-top:10px; }
-  th, td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--borde); }
-  th { color:var(--suave); font-weight:600; font-size:.82rem; }
-  .color { display:inline-block; width:11px; height:11px; border-radius:3px; margin-right:6px; vertical-align:middle; }
-  #resumen { font-weight:600; margin:10px 0 2px; }
-  #escala { font-size:.85rem; color:var(--suave); }
-  .oculto { display:none !important; }
-  #calidad { font-size:.88rem; color:#8a4b00; background:#fff4e0; border-radius:9px; padding:8px 10px; margin-top:8px; }
-  tr.fila-det { cursor:pointer; }
-  .ficha { background:#f6f8f4; border:1px solid var(--borde); border-radius:11px; padding:11px 12px; margin:8px 0; font-size:.9rem; }
-  .ficha h3 { margin:0 0 2px; font-size:1rem; }
-  .ficha .lat { font-style:italic; color:var(--suave); font-size:.85rem; }
-  .ficha ul { margin:6px 0; padding-left:18px; }
-  .ficha p { margin:6px 0; }
-  .ficha b { color:var(--verde); }
-  .chips { display:flex; gap:6px; margin:10px 0 6px; }
-  .chip { flex:1; padding:8px; border-radius:9px; border:1px solid var(--borde); background:#fff; font-size:.9rem; font-weight:600; color:var(--suave); cursor:pointer; }
-  .chip.activo { background:var(--verde); color:#fff; border-color:var(--verde); }
-  #buscarAtlas { width:100%; padding:10px; border-radius:9px; border:1px solid var(--borde); font-size:1rem; }
-  .entrada-atlas { border-bottom:1px solid var(--borde); padding:9px 2px; }
-  .entrada-atlas summary { font-weight:500; color:var(--texto); }
-  .toque { font-size:.8rem; color:var(--suave); margin-top:6px; }
-  details summary { cursor:pointer; color:var(--verde); font-weight:600; }
-  .cargando { display:inline-block; width:16px; height:16px; border:2px solid #fff; border-right-color:transparent; border-radius:50%; animation:g 0.8s linear infinite; }
-  @keyframes g { to { transform:rotate(360deg); } }
-</style>
+<link rel="stylesheet" href="app.css">
 </head>
 <body>
-<header><img src="icon-192.png" alt=""><h1>Detector de microscopía</h1></header>
+<header>
+  <div class="cab">
+    <span class="logo" id="logo"></span>
+    <div class="marca"><b>NeuroVision</b><small>Laboratorio</small></div>
+    <nav aria-label="Secciones">
+      <button type="button" data-tab="leer" aria-current="page">Leer</button>
+      <button type="button" data-tab="atlas">Atlas</button>
+      <button type="button" data-tab="bitacora">Bitácora</button>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <div class="aviso">⚠️ Prototipo educativo. Reconoce solo las estructuras con las que se entrenó cada modelo y puede confundir artefactos (restos vegetales, burbujas, fibras) con ellas. Confirme siempre al microscopio. No es un diagnóstico.</div>
-
-  <section class="tarjeta" id="secModelo" style="margin-top:12px">
-    <strong>1. Modelo</strong>
-    <div id="estadoModelo">Buscando modelo…</div>
-    <select id="listaModelos" class="oculto" style="margin-top:8px" aria-label="Modelo en uso"></select>
-    <div class="fila" style="margin-top:10px">
-      <button class="boton sec" id="btnModelo">📦 Cargar modelo (.onnx)</button>
+  <!-- ============ LEER ============ -->
+  <section id="tab-leer">
+    <div>
+      <h1>Lectura de lámina</h1>
+      <p class="sub" id="subLeer">Primero la muestra. Después la foto.</p>
     </div>
-    <input type="file" id="archivoModelo" accept=".onnx,application/octet-stream">
-  </section>
 
-  <section class="tarjeta">
-    <strong>2. Foto del microscopio</strong>
-    <div class="fila" style="margin-top:10px">
-      <button class="boton" id="btnCamara" disabled>📷 Tomar foto</button>
-      <button class="boton sec" id="btnGaleria" disabled>🖼️ Galería</button>
-    </div>
-    <input type="file" id="archivoCamara" accept="image/*" capture="environment">
-    <input type="file" id="archivoGaleria" accept="image/*">
-    <details style="margin-top:12px">
-      <summary>Ajustes</summary>
-      <label class="campo" for="objetivo">Objetivo (para calcular tamaños)</label>
-      <select id="objetivo">
-        <option value="0">No calcular tamaño</option>
-        <option value="4500">4x (campo ≈ 4500 µm)</option>
-        <option value="1800">10x (campo ≈ 1800 µm)</option>
-        <option value="450" selected>40x (campo ≈ 450 µm)</option>
-        <option value="180">100x (campo ≈ 180 µm)</option>
-        <option value="otro">Otro (escribir diámetro)</option>
-      </select>
-      <input type="number" id="diamOtro" class="oculto" placeholder="Diámetro del campo en µm" min="1" style="margin-top:6px">
-      <label class="campo" for="confianza">Confianza mínima: <span id="confValor">25</span>%</label>
-      <input type="range" id="confianza" min="5" max="95" step="5" value="25">
-    </details>
-  </section>
-
-  <section class="tarjeta oculto" id="secResultado">
-    <strong>3. Resultado</strong>
-    <canvas id="lienzo" style="margin-top:10px"></canvas>
-    <div id="resumen"></div>
-    <div id="escala"></div>
-    <div id="calidad" class="oculto"></div>
-    <table id="tabla" class="oculto">
-      <thead><tr><th>Estructura</th><th>Confianza</th><th>Tamaño (µm)</th></tr></thead>
-      <tbody></tbody>
-    </table>
-    <div class="toque oculto" id="toque">Toca una fila para ver cómo reconocerla y con qué se confunde.</div>
-    <div id="fichaDet"></div>
-  </section>
-
-  <section class="tarjeta">
-    <details id="secAtlas">
-      <summary>📖 Atlas de referencia</summary>
-      <div class="chips">
-        <button class="chip activo" data-muestra="heces">Heces</button>
-        <button class="chip" data-muestra="orina">Orina</button>
+    <!-- Paso 1: muestra -->
+    <div class="col" id="stepMuestra">
+      <div class="card">
+        <p class="etq">Tipo de muestra</p>
+        <div class="grid2">
+          <button type="button" class="chip" id="chipOrina" aria-pressed="true">Orina</button>
+          <button type="button" class="chip" id="chipHeces" aria-pressed="false">Heces</button>
+        </div>
+        <p class="sub" id="descMuestra" style="margin:0"></p>
+        <button type="button" class="primario" id="btnContinuar">Continuar</button>
       </div>
-      <input type="search" id="buscarAtlas" placeholder="Buscar (p. ej. giardia, oxalato, cilindro)">
-      <div id="listaAtlas"></div>
-    </details>
+
+      <details class="card ajustes">
+        <summary>Modelos y ajustes</summary>
+        <div class="col" style="gap:12px">
+          <div id="estadoModelo">Buscando modelo…</div>
+          <select id="listaModelos" class="oculto" aria-label="Modelo en uso"></select>
+          <button type="button" class="secundario" id="btnModelo">Cargar otro modelo (.onnx)</button>
+          <input type="file" id="archivoModelo" accept=".onnx,application/octet-stream">
+          <label class="col" style="gap:6px">
+            <span class="etq">Confianza mínima: <span id="confValor">25</span>%</span>
+            <input type="range" id="confianza" min="5" max="95" step="5" value="25">
+          </label>
+          <label class="col" style="gap:6px">
+            <span class="etq">Diámetro del campo, µm (vacío = valor típico del objetivo)</span>
+            <input type="number" id="diamOtro" min="1" inputmode="decimal" placeholder="p. ej. 450">
+          </label>
+        </div>
+      </details>
+    </div>
+
+    <!-- Paso 2: foto -->
+    <div class="col oculto" id="stepFotos">
+      <button type="button" class="enlace" id="btnCambiarMuestra"></button>
+
+      <div class="card fotocard">
+        <div class="vista" id="vista"></div>
+        <div class="pie">
+          <div class="grid2">
+            <button type="button" class="btn2 v" id="btnCamara"></button>
+            <button type="button" class="btn2" id="btnGaleria"></button>
+          </div>
+          <input type="file" id="archivoCamara" accept="image/*" capture="environment">
+          <input type="file" id="archivoGaleria" accept="image/*">
+          <button type="button" class="enlace gris oculto" id="btnQuitar">Quitar esta foto</button>
+          <p class="rose oculto" id="problema" style="font-size:.875rem"></p>
+        </div>
+      </div>
+
+      <fieldset>
+        <legend class="etq">Objetivo</legend>
+        <div class="grid3" id="chipsObjetivo"></div>
+      </fieldset>
+      <fieldset>
+        <legend class="etq">Preparación</legend>
+        <div class="grid3" id="chipsPrep"></div>
+      </fieldset>
+      <label class="col" style="gap:8px">
+        <span class="etq">Nota de la lámina</span>
+        <textarea id="nota" maxlength="280"></textarea>
+      </label>
+      <button type="button" class="primario" id="btnIdentificar" disabled></button>
+      <p class="alerta oculto" id="errorLeer" role="alert"></p>
+    </div>
+
+    <!-- Analizando -->
+    <div class="card oculto" id="busy" role="status">
+      <div class="cargando">
+        <span class="giro" aria-hidden="true"></span>
+        <div>
+          <p style="font-size:1.125rem;font-weight:600">Leyendo el campo</p>
+          <p class="sub">Revisando la foto. El resultado aparece al terminar.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paso 3: resultado -->
+    <div class="col oculto" id="stepResultado">
+      <article class="card" id="tarjetaRes"></article>
+      <button type="button" class="secundario" id="btnNueva">Nueva lectura</button>
+    </div>
   </section>
 
-  <p style="font-size:.75rem;color:var(--suave);text-align:center">Funciona sin internet una vez cargado. Las fotos no salen de tu teléfono.</p>
+  <!-- ============ ATLAS ============ -->
+  <section id="tab-atlas" class="oculto">
+    <div>
+      <h2 class="t">Atlas</h2>
+      <p class="sub" id="subAtlas"></p>
+    </div>
+    <div class="grid2">
+      <button type="button" class="chip" id="atlasOrina" aria-pressed="true">Orina</button>
+      <button type="button" class="chip" id="atlasHeces" aria-pressed="false">Heces</button>
+    </div>
+    <input type="search" id="buscarAtlas" aria-label="Buscar en el atlas">
+    <div class="chips-x" id="gruposAtlas"></div>
+    <ul class="lista" id="listaAtlas"></ul>
+    <p class="pie-aviso" id="notaAtlas"></p>
+  </section>
+
+  <!-- ============ BITÁCORA ============ -->
+  <section id="tab-bitacora" class="oculto">
+    <div>
+      <h2 class="t">Bitácora</h2>
+      <p class="sub">Queda solo en este teléfono. No guardes datos que identifiquen al paciente.</p>
+    </div>
+    <p class="card muted" id="bitVacia" style="font-size:.875rem">Aún no hay lecturas.</p>
+    <ul class="lista" id="listaBit"></ul>
+  </section>
+
+  <p class="pie-pag">Funciona sin internet una vez cargada. Las fotos no salen de tu teléfono.</p>
 </main>
+
+<div id="hojaRaiz"></div>
 <script type="module" src="app.js"></script>
 </body>
 </html>
