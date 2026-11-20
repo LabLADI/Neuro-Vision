@@ -1,0 +1,46 @@
+{
+  "titulo": "Las náuseas del embarazo las manda el bebé",
+  "escenas": [
+    {
+      "narracion": "Las náuseas del embarazo no las provoca el cuerpo de la mamá. Las manda el bebé.",
+      "visual": {"tipo": "gancho", "icono": "bebe", "tachado": "El cuerpo de la mamá", "clave": "las manda", "texto": "Las manda el bebé", "destacado": "el bebé"}
+    },
+    {
+      "narracion": "Durante décadas se culpó a los estrógenos, a la progesterona, incluso al estrés. Pero nada lo explicaba del todo.",
+      "visual": {"tipo": "lista", "titulo": "Los sospechosos", "items": [
+        {"texto": "Estrógenos", "icono": "molecula", "estado": "no", "clave": "estrógenos"},
+        {"texto": "Progesterona", "icono": "pastilla", "estado": "no", "clave": "progesterona"},
+        {"texto": "Estrés", "icono": "rayo", "estado": "no", "clave": "estrés"}
+      ]}
+    },
+    {
+      "narracion": "En 2023, un estudio publicado en la revista Nature encontró al verdadero culpable: una hormona llamada [GDF15|ge de efe quince].",
+      "visual": {"tipo": "estudio", "revista": "Nature", "anio": "2023", "titulo": "La hormona GDF15 está detrás de las náuseas del embarazo", "sello": "¡CULPABLE!"}
+    },
+    {
+      "narracion": "Y lo sorprendente es quién la fabrica: casi toda sale de la placenta, un órgano que se forma con los genes del bebé.",
+      "visual": {"tipo": "emision", "fuente": {"icono": "placenta", "etiqueta": "Placenta = tejido del bebé"}, "particula": {"etiqueta": "GDF15", "color": "amarillo"}}
+    },
+    {
+      "narracion": "Desde ahí viaja por la sangre de la madre hasta su cerebro, a una zona diminuta llamada área postrema: el centro del vómito.",
+      "visual": {"tipo": "viaje", "desde": {"icono": "placenta", "etiqueta": "Placenta"}, "hasta": {"icono": "cerebro", "etiqueta": "Área postrema"}, "particula": {"etiqueta": "GDF15", "color": "amarillo"}}
+    },
+    {
+      "narracion": "Allí encaja en su receptor como una llave en su cerradura, y el cerebro recibe la orden: náuseas.",
+      "visual": {"tipo": "receptor", "clave": "encaja", "molecula": {"etiqueta": "GDF15", "color": "amarillo"}, "receptor": {"etiqueta": "Receptor GFRAL"}, "celula": {"etiqueta": "Neurona del área postrema"}, "efecto": {"icono": "nauseas", "texto": "¡Náuseas!"}}
+    },
+    {
+      "narracion": "Pero hay un giro. Las mujeres que tenían muy poca [GDF15|ge de efe quince] antes del embarazo sufren las náuseas más fuertes. Las que ya estaban acostumbradas a niveles altos casi no las notan.",
+      "visual": {"tipo": "comparacion", "titulo": "¿Cuántas náuseas?", "izquierda": {"titulo": "Poca GDF15 antes", "icono": "nauseas", "valor": 0.92, "resultado": "Muy fuertes", "color": "coral", "clave": "muy poca"}, "derecha": {"titulo": "Mucha GDF15 antes", "icono": "mama", "valor": 0.15, "resultado": "Casi nada", "color": "verde", "clave": "acostumbradas"}}
+    },
+    {
+      "narracion": "O sea: el bebé manda la señal, pero el cuerpo de la mamá decide qué tan fuerte la escucha. Sígueme para más ciencia que nadie te contó.",
+      "visual": {"tipo": "cierre", "icono": "mensaje", "texto": "El bebé manda la señal. La mamá decide qué tan fuerte la escucha.", "destacado": "qué tan fuerte la escucha", "cta": "Sígueme para más ciencia 🧠"}
+    }
+  ],
+  "portada": {"arriba": "Las náuseas del embarazo…", "destacado": "¡las manda el bebé!", "icono": "bebe", "abajo": "Lo confirmó Nature"},
+  "post": {
+    "texto": "🤢👶 Las náuseas del embarazo no son \"cosa de la mamá\": la señal la manda el bebé.\n\nUn estudio publicado en Nature (2023) descubrió que la hormona GDF15, fabricada sobre todo por la placenta (que se forma con los genes del bebé), viaja hasta el área postrema del cerebro de la madre —el centro del vómito— y activa su receptor GFRAL.\n\nEl giro: las mujeres con poca GDF15 antes del embarazo sufren náuseas más fuertes, y las que ya estaban expuestas a niveles altos casi no las notan. Esto abre la puerta a tratamientos para la hiperémesis gravídica.\n\n📚 Fuente: Fejzo et al., Nature (2023). \"GDF15 linked to maternal risk of nausea and vomiting during pregnancy\".\n\n¿Tú tuviste náuseas en el embarazo? Cuéntame 👇",
+    "hashtags": ["ciencia", "embarazo", "nauseas", "biologia", "cuerpohumano", "divulgacion", "maternidad", "curiosidades", "sabiasque", "ciencia_en_1_minuto"]
+  }
+}

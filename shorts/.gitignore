@@ -1,0 +1,4 @@
+node_modules/
+out/
+videos/*/vista-previa/
+public/audio/*.crudo.mp3

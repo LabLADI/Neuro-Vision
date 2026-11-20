@@ -1,0 +1,15 @@
+{
+  "voz": {
+    "voice_id": "EXAVITQu4vr4xnSDxMaL",
+    "nombre": "Sarah (ElevenLabs, multilingüe)",
+    "modelo": "eleven_multilingual_v2",
+    "estabilidad": 0.45,
+    "similitud": 0.8,
+    "estilo": 0.25,
+    "velocidad": 1.06
+  },
+  "marca": "",
+  "colaSegundos": 1.2,
+  "concurrencia": null,
+  "navegador": "/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell"
+}
