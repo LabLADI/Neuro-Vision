@@ -5,3 +5,4 @@ viral/*/*.mp4
 viral/*/*.wav
 viral/*/*.mp3
 viral/*/check/*.jpg
+__pycache__/
