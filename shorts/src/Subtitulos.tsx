@@ -47,8 +47,8 @@ export const Subtitulos: React.FC<{palabras: Palabra[]}> = ({palabras}) => {
     <div
       style={{
         position: 'absolute',
-        left: 50,
-        right: 50,
+        left: 80,
+        right: 150,
         top: 1200,
         display: 'flex',
         flexWrap: 'wrap',

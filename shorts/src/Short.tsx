@@ -2,6 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Fondo} from './comunes';
 import {ESCENAS} from './escenas';
+import {EXTRA} from './escenas/extra';
 import {Subtitulos} from './Subtitulos';
 import {C, FUENTE, color} from './tema';
 import type {Props} from './tipos';
@@ -24,7 +25,7 @@ export const Short: React.FC<Props> = ({guion, audio, palabras, escenas, marca})
         const desde = Math.round(t.inicio * fps);
         const hasta = i === guion.escenas.length - 1 ? durationInFrames : Math.round(t.fin * fps);
         const dur = Math.max(1, hasta - desde);
-        const Comp = ESCENAS[e.visual.tipo] ?? ESCENAS.texto;
+        const Comp = EXTRA[e.visual.tipo] ?? ESCENAS[e.visual.tipo] ?? ESCENAS.texto;
         const pal = palabras.filter((p) => p.inicio >= t.inicio - 0.01 && p.inicio < t.fin);
         return (
           <Sequence key={i} from={desde} durationInFrames={dur} name={`${i + 1}. ${e.visual.tipo}`}>

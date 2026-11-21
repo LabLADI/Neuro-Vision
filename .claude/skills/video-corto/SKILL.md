@@ -50,20 +50,23 @@ Ejemplo completo y probado: `shorts/videos/nauseas-embarazo/guion.json`.
 
 | tipo | Para qué | Campos |
 |---|---|---|
-| `gancho` | Escena 1. Mito tachado → verdad | `icono`, `tachado` (el mito), `clave` (cuándo aparece la verdad), `texto`, `destacado` (parte de `texto` con marcador), `color` |
+| `gancho` | Escena 1. Mito tachado → verdad | `icono`, `sello` (`no`/`si` sobre el icono), `tachado` (el mito), `clave` (cuándo aparece la verdad), `texto`, `destacado` (parte de `texto` con marcador), `color` |
 | `texto` | Afirmación + ilustración | `texto`, `destacado`, `icono`, `tam`, `tamIcono`, `colorIcono` |
 | `lista` | 2–4 elementos que aparecen al nombrarlos, con ✓/✗ | `titulo`, `items: [{texto, icono, estado: "si"\|"no", clave}]` |
 | `estudio` | Tarjeta de paper científico | `revista`, `anio`, `titulo`, `sello` |
-| `emision` | Una fuente fabrica/libera muchas partículas | `fuente: {icono, etiqueta}`, `particula: {etiqueta, color}`, `cantidad`, `contador: {desde, hasta, sufijo}` |
+| `emision` | Una fuente fabrica/libera muchas partículas | `fuente: {icono, etiqueta}`, `particula: {etiqueta, color}`, `forma` (`hex` = hexágonos), `nota: {icono, texto}`, `cantidad`, `contador: {desde, hasta, sufijo}` |
 | `viaje` | Algo viaja de A a B (hormona, señal, nutriente) | `desde: {icono, etiqueta}`, `hasta: {icono, etiqueta}`, `particula: {etiqueta, color}`, `colorCamino` |
 | `receptor` | Molécula encaja en receptor de membrana → efecto | `molecula: {etiqueta, color}`, `receptor: {etiqueta}`, `celula: {etiqueta}`, `efecto: {icono, texto}`, `clave` |
 | `comparacion` | Dos casos lado a lado con barra de nivel (0–1) | `titulo`, `izquierda`/`derecha: {titulo, icono, valor, resultado, color, clave}` |
 | `foco` | Un elemento grande con hasta 4 notas alrededor | `icono`, `etiqueta`, `notas: [{texto, clave, color}]`, `tam` |
 | `cifra` | Número grande que cuenta | `numero`, `desde`, `decimales`, `sufijo`, `tamNumero`, `texto`, `destacado`, `icono`, `color` |
+| `vaso` | Acercamiento a un vaso sanguíneo con glóbulos rojos fluyendo | `etiqueta`, `glucosa` (true = también hexágonos de glucosa), `color` |
+| `puerta` | Célula con puerta: la glucosa rebota, llega la llave (insulina) y abre; o no abre (resistencia) | `llave` (false = sin llave), `claveLlave`, `claveAbre`, `resistencia`, `aviso`, `glucosa`, `insulina`, `celula` (textos de etiquetas) |
+| `grafica` | Curva de glucosa que sube con cada cosa nombrada, o se estabiliza | `titulo`, `destacado`, `icono`, `eventos: [{clave, icono, sube, etiqueta, hex}]`, `base`, `acumula`, `estable`, `zonaRoja`, `bandaVerde`, `etiqueta` |
 | `laboratorio` | Cierre promocional: logo de un laboratorio + lista de pruebas | `logo` (ruta en `public/`, p. ej. `marcas/ladi.png`), `anchoLogo`, `texto`, `destacado`, `pruebas: [..]`, `clave` (cuándo aparece la lista) |
 | `cierre` | Conclusión + CTA | `texto`, `destacado`, `icono`, `cta` (texto de la pastilla o `false`) |
 
-**Iconos dibujados** (`icono`): `bebe`, `mama`, `placenta`, `cerebro`, `celula`, `molecula`/`hormona`, `nauseas`, `estomago`, `corazon`, `adn`, `bacteria`, `virus`, `lupa`, `sangre`, `reloj`, `rayo`, `mensaje`, `pastilla`. Cualquier otro valor se dibuja como **emoji** (p. ej. `"🦴"`, `"🫁"`, `"🧪"`, `"☕"`), así que cualquier tema tiene ilustración.
+**Iconos dibujados** (`icono`): `azucar`, `tubo`, `luna` (dormir mal), `higado`, `pancreas`, `bebe`, `mama`, `placenta`, `cerebro`, `celula`, `molecula`/`hormona`, `nauseas`, `estomago`, `corazon`, `adn`, `bacteria`, `virus`, `lupa`, `sangre`, `reloj`, `rayo`, `mensaje`, `pastilla`. Cualquier otro valor se dibuja como **emoji** (p. ej. `"🦴"`, `"🫁"`, `"🧪"`, `"☕"`), así que cualquier tema tiene ilustración.
 
 **Colores** (`color`, `fondo`, etc.): `coral`, `turquesa`, `amarillo`, `morado`, `azul`, `rosa`, `verde`, `rojo`, `blanco` o un hex.
 

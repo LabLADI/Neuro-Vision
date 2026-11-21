@@ -268,7 +268,42 @@ const Pancreas = ({color}: P) => (
   </g>
 );
 
+const Azucar = ({frame}: P) => {
+  const b = Math.sin(frame / 10) * 2;
+  return (
+    <g transform={`translate(0 ${b})`}>
+      <path d="M100 30 L170 65 L100 100 L30 65 Z" fill="#ffffff" stroke={T} strokeWidth={sw} strokeLinejoin="round" />
+      <path d="M30 65 L100 100 L100 175 L30 140 Z" fill="#e8ecf0" stroke={T} strokeWidth={sw} strokeLinejoin="round" />
+      <path d="M170 65 L100 100 L100 175 L170 140 Z" fill="#d3d9e0" stroke={T} strokeWidth={sw} strokeLinejoin="round" />
+      {[[70, 60], [110, 52], [125, 72], [60, 115], [75, 140], [130, 120], [145, 100]].map(([x, y], k) => (
+        <rect key={k} x={x} y={y} width={7} height={7} fill="#c9d1da" transform={`rotate(20 ${x} ${y})`} />
+      ))}
+    </g>
+  );
+};
+
+const Tubo = ({color}: P) => (
+  <g transform="rotate(12 100 100)">
+    <rect x={72} y={28} width={56} height={22} rx={6} fill={C.morado} stroke={T} strokeWidth={sw} />
+    <path d="M78 50 L78 160 a22 22 0 0 0 44 0 L122 50 Z" fill="#eaf6ff" stroke={T} strokeWidth={sw} strokeLinejoin="round" />
+    <path d="M82 100 L82 160 a18 18 0 0 0 36 0 L118 100 Z" fill={color ?? C.rojo} />
+    <rect x={88} y={62} width={8} height={30} rx={4} fill="#fff" opacity={0.8} />
+  </g>
+);
+
+const Luna = ({frame}: P) => (
+  <g>
+    <path d="M120 30 A75 75 0 1 0 170 140 A60 60 0 1 1 120 30 Z" fill={C.amarillo} stroke={T} strokeWidth={sw} strokeLinejoin="round" transform={`rotate(${Math.sin(frame / 15) * 4} 100 100)`} />
+    <text x={130} y={70} fontFamily="Montserrat" fontWeight={900} fontSize={38} fill={T}>Zzz</text>
+    <line x1={118} y1={34} x2={200} y2={78} stroke={C.rojo} strokeWidth={10} strokeLinecap="round" />
+  </g>
+);
+
 const MAPA: Record<string, (p: P) => React.ReactElement> = {
+  azucar: Azucar,
+  tubo: Tubo,
+  luna: Luna,
+  sueno: Luna,
   higado: Higado,
   pancreas: Pancreas,
   bebe: Bebe,

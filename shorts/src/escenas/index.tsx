@@ -43,8 +43,13 @@ export const Gancho: React.FC<EscenaProps> = ({v, palabras, inicio, dur}) => {
   return (
     <Zona gap={40}>
       <Pop>
-        <div style={{transform: `rotate(${sacudida}deg)`}}>
+        <div style={{transform: `rotate(${sacudida}deg)`, position: 'relative'}}>
           <Icono nombre={v.icono ?? 'bebe'} tam={460} />
+          {v.sello && (
+            <div style={{position: 'absolute', right: -10, bottom: 10}}>
+              <Sello tipo={v.sello} tam={200} retraso={v.retrasoSello ?? 12} />
+            </div>
+          )}
         </div>
       </Pop>
       {v.tachado && (
@@ -214,8 +219,12 @@ export const Emision: React.FC<EscenaProps> = ({v}) => {
           const x = cx + Math.cos(a) * r + Math.sin((f + i * 10) / 15) * 8;
           const y = cy + Math.sin(a) * r * 0.85 + Math.cos((f + i * 7) / 13) * 8;
           return (
-            <g key={i} transform={`translate(${x} ${y}) scale(${Math.min(1, t / 8)})`}>
-              <circle r={22 + (i % 3) * 5} fill={col} stroke={C.tinta} strokeWidth={5} />
+            <g key={i} transform={`translate(${x} ${y}) scale(${Math.min(1, t / 8)}) rotate(${f * 3 + i * 20})`}>
+              {v.forma === 'hex' ? (
+                <polygon points={Array.from({length: 6}, (_, q) => `${Math.cos((Math.PI / 3) * q) * 26},${Math.sin((Math.PI / 3) * q) * 26}`).join(' ')} fill={col} stroke={C.tinta} strokeWidth={5} strokeLinejoin="round" />
+              ) : (
+                <circle r={22 + (i % 3) * 5} fill={col} stroke={C.tinta} strokeWidth={5} />
+              )}
             </g>
           );
         })}
@@ -233,6 +242,12 @@ export const Emision: React.FC<EscenaProps> = ({v}) => {
       <div style={{position: 'absolute', left: 0, right: 0, bottom: 10, display: 'flex', justifyContent: 'center'}}>
         {v.particula?.etiqueta && <Pildora texto={v.particula.etiqueta} fondo={v.particula.color ?? 'amarillo'} retraso={20} tam={56} />}
       </div>
+      {v.nota && (
+        <div style={{position: 'absolute', right: 0, top: 110, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6}}>
+          {v.nota.icono && <Pop retraso={v.nota.retraso ?? 30}><Icono nombre={v.nota.icono} tam={170} /></Pop>}
+          <Pildora texto={v.nota.texto} fondo={v.nota.color ?? 'blanco'} retraso={(v.nota.retraso ?? 30) + 4} tam={36} />
+        </div>
+      )}
       {cont && (
         <div style={{position: 'absolute', right: 0, top: 120, fontFamily: FUENTE, fontWeight: 900, fontSize: 110, color: C.tinta}}>
           ×{Math.round(interpolate(f, [15, 60], [cont.desde ?? 1, cont.hasta ?? 100], clamp))}
@@ -423,7 +438,10 @@ export const Laboratorio: React.FC<EscenaProps> = ({v, palabras, inicio}) => {
   const tLista = momento(palabras, inicio, v.clave, 18);
   return (
     <Zona gap={44}>
-      {v.logo && <Img src={staticFile(v.logo)} style={{width: v.anchoLogo ?? 760, opacity: s, transform: `scale(${0.85 + 0.15 * s})`}} />}
+      <div style={{display: 'flex', alignItems: 'center', gap: 24}}>
+        {v.icono && <Pop><Icono nombre={v.icono} tam={v.tamIcono ?? 240} /></Pop>}
+        {v.logo && <Img src={staticFile(v.logo)} style={{width: v.anchoLogo ?? 760, opacity: s, transform: `scale(${0.85 + 0.15 * s})`}} />}
+      </div>
       {v.texto && <TextoGrande texto={v.texto} destacado={v.destacado} tam={v.tam ?? 64} retraso={8} colorMarcador={v.color} />}
       <div style={{display: 'flex', flexDirection: 'column', gap: 18, alignItems: 'stretch', width: 860}}>
         {pruebas.map((p, i) => (
@@ -433,6 +451,7 @@ export const Laboratorio: React.FC<EscenaProps> = ({v, palabras, inicio}) => {
           </Pop>
         ))}
       </div>
+      {v.nota && <div style={{fontFamily: FUENTE, fontWeight: 600, fontSize: 32, color: C.tinta, opacity: 0.7, textAlign: 'center'}}>{v.nota}</div>}
     </Zona>
   );
 };

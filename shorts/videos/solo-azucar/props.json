@@ -1,0 +1,956 @@
+{
+ "guion": {
+  "titulo": "El control glucémico no es solo no comer azúcar",
+  "escenas": [
+   {
+    "narracion": "Dejar el azúcar no basta para controlar tu glucosa.",
+    "visual": {
+     "tipo": "gancho",
+     "icono": "azucar",
+     "sello": "no",
+     "retrasoSello": 6,
+     "texto": "¿SOLO EL AZÚCAR?",
+     "destacado": "AZÚCAR",
+     "tam": 120
+    }
+   },
+   {
+    "narracion": "La razón está en tu sangre.",
+    "visual": {
+     "tipo": "vaso",
+     "etiqueta": "TU SANGRE"
+    }
+   },
+   {
+    "narracion": "La glucosa es el combustible de tus células. Viaja por la sangre… pero no puede entrar sola.",
+    "visual": {
+     "tipo": "puerta",
+     "llave": false,
+     "glucosa": "GLUCOSA",
+     "celula": "CÉLULA"
+    }
+   },
+   {
+    "narracion": "Necesita una llave: la insulina, que abre la puerta de la célula.",
+    "visual": {
+     "tipo": "puerta",
+     "claveLlave": "llave",
+     "claveAbre": "abre",
+     "insulina": "INSULINA"
+    }
+   },
+   {
+    "narracion": "Ahora lo sorprendente: tu glucosa no solo sube con el azúcar.",
+    "visual": {
+     "tipo": "grafica",
+     "titulo": "No solo sube con el azúcar",
+     "destacado": "No solo",
+     "eventos": [
+      {
+       "clave": "azúcar",
+       "icono": "azucar",
+       "sube": 0.1,
+       "hex": false
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "Sube con el pan, la tortilla, el arroz o la fruta, porque tu cuerpo convierte esos carbohidratos en glucosa.",
+    "visual": {
+     "tipo": "grafica",
+     "acumula": true,
+     "base": 0.18,
+     "eventos": [
+      {
+       "clave": "pan",
+       "icono": "🍞",
+       "sube": 0.14
+      },
+      {
+       "clave": "tortilla",
+       "icono": "🫓",
+       "sube": 0.14
+      },
+      {
+       "clave": "arroz",
+       "icono": "🍚",
+       "sube": 0.14
+      },
+      {
+       "clave": "fruta",
+       "icono": "🍎",
+       "sube": 0.14
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "También sube con el estrés… y cuando duermes mal.",
+    "visual": {
+     "tipo": "grafica",
+     "titulo": "ESTRÉS y MAL SUEÑO",
+     "destacado": "MAL SUEÑO",
+     "base": 0.25,
+     "eventos": [
+      {
+       "clave": "estrés",
+       "icono": "rayo",
+       "sube": 0.22,
+       "etiqueta": "ESTRÉS",
+       "hex": false
+      },
+      {
+       "clave": "duermes",
+       "icono": "luna",
+       "sube": 0.22,
+       "etiqueta": "DORMIR MAL",
+       "hex": false
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "Y tu hígado libera glucosa por su cuenta, aunque no hayas comido.",
+    "visual": {
+     "tipo": "emision",
+     "forma": "hex",
+     "fuente": {
+      "icono": "higado",
+      "etiqueta": "HÍGADO"
+     },
+     "particula": {
+      "etiqueta": "GLUCOSA",
+      "color": "amarillo"
+     },
+     "nota": {
+      "icono": "🍽️",
+      "texto": "Plato vacío",
+      "retraso": 40
+     }
+    }
+   },
+   {
+    "narracion": "Si tus células dejan de responder bien a la insulina, la glucosa se acumula en la sangre.",
+    "visual": {
+     "tipo": "puerta",
+     "resistencia": true,
+     "claveLlave": "responder",
+     "insulina": "INSULINA",
+     "aviso": "La glucosa se acumula"
+    }
+   },
+   {
+    "narracion": "Entonces, el control glucémico no es solo \"no comer azúcar\". Es cómo tu cuerpo entero maneja su energía… todo el día.",
+    "visual": {
+     "tipo": "grafica",
+     "estable": true,
+     "icono": "reloj",
+     "titulo": "NO ES SOLO AZÚCAR. ES EQUILIBRIO.",
+     "destacado": "EQUILIBRIO.",
+     "tamTitulo": 58,
+     "etiqueta": "GLUCOSA · 24 h"
+    }
+   },
+   {
+    "narracion": "Las pruebas de control glucémico se hacen en Laboratorio Ladi.",
+    "visual": {
+     "tipo": "laboratorio",
+     "icono": "tubo",
+     "tamIcono": 200,
+     "logo": "marcas/ladi.png",
+     "anchoLogo": 600,
+     "texto": "Pruebas de control glucémico",
+     "destacado": "control glucémico",
+     "tam": 60,
+     "nota": "Contenido informativo. No sustituye la consulta médica."
+    }
+   }
+  ],
+  "portada": {
+   "arriba": "Control glucémico…",
+   "destacado": "¿SOLO EL AZÚCAR?",
+   "icono": "azucar",
+   "logo": "marcas/ladi.png"
+  },
+  "post": {
+   "texto": "🍬❌ Dejar el azúcar no basta para controlar tu glucosa.\n\nLa glucosa es el combustible de tus células, pero no puede entrar sola: necesita una llave, la insulina. Y tu glucosa no solo sube con el azúcar: también con el pan, la tortilla, el arroz o la fruta (los carbohidratos se convierten en glucosa), con el estrés y cuando duermes mal. Además, tu hígado libera glucosa por su cuenta, aunque no hayas comido.\n\nSi tus células dejan de responder bien a la insulina, la glucosa se acumula en la sangre.\n\nEl control glucémico no es solo \"no comer azúcar\": es cómo tu cuerpo entero maneja su energía, todo el día.\n\n🧪 Las pruebas de control glucémico se hacen en Laboratorio Ladi.\n\nContenido informativo. No sustituye la consulta médica.",
+   "hashtags": [
+    "glucosa",
+    "insulina",
+    "diabetes",
+    "controlglucemico",
+    "salud",
+    "ciencia",
+    "cuerpohumano",
+    "laboratorioclinico",
+    "LaboratorioLadi"
+   ]
+  }
+ },
+ "audio": "audio/solo-azucar.mp3",
+ "palabras": [
+  {
+   "texto": "Dejar",
+   "inicio": 0,
+   "fin": 0.43
+  },
+  {
+   "texto": "el",
+   "inicio": 0.476,
+   "fin": 0.546
+  },
+  {
+   "texto": "azúcar",
+   "inicio": 0.604,
+   "fin": 1.126
+  },
+  {
+   "texto": "no",
+   "inicio": 1.231,
+   "fin": 1.416
+  },
+  {
+   "texto": "basta",
+   "inicio": 1.486,
+   "fin": 1.939
+  },
+  {
+   "texto": "para",
+   "inicio": 1.997,
+   "fin": 2.194
+  },
+  {
+   "texto": "controlar",
+   "inicio": 2.252,
+   "fin": 2.705
+  },
+  {
+   "texto": "tu",
+   "inicio": 2.775,
+   "fin": 2.856
+  },
+  {
+   "texto": "glucosa.",
+   "inicio": 2.902,
+   "fin": 3.646
+  },
+  {
+   "texto": "La",
+   "inicio": 3.947,
+   "fin": 4.087
+  },
+  {
+   "texto": "razón",
+   "inicio": 4.156,
+   "fin": 4.609
+  },
+  {
+   "texto": "está",
+   "inicio": 4.69,
+   "fin": 5.132
+  },
+  {
+   "texto": "en",
+   "inicio": 5.213,
+   "fin": 5.329
+  },
+  {
+   "texto": "tu",
+   "inicio": 5.399,
+   "fin": 5.503
+  },
+  {
+   "texto": "sangre.",
+   "inicio": 5.584,
+   "fin": 6.269
+  },
+  {
+   "texto": "La",
+   "inicio": 6.629,
+   "fin": 6.745
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 6.792,
+   "fin": 7.314
+  },
+  {
+   "texto": "es",
+   "inicio": 7.407,
+   "fin": 7.512
+  },
+  {
+   "texto": "el",
+   "inicio": 7.581,
+   "fin": 7.639
+  },
+  {
+   "texto": "combustible",
+   "inicio": 7.697,
+   "fin": 8.336
+  },
+  {
+   "texto": "de",
+   "inicio": 8.394,
+   "fin": 8.464
+  },
+  {
+   "texto": "tus",
+   "inicio": 8.51,
+   "fin": 8.661
+  },
+  {
+   "texto": "células.",
+   "inicio": 8.684,
+   "fin": 9.369
+  },
+  {
+   "texto": "Viaja",
+   "inicio": 9.601,
+   "fin": 9.915
+  },
+  {
+   "texto": "por",
+   "inicio": 9.961,
+   "fin": 10.101
+  },
+  {
+   "texto": "la",
+   "inicio": 10.17,
+   "fin": 10.252
+  },
+  {
+   "texto": "sangre…",
+   "inicio": 10.31,
+   "fin": 10.971
+  },
+  {
+   "texto": "pero",
+   "inicio": 11.273,
+   "fin": 11.482
+  },
+  {
+   "texto": "no",
+   "inicio": 11.552,
+   "fin": 11.656
+  },
+  {
+   "texto": "puede",
+   "inicio": 11.726,
+   "fin": 12.063
+  },
+  {
+   "texto": "entrar",
+   "inicio": 12.144,
+   "fin": 12.562
+  },
+  {
+   "texto": "sola.",
+   "inicio": 12.643,
+   "fin": 13.189
+  },
+  {
+   "texto": "Necesita",
+   "inicio": 13.491,
+   "fin": 14.095
+  },
+  {
+   "texto": "una",
+   "inicio": 14.187,
+   "fin": 14.385
+  },
+  {
+   "texto": "llave:",
+   "inicio": 14.42,
+   "fin": 15.023
+  },
+  {
+   "texto": "la",
+   "inicio": 15.325,
+   "fin": 15.488
+  },
+  {
+   "texto": "insulina,",
+   "inicio": 15.557,
+   "fin": 16.312
+  },
+  {
+   "texto": "que",
+   "inicio": 16.417,
+   "fin": 16.533
+  },
+  {
+   "texto": "abre",
+   "inicio": 16.591,
+   "fin": 16.765
+  },
+  {
+   "texto": "la",
+   "inicio": 16.811,
+   "fin": 16.881
+  },
+  {
+   "texto": "puerta",
+   "inicio": 16.927,
+   "fin": 17.252
+  },
+  {
+   "texto": "de",
+   "inicio": 17.299,
+   "fin": 17.357
+  },
+  {
+   "texto": "la",
+   "inicio": 17.415,
+   "fin": 17.496
+  },
+  {
+   "texto": "célula.",
+   "inicio": 17.543,
+   "fin": 18.321
+  },
+  {
+   "texto": "Ahora",
+   "inicio": 18.622,
+   "fin": 19.064
+  },
+  {
+   "texto": "lo",
+   "inicio": 19.156,
+   "fin": 19.284
+  },
+  {
+   "texto": "sorprendente:",
+   "inicio": 19.342,
+   "fin": 20.283
+  },
+  {
+   "texto": "tu",
+   "inicio": 20.701,
+   "fin": 20.828
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 20.875,
+   "fin": 21.444
+  },
+  {
+   "texto": "no",
+   "inicio": 21.548,
+   "fin": 21.722
+  },
+  {
+   "texto": "solo",
+   "inicio": 21.804,
+   "fin": 22.094
+  },
+  {
+   "texto": "sube",
+   "inicio": 22.175,
+   "fin": 22.465
+  },
+  {
+   "texto": "con",
+   "inicio": 22.512,
+   "fin": 22.639
+  },
+  {
+   "texto": "el",
+   "inicio": 22.686,
+   "fin": 22.756
+  },
+  {
+   "texto": "azúcar.",
+   "inicio": 22.802,
+   "fin": 23.533
+  },
+  {
+   "texto": "Sube",
+   "inicio": 23.835,
+   "fin": 24.137
+  },
+  {
+   "texto": "con",
+   "inicio": 24.184,
+   "fin": 24.3
+  },
+  {
+   "texto": "el",
+   "inicio": 24.358,
+   "fin": 24.427
+  },
+  {
+   "texto": "pan,",
+   "inicio": 24.497,
+   "fin": 25.008
+  },
+  {
+   "texto": "la",
+   "inicio": 25.147,
+   "fin": 25.24
+  },
+  {
+   "texto": "tortilla,",
+   "inicio": 25.298,
+   "fin": 26.041
+  },
+  {
+   "texto": "el",
+   "inicio": 26.204,
+   "fin": 26.355
+  },
+  {
+   "texto": "arroz",
+   "inicio": 26.436,
+   "fin": 26.889
+  },
+  {
+   "texto": "o",
+   "inicio": 27.156,
+   "fin": 27.249
+  },
+  {
+   "texto": "la",
+   "inicio": 27.307,
+   "fin": 27.376
+  },
+  {
+   "texto": "fruta,",
+   "inicio": 27.423,
+   "fin": 28.015
+  },
+  {
+   "texto": "porque",
+   "inicio": 28.119,
+   "fin": 28.375
+  },
+  {
+   "texto": "tu",
+   "inicio": 28.41,
+   "fin": 28.491
+  },
+  {
+   "texto": "cuerpo",
+   "inicio": 28.526,
+   "fin": 28.816
+  },
+  {
+   "texto": "convierte",
+   "inicio": 28.874,
+   "fin": 29.513
+  },
+  {
+   "texto": "esos",
+   "inicio": 29.594,
+   "fin": 29.919
+  },
+  {
+   "texto": "carbohidratos",
+   "inicio": 29.965,
+   "fin": 30.755
+  },
+  {
+   "texto": "en",
+   "inicio": 30.824,
+   "fin": 30.883
+  },
+  {
+   "texto": "glucosa.",
+   "inicio": 30.917,
+   "fin": 31.73
+  },
+  {
+   "texto": "También",
+   "inicio": 32.09,
+   "fin": 32.543
+  },
+  {
+   "texto": "sube",
+   "inicio": 32.612,
+   "fin": 32.856
+  },
+  {
+   "texto": "con",
+   "inicio": 32.891,
+   "fin": 33.007
+  },
+  {
+   "texto": "el",
+   "inicio": 33.065,
+   "fin": 33.135
+  },
+  {
+   "texto": "estrés…",
+   "inicio": 33.193,
+   "fin": 33.855
+  },
+  {
+   "texto": "y",
+   "inicio": 34.087,
+   "fin": 34.157
+  },
+  {
+   "texto": "cuando",
+   "inicio": 34.226,
+   "fin": 34.447
+  },
+  {
+   "texto": "duermes",
+   "inicio": 34.482,
+   "fin": 34.795
+  },
+  {
+   "texto": "mal.",
+   "inicio": 34.842,
+   "fin": 35.248
+  },
+  {
+   "texto": "Y",
+   "inicio": 35.48,
+   "fin": 35.585
+  },
+  {
+   "texto": "tu",
+   "inicio": 35.666,
+   "fin": 35.759
+  },
+  {
+   "texto": "hígado",
+   "inicio": 35.817,
+   "fin": 36.177
+  },
+  {
+   "texto": "libera",
+   "inicio": 36.235,
+   "fin": 36.571
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 36.63,
+   "fin": 37.21
+  },
+  {
+   "texto": "por",
+   "inicio": 37.268,
+   "fin": 37.454
+  },
+  {
+   "texto": "su",
+   "inicio": 37.523,
+   "fin": 37.616
+  },
+  {
+   "texto": "cuenta,",
+   "inicio": 37.674,
+   "fin": 38.313
+  },
+  {
+   "texto": "aunque",
+   "inicio": 38.452,
+   "fin": 38.684
+  },
+  {
+   "texto": "no",
+   "inicio": 38.743,
+   "fin": 38.824
+  },
+  {
+   "texto": "hayas",
+   "inicio": 38.87,
+   "fin": 39.091
+  },
+  {
+   "texto": "comido.",
+   "inicio": 39.137,
+   "fin": 39.741
+  },
+  {
+   "texto": "Si",
+   "inicio": 40.043,
+   "fin": 40.194
+  },
+  {
+   "texto": "tus",
+   "inicio": 40.24,
+   "fin": 40.38
+  },
+  {
+   "texto": "células",
+   "inicio": 40.403,
+   "fin": 40.902
+  },
+  {
+   "texto": "dejan",
+   "inicio": 40.972,
+   "fin": 41.273
+  },
+  {
+   "texto": "de",
+   "inicio": 41.32,
+   "fin": 41.378
+  },
+  {
+   "texto": "responder",
+   "inicio": 41.436,
+   "fin": 41.935
+  },
+  {
+   "texto": "bien",
+   "inicio": 42.005,
+   "fin": 42.237
+  },
+  {
+   "texto": "a",
+   "inicio": 42.295,
+   "fin": 42.318
+  },
+  {
+   "texto": "la",
+   "inicio": 42.365,
+   "fin": 42.423
+  },
+  {
+   "texto": "insulina,",
+   "inicio": 42.481,
+   "fin": 43.247
+  },
+  {
+   "texto": "la",
+   "inicio": 43.479,
+   "fin": 43.561
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 43.607,
+   "fin": 44.06
+  },
+  {
+   "texto": "se",
+   "inicio": 44.106,
+   "fin": 44.164
+  },
+  {
+   "texto": "acumula",
+   "inicio": 44.188,
+   "fin": 44.64
+  },
+  {
+   "texto": "en",
+   "inicio": 44.722,
+   "fin": 44.815
+  },
+  {
+   "texto": "la",
+   "inicio": 44.884,
+   "fin": 44.965
+  },
+  {
+   "texto": "sangre.",
+   "inicio": 45.024,
+   "fin": 45.592
+  },
+  {
+   "texto": "Entonces,",
+   "inicio": 45.825,
+   "fin": 46.544
+  },
+  {
+   "texto": "el",
+   "inicio": 46.591,
+   "fin": 46.719
+  },
+  {
+   "texto": "control",
+   "inicio": 46.788,
+   "fin": 47.183
+  },
+  {
+   "texto": "glucémico",
+   "inicio": 47.253,
+   "fin": 48.089
+  },
+  {
+   "texto": "no",
+   "inicio": 48.321,
+   "fin": 48.507
+  },
+  {
+   "texto": "es",
+   "inicio": 48.576,
+   "fin": 48.704
+  },
+  {
+   "texto": "solo",
+   "inicio": 48.808,
+   "fin": 49.284
+  },
+  {
+   "texto": "\"no",
+   "inicio": 49.389,
+   "fin": 49.726
+  },
+  {
+   "texto": "comer",
+   "inicio": 49.795,
+   "fin": 50.05
+  },
+  {
+   "texto": "azúcar\".",
+   "inicio": 50.097,
+   "fin": 50.7
+  },
+  {
+   "texto": "Es",
+   "inicio": 51.002,
+   "fin": 51.211
+  },
+  {
+   "texto": "cómo",
+   "inicio": 51.281,
+   "fin": 51.571
+  },
+  {
+   "texto": "tu",
+   "inicio": 51.629,
+   "fin": 51.699
+  },
+  {
+   "texto": "cuerpo",
+   "inicio": 51.745,
+   "fin": 52.14
+  },
+  {
+   "texto": "entero",
+   "inicio": 52.21,
+   "fin": 52.709
+  },
+  {
+   "texto": "maneja",
+   "inicio": 52.779,
+   "fin": 53.173
+  },
+  {
+   "texto": "su",
+   "inicio": 53.22,
+   "fin": 53.301
+  },
+  {
+   "texto": "energía…",
+   "inicio": 53.348,
+   "fin": 54.021
+  },
+  {
+   "texto": "todo",
+   "inicio": 54.288,
+   "fin": 54.567
+  },
+  {
+   "texto": "el",
+   "inicio": 54.613,
+   "fin": 54.671
+  },
+  {
+   "texto": "día.",
+   "inicio": 54.706,
+   "fin": 55.112
+  },
+  {
+   "texto": "Las",
+   "inicio": 55.414,
+   "fin": 55.611
+  },
+  {
+   "texto": "pruebas",
+   "inicio": 55.681,
+   "fin": 55.995
+  },
+  {
+   "texto": "de",
+   "inicio": 56.018,
+   "fin": 56.064
+  },
+  {
+   "texto": "control",
+   "inicio": 56.111,
+   "fin": 56.436
+  },
+  {
+   "texto": "glucémico",
+   "inicio": 56.482,
+   "fin": 57.156
+  },
+  {
+   "texto": "se",
+   "inicio": 57.237,
+   "fin": 57.365
+  },
+  {
+   "texto": "hacen",
+   "inicio": 57.411,
+   "fin": 57.678
+  },
+  {
+   "texto": "en",
+   "inicio": 57.759,
+   "fin": 57.841
+  },
+  {
+   "texto": "Laboratorio",
+   "inicio": 57.91,
+   "fin": 58.572
+  },
+  {
+   "texto": "Ladi.",
+   "inicio": 58.653,
+   "fin": 59.303
+  }
+ ],
+ "escenas": [
+  {
+   "inicio": 0,
+   "fin": 3.797
+  },
+  {
+   "inicio": 3.797,
+   "fin": 6.478999999999999
+  },
+  {
+   "inicio": 6.478999999999999,
+   "fin": 13.341
+  },
+  {
+   "inicio": 13.341,
+   "fin": 18.472
+  },
+  {
+   "inicio": 18.472,
+   "fin": 23.685000000000002
+  },
+  {
+   "inicio": 23.685000000000002,
+   "fin": 31.940000000000005
+  },
+  {
+   "inicio": 31.940000000000005,
+   "fin": 35.33
+  },
+  {
+   "inicio": 35.33,
+   "fin": 39.893
+  },
+  {
+   "inicio": 39.893,
+   "fin": 45.675000000000004
+  },
+  {
+   "inicio": 45.675000000000004,
+   "fin": 55.264
+  },
+  {
+   "inicio": 55.264,
+   "fin": 60.550204
+  }
+ ],
+ "duracion": 60.550204
+}
