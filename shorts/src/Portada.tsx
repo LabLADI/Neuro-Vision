@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill, Img, staticFile} from 'remotion';
 import {Fondo} from './comunes';
 import {Icono} from './iconos';
 import {C, FUENTE} from './tema';
@@ -30,6 +30,7 @@ export const Portada: React.FC<Props> = ({guion, marca}) => {
         </div>
         {p.abajo && <div style={{...linea, fontSize: 64, background: C.coral, color: '#fff', padding: '12px 36px', borderRadius: 24, border: `8px solid ${C.tinta}`}}>{p.abajo}</div>}
       </AbsoluteFill>
+      {(p as any).logo && <Img src={staticFile((p as any).logo)} style={{position: 'absolute', bottom: 110, left: '50%', width: 420, transform: 'translateX(-50%)'}} />}
       {marca && <div style={{position: 'absolute', bottom: 120, width: '100%', textAlign: 'center', fontFamily: FUENTE, fontWeight: 800, fontSize: 44, color: C.tinta, opacity: 0.6}}>{marca}</div>}
     </AbsoluteFill>
   );

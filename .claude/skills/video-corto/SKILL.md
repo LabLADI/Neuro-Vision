@@ -36,7 +36,7 @@ El sistema vive en `shorts/` (Remotion + ElevenLabs). Tú escribes el guion como
   "escenas": [
     {"narracion": "Texto que se dice en esta escena.", "visual": {"tipo": "gancho", "...": "..."}, "fondo": "opcional: color"}
   ],
-  "portada": {"arriba": "texto pequeño", "destacado": "FRASE GANCHO", "abajo": "pastilla roja opcional", "icono": "bebe"},
+  "portada": {"arriba": "texto pequeño", "destacado": "FRASE GANCHO", "abajo": "pastilla roja opcional", "icono": "bebe", "logo": "opcional: marcas/ladi.png"},
   "post": {"texto": "Texto del post con fuente al final y una pregunta para comentarios.", "hashtags": ["ciencia", "…"]},
   "voz": {"voice_id": "opcional, para cambiar la voz solo en este video", "velocidad": 1.06}
 }
@@ -59,7 +59,8 @@ Ejemplo completo y probado: `shorts/videos/nauseas-embarazo/guion.json`.
 | `receptor` | Molécula encaja en receptor de membrana → efecto | `molecula: {etiqueta, color}`, `receptor: {etiqueta}`, `celula: {etiqueta}`, `efecto: {icono, texto}`, `clave` |
 | `comparacion` | Dos casos lado a lado con barra de nivel (0–1) | `titulo`, `izquierda`/`derecha: {titulo, icono, valor, resultado, color, clave}` |
 | `foco` | Un elemento grande con hasta 4 notas alrededor | `icono`, `etiqueta`, `notas: [{texto, clave, color}]`, `tam` |
-| `cifra` | Número grande que cuenta | `numero`, `desde`, `decimales`, `sufijo`, `texto`, `destacado`, `icono`, `color` |
+| `cifra` | Número grande que cuenta | `numero`, `desde`, `decimales`, `sufijo`, `tamNumero`, `texto`, `destacado`, `icono`, `color` |
+| `laboratorio` | Cierre promocional: logo de un laboratorio + lista de pruebas | `logo` (ruta en `public/`, p. ej. `marcas/ladi.png`), `anchoLogo`, `texto`, `destacado`, `pruebas: [..]`, `clave` (cuándo aparece la lista) |
 | `cierre` | Conclusión + CTA | `texto`, `destacado`, `icono`, `cta` (texto de la pastilla o `false`) |
 
 **Iconos dibujados** (`icono`): `bebe`, `mama`, `placenta`, `cerebro`, `celula`, `molecula`/`hormona`, `nauseas`, `estomago`, `corazon`, `adn`, `bacteria`, `virus`, `lupa`, `sangre`, `reloj`, `rayo`, `mensaje`, `pastilla`. Cualquier otro valor se dibuja como **emoji** (p. ej. `"🦴"`, `"🫁"`, `"🧪"`, `"☕"`), así que cualquier tema tiene ilustración.
@@ -75,3 +76,7 @@ Añádela en `shorts/src/escenas/index.tsx` (y regístrala en `ESCENAS`), o un i
 ## Configuración
 
 `shorts/config.json`: voz (`voice_id`, modelo, velocidad…), `marca` (@usuario que sale arriba en el video y en la portada), `colaSegundos`. `npm run voces` lista voces y el saldo de caracteres. La API key de ElevenLabs la inyecta el proxy en la nube; en local se lee de la variable `ELEVENLABS_API_KEY`.
+
+## Videos para Laboratorio LADI
+
+Si el usuario pide cerrar con "esta y otras pruebas puedes hacerlas en Laboratorio LADI": última escena tipo `laboratorio` con `"logo": "marcas/ladi.png"` y solo pruebas que existan en el catálogo de LADI (`seed/catalogo.json` del repositorio `LabLADI/ladi-laboratorio`). Nada de precios. El logo sale de `public/logo.png` de ese repositorio y se copia a `shorts/public/marcas/ladi.png` (carpeta excluida de git porque este repositorio es público). Ejemplo: `shorts/videos/control-glucemico/guion.json`.

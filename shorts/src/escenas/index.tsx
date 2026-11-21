@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {Icono} from '../iconos';
 import {Pildora, Sello, TextoGrande} from '../comunes';
 import {C, FUENTE, TRAZO, ZONA, color} from '../tema';
@@ -386,7 +386,7 @@ export const Cifra: React.FC<EscenaProps> = ({v}) => {
           <Icono nombre={v.icono} tam={300} />
         </Pop>
       )}
-      <div style={{fontFamily: FUENTE, fontWeight: 900, fontSize: 230, color: color(v.color, C.coral), WebkitTextStroke: `10px ${C.tinta}`, paintOrder: 'stroke fill', lineHeight: 1}}>
+      <div style={{fontFamily: FUENTE, fontWeight: 900, fontSize: v.tamNumero ?? Math.min(230, Math.floor(1500 / Math.max(4, (String(v.numero ?? '') + (v.sufijo ?? '')).length))), whiteSpace: 'nowrap', color: color(v.color, C.coral), WebkitTextStroke: `10px ${C.tinta}`, paintOrder: 'stroke fill', lineHeight: 1}}>
         {n.toLocaleString('es-ES', {minimumFractionDigits: dec, maximumFractionDigits: dec})}
         {v.sufijo ?? ''}
       </div>
@@ -415,7 +415,30 @@ export const Cierre: React.FC<EscenaProps> = ({v}) => {
   );
 };
 
+// ── laboratorio: logo de un laboratorio + pruebas que ofrece (cierre promocional) ──
+export const Laboratorio: React.FC<EscenaProps> = ({v, palabras, inicio}) => {
+  const f = useCurrentFrame();
+  const s = entrada(f, 0);
+  const pruebas: string[] = v.pruebas ?? [];
+  const tLista = momento(palabras, inicio, v.clave, 18);
+  return (
+    <Zona gap={44}>
+      {v.logo && <Img src={staticFile(v.logo)} style={{width: v.anchoLogo ?? 760, opacity: s, transform: `scale(${0.85 + 0.15 * s})`}} />}
+      {v.texto && <TextoGrande texto={v.texto} destacado={v.destacado} tam={v.tam ?? 64} retraso={8} colorMarcador={v.color} />}
+      <div style={{display: 'flex', flexDirection: 'column', gap: 18, alignItems: 'stretch', width: 860}}>
+        {pruebas.map((p, i) => (
+          <Pop key={i} retraso={tLista + i * 6} style={{display: 'flex', alignItems: 'center', gap: 20, background: '#fff', border: `${TRAZO - 3}px solid ${C.tinta}`, borderRadius: 26, padding: '12px 24px', boxShadow: `0 7px 0 ${C.tinta}`}}>
+            <Sello tipo="si" tam={58} retraso={tLista + i * 6 + 4} />
+            <span style={{fontFamily: FUENTE, fontWeight: 800, fontSize: 44, color: C.tinta}}>{p}</span>
+          </Pop>
+        ))}
+      </div>
+    </Zona>
+  );
+};
+
 export const ESCENAS: Record<string, React.FC<EscenaProps>> = {
+  laboratorio: Laboratorio,
   gancho: Gancho,
   texto: Texto,
   lista: Lista,

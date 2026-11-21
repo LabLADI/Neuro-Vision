@@ -1,0 +1,53 @@
+{
+  "titulo": "Tu sangre guarda un registro de tu azúcar de 3 meses",
+  "escenas": [
+    {
+      "narracion": "Tu análisis de glucosa de hoy no dice cómo has estado. Tu sangre guarda un registro de los últimos tres meses.",
+      "visual": {"tipo": "gancho", "icono": "sangre", "tachado": "Solo la glucosa de hoy", "clave": "tu sangre", "texto": "Un registro de 3 meses", "destacado": "3 meses"}
+    },
+    {
+      "narracion": "La glucosa en ayunas es como una foto: cambia si cenaste tarde, si dormiste mal o si andas estresado.",
+      "visual": {"tipo": "lista", "titulo": "Glucosa en ayunas = una foto", "destacado": "una foto", "items": [
+        {"texto": "Cenaste tarde", "icono": "🍕", "clave": "cenaste"},
+        {"texto": "Dormiste mal", "icono": "😴", "clave": "dormiste"},
+        {"texto": "Andas estresado", "icono": "rayo", "clave": "estresado"}
+      ]}
+    },
+    {
+      "narracion": "Pero dentro de tus glóbulos rojos pasa algo curioso: la glucosa que viaja por tu sangre se pega a la hemoglobina, y ya no se suelta.",
+      "visual": {"tipo": "receptor", "clave": "se pega", "molecula": {"etiqueta": "Glucosa", "color": "amarillo"}, "receptor": {"etiqueta": "Hemoglobina"}, "celula": {"etiqueta": "Dentro de un glóbulo rojo"}, "colorCelula": "#FFD9DE", "efecto": {"icono": "sangre", "texto": "¡Se queda pegada!"}}
+    },
+    {
+      "narracion": "Y un glóbulo rojo vive unos ciento veinte días. Entre más azúcar hubo en esos meses, más hemoglobina queda endulzada.",
+      "visual": {"tipo": "cifra", "icono": "sangre", "numero": 120, "sufijo": " días", "color": "rojo", "texto": "Lo que vive un glóbulo rojo", "destacado": "glóbulo rojo"}
+    },
+    {
+      "narracion": "Esa marca se mide con un análisis llamado hemoglobina glicosilada, o [HbA1c|hemoglobina a uno ce].",
+      "visual": {"tipo": "foco", "icono": "lupa", "etiqueta": "HbA1c", "color": "amarillo", "notas": [
+        {"texto": "Hemoglobina glicosilada", "clave": "glicosilada"},
+        {"texto": "Promedio de ~3 meses", "clave": "HbA1c", "color": "turquesa"}
+      ]}
+    },
+    {
+      "narracion": "Menos de [5.7 %|cinco punto siete por ciento] es normal. De [5.7|cinco punto siete] a [6.4 %|seis punto cuatro], prediabetes. Y [6.5 %|seis punto cinco] o más, rango de diabetes.",
+      "visual": {"tipo": "lista", "titulo": "¿Qué significa tu HbA1c?", "destacado": "HbA1c", "items": [
+        {"texto": "Menos de 5.7 % · Normal", "icono": "😊", "estado": "si", "clave": "menos"},
+        {"texto": "5.7 a 6.4 % · Prediabetes", "icono": "⚠️", "clave": "prediabetes"},
+        {"texto": "6.5 % o más · Diabetes", "icono": "🩸", "estado": "no", "clave": "6.5"}
+      ]}
+    },
+    {
+      "narracion": "Por eso puedes salir con la glucosa normal hoy, y aun así venir arrastrando meses de azúcar alta. Juntas, la glucosa y la [HbA1c|hemoglobina a uno ce] cuentan la historia completa.",
+      "visual": {"tipo": "comparacion", "titulo": "Juntas: la historia completa", "destacado": "la historia completa", "izquierda": {"titulo": "Glucosa en ayunas", "icono": "📸", "valor": 0.15, "resultado": "Un día", "color": "amarillo", "clave": "glucosa"}, "derecha": {"titulo": "HbA1c", "icono": "reloj", "valor": 0.95, "resultado": "3 meses", "color": "turquesa", "clave": "juntas"}}
+    },
+    {
+      "narracion": "Esta y otras pruebas más puedes hacerlas en Laboratorio LADI.",
+      "visual": {"tipo": "laboratorio", "logo": "marcas/ladi.png", "anchoLogo": 720, "clave": "otras", "pruebas": ["Control glucémico", "Hemoglobina glicosilada (HbA1c)", "Glucosa postprandial", "Curva de tolerancia a la glucosa"]}
+    }
+  ],
+  "portada": {"arriba": "Tu sangre guarda un secreto…", "destacado": "¡3 meses de tu azúcar!", "icono": "sangre", "logo": "marcas/ladi.png"},
+  "post": {
+    "texto": "🩸 Tu glucosa de hoy es solo una foto… pero tu sangre guarda un registro de los últimos 3 meses.\n\nLa glucosa que viaja por tu sangre se pega a la hemoglobina de tus glóbulos rojos y ahí se queda. Como un glóbulo rojo vive unos 120 días, el análisis de hemoglobina glicosilada (HbA1c) muestra tu promedio de azúcar de los últimos 2 a 3 meses.\n\n📊 Valores de referencia (Asociación Americana de Diabetes):\n• Menos de 5.7 %: normal\n• 5.7 a 6.4 %: prediabetes\n• 6.5 % o más: rango de diabetes (se confirma con tu médico)\n\nPor eso la glucosa en ayunas y la HbA1c juntas cuentan la historia completa.\n\n🧪 El control glucémico, la HbA1c, la glucosa postprandial y la curva de tolerancia a la glucosa, además de muchas otras pruebas, puedes hacerlas en Laboratorio LADI.\n\nEste contenido es informativo; tus resultados siempre deben ser interpretados por tu médico.\n\n¿Sabías que tu sangre guardaba este registro? 👇",
+    "hashtags": ["ciencia", "diabetes", "glucosa", "hba1c", "salud", "cuerpohumano", "laboratorioclinico", "prediabetes", "divulgacion", "LaboratorioLADI"]
+  }
+}

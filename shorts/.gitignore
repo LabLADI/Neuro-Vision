@@ -2,3 +2,6 @@ node_modules/
 out/
 videos/*/vista-previa/
 public/audio/*.crudo.mp3
+public/marcas/
+videos/control-glucemico/video.mp4
+videos/control-glucemico/portada.png

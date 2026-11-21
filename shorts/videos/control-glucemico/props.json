@@ -1,0 +1,987 @@
+{
+ "guion": {
+  "titulo": "Tu sangre guarda un registro de tu azúcar de 3 meses",
+  "escenas": [
+   {
+    "narracion": "Tu análisis de glucosa de hoy no dice cómo has estado. Tu sangre guarda un registro de los últimos tres meses.",
+    "visual": {
+     "tipo": "gancho",
+     "icono": "sangre",
+     "tachado": "Solo la glucosa de hoy",
+     "clave": "tu sangre",
+     "texto": "Un registro de 3 meses",
+     "destacado": "3 meses"
+    }
+   },
+   {
+    "narracion": "La glucosa en ayunas es como una foto: cambia si cenaste tarde, si dormiste mal o si andas estresado.",
+    "visual": {
+     "tipo": "lista",
+     "titulo": "Glucosa en ayunas = una foto",
+     "destacado": "una foto",
+     "items": [
+      {
+       "texto": "Cenaste tarde",
+       "icono": "🍕",
+       "clave": "cenaste"
+      },
+      {
+       "texto": "Dormiste mal",
+       "icono": "😴",
+       "clave": "dormiste"
+      },
+      {
+       "texto": "Andas estresado",
+       "icono": "rayo",
+       "clave": "estresado"
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "Pero dentro de tus glóbulos rojos pasa algo curioso: la glucosa que viaja por tu sangre se pega a la hemoglobina, y ya no se suelta.",
+    "visual": {
+     "tipo": "receptor",
+     "clave": "se pega",
+     "molecula": {
+      "etiqueta": "Glucosa",
+      "color": "amarillo"
+     },
+     "receptor": {
+      "etiqueta": "Hemoglobina"
+     },
+     "celula": {
+      "etiqueta": "Dentro de un glóbulo rojo"
+     },
+     "colorCelula": "#FFD9DE",
+     "efecto": {
+      "icono": "sangre",
+      "texto": "¡Se queda pegada!"
+     }
+    }
+   },
+   {
+    "narracion": "Y un glóbulo rojo vive unos ciento veinte días. Entre más azúcar hubo en esos meses, más hemoglobina queda endulzada.",
+    "visual": {
+     "tipo": "cifra",
+     "icono": "sangre",
+     "numero": 120,
+     "sufijo": " días",
+     "color": "rojo",
+     "texto": "Lo que vive un glóbulo rojo",
+     "destacado": "glóbulo rojo"
+    }
+   },
+   {
+    "narracion": "Esa marca se mide con un análisis llamado hemoglobina glicosilada, o [HbA1c|hemoglobina a uno ce].",
+    "visual": {
+     "tipo": "foco",
+     "icono": "lupa",
+     "etiqueta": "HbA1c",
+     "color": "amarillo",
+     "notas": [
+      {
+       "texto": "Hemoglobina glicosilada",
+       "clave": "glicosilada"
+      },
+      {
+       "texto": "Promedio de ~3 meses",
+       "clave": "HbA1c",
+       "color": "turquesa"
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "Menos de [5.7 %|cinco punto siete por ciento] es normal. De [5.7|cinco punto siete] a [6.4 %|seis punto cuatro], prediabetes. Y [6.5 %|seis punto cinco] o más, rango de diabetes.",
+    "visual": {
+     "tipo": "lista",
+     "titulo": "¿Qué significa tu HbA1c?",
+     "destacado": "HbA1c",
+     "items": [
+      {
+       "texto": "Menos de 5.7 % · Normal",
+       "icono": "😊",
+       "estado": "si",
+       "clave": "menos"
+      },
+      {
+       "texto": "5.7 a 6.4 % · Prediabetes",
+       "icono": "⚠️",
+       "clave": "prediabetes"
+      },
+      {
+       "texto": "6.5 % o más · Diabetes",
+       "icono": "🩸",
+       "estado": "no",
+       "clave": "6.5"
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "Por eso puedes salir con la glucosa normal hoy, y aun así venir arrastrando meses de azúcar alta. Juntas, la glucosa y la [HbA1c|hemoglobina a uno ce] cuentan la historia completa.",
+    "visual": {
+     "tipo": "comparacion",
+     "titulo": "Juntas: la historia completa",
+     "destacado": "la historia completa",
+     "izquierda": {
+      "titulo": "Glucosa en ayunas",
+      "icono": "📸",
+      "valor": 0.15,
+      "resultado": "Un día",
+      "color": "amarillo",
+      "clave": "glucosa"
+     },
+     "derecha": {
+      "titulo": "HbA1c",
+      "icono": "reloj",
+      "valor": 0.95,
+      "resultado": "3 meses",
+      "color": "turquesa",
+      "clave": "juntas"
+     }
+    }
+   },
+   {
+    "narracion": "Esta y otras pruebas más puedes hacerlas en Laboratorio LADI.",
+    "visual": {
+     "tipo": "laboratorio",
+     "logo": "marcas/ladi.png",
+     "anchoLogo": 720,
+     "clave": "otras",
+     "pruebas": [
+      "Control glucémico",
+      "Hemoglobina glicosilada (HbA1c)",
+      "Glucosa postprandial",
+      "Curva de tolerancia a la glucosa"
+     ]
+    }
+   }
+  ],
+  "portada": {
+   "arriba": "Tu sangre guarda un secreto…",
+   "destacado": "¡3 meses de tu azúcar!",
+   "icono": "sangre",
+   "logo": "marcas/ladi.png"
+  },
+  "post": {
+   "texto": "🩸 Tu glucosa de hoy es solo una foto… pero tu sangre guarda un registro de los últimos 3 meses.\n\nLa glucosa que viaja por tu sangre se pega a la hemoglobina de tus glóbulos rojos y ahí se queda. Como un glóbulo rojo vive unos 120 días, el análisis de hemoglobina glicosilada (HbA1c) muestra tu promedio de azúcar de los últimos 2 a 3 meses.\n\n📊 Valores de referencia (Asociación Americana de Diabetes):\n• Menos de 5.7 %: normal\n• 5.7 a 6.4 %: prediabetes\n• 6.5 % o más: rango de diabetes (se confirma con tu médico)\n\nPor eso la glucosa en ayunas y la HbA1c juntas cuentan la historia completa.\n\n🧪 El control glucémico, la HbA1c, la glucosa postprandial y la curva de tolerancia a la glucosa, además de muchas otras pruebas, puedes hacerlas en Laboratorio LADI.\n\nEste contenido es informativo; tus resultados siempre deben ser interpretados por tu médico.\n\n¿Sabías que tu sangre guardaba este registro? 👇",
+   "hashtags": [
+    "ciencia",
+    "diabetes",
+    "glucosa",
+    "hba1c",
+    "salud",
+    "cuerpohumano",
+    "laboratorioclinico",
+    "prediabetes",
+    "divulgacion",
+    "LaboratorioLADI"
+   ]
+  }
+ },
+ "audio": "audio/control-glucemico.mp3",
+ "palabras": [
+  {
+   "texto": "Tu",
+   "inicio": 0,
+   "fin": 0.209
+  },
+  {
+   "texto": "análisis",
+   "inicio": 0.267,
+   "fin": 0.789
+  },
+  {
+   "texto": "de",
+   "inicio": 0.824,
+   "fin": 0.871
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 0.917,
+   "fin": 1.382
+  },
+  {
+   "texto": "de",
+   "inicio": 1.44,
+   "fin": 1.521
+  },
+  {
+   "texto": "hoy",
+   "inicio": 1.544,
+   "fin": 1.846
+  },
+  {
+   "texto": "no",
+   "inicio": 2.148,
+   "fin": 2.334
+  },
+  {
+   "texto": "dice",
+   "inicio": 2.403,
+   "fin": 2.786
+  },
+  {
+   "texto": "cómo",
+   "inicio": 2.902,
+   "fin": 3.274
+  },
+  {
+   "texto": "has",
+   "inicio": 3.332,
+   "fin": 3.46
+  },
+  {
+   "texto": "estado.",
+   "inicio": 3.541,
+   "fin": 4.168
+  },
+  {
+   "texto": "Tu",
+   "inicio": 4.365,
+   "fin": 4.516
+  },
+  {
+   "texto": "sangre",
+   "inicio": 4.586,
+   "fin": 4.969
+  },
+  {
+   "texto": "guarda",
+   "inicio": 5.016,
+   "fin": 5.422
+  },
+  {
+   "texto": "un",
+   "inicio": 5.526,
+   "fin": 5.642
+  },
+  {
+   "texto": "registro",
+   "inicio": 5.724,
+   "fin": 6.281
+  },
+  {
+   "texto": "de",
+   "inicio": 6.327,
+   "fin": 6.397
+  },
+  {
+   "texto": "los",
+   "inicio": 6.444,
+   "fin": 6.583
+  },
+  {
+   "texto": "últimos",
+   "inicio": 6.687,
+   "fin": 7.198
+  },
+  {
+   "texto": "tres",
+   "inicio": 7.291,
+   "fin": 7.628
+  },
+  {
+   "texto": "meses.",
+   "inicio": 7.721,
+   "fin": 8.29
+  },
+  {
+   "texto": "La",
+   "inicio": 8.591,
+   "fin": 8.707
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 8.754,
+   "fin": 9.242
+  },
+  {
+   "texto": "en",
+   "inicio": 9.311,
+   "fin": 9.392
+  },
+  {
+   "texto": "ayunas",
+   "inicio": 9.451,
+   "fin": 9.973
+  },
+  {
+   "texto": "es",
+   "inicio": 10.054,
+   "fin": 10.182
+  },
+  {
+   "texto": "como",
+   "inicio": 10.24,
+   "fin": 10.449
+  },
+  {
+   "texto": "una",
+   "inicio": 10.53,
+   "fin": 10.681
+  },
+  {
+   "texto": "foto:",
+   "inicio": 10.739,
+   "fin": 11.308
+  },
+  {
+   "texto": "cambia",
+   "inicio": 11.471,
+   "fin": 11.935
+  },
+  {
+   "texto": "si",
+   "inicio": 12.005,
+   "fin": 12.109
+  },
+  {
+   "texto": "cenaste",
+   "inicio": 12.144,
+   "fin": 12.527
+  },
+  {
+   "texto": "tarde,",
+   "inicio": 12.574,
+   "fin": 13.084
+  },
+  {
+   "texto": "si",
+   "inicio": 13.142,
+   "fin": 13.259
+  },
+  {
+   "texto": "dormiste",
+   "inicio": 13.305,
+   "fin": 13.711
+  },
+  {
+   "texto": "mal",
+   "inicio": 13.758,
+   "fin": 14.083
+  },
+  {
+   "texto": "o",
+   "inicio": 14.187,
+   "fin": 14.28
+  },
+  {
+   "texto": "si",
+   "inicio": 14.338,
+   "fin": 14.466
+  },
+  {
+   "texto": "andas",
+   "inicio": 14.536,
+   "fin": 14.814
+  },
+  {
+   "texto": "estresado.",
+   "inicio": 14.884,
+   "fin": 15.755
+  },
+  {
+   "texto": "Pero",
+   "inicio": 15.987,
+   "fin": 16.196
+  },
+  {
+   "texto": "dentro",
+   "inicio": 16.242,
+   "fin": 16.579
+  },
+  {
+   "texto": "de",
+   "inicio": 16.625,
+   "fin": 16.695
+  },
+  {
+   "texto": "tus",
+   "inicio": 16.753,
+   "fin": 16.904
+  },
+  {
+   "texto": "glóbulos",
+   "inicio": 16.962,
+   "fin": 17.484
+  },
+  {
+   "texto": "rojos",
+   "inicio": 17.589,
+   "fin": 17.995
+  },
+  {
+   "texto": "pasa",
+   "inicio": 18.088,
+   "fin": 18.425
+  },
+  {
+   "texto": "algo",
+   "inicio": 18.471,
+   "fin": 18.703
+  },
+  {
+   "texto": "curioso:",
+   "inicio": 18.75,
+   "fin": 19.504
+  },
+  {
+   "texto": "la",
+   "inicio": 19.806,
+   "fin": 19.899
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 19.957,
+   "fin": 20.584
+  },
+  {
+   "texto": "que",
+   "inicio": 20.654,
+   "fin": 20.735
+  },
+  {
+   "texto": "viaja",
+   "inicio": 20.793,
+   "fin": 21.083
+  },
+  {
+   "texto": "por",
+   "inicio": 21.118,
+   "fin": 21.246
+  },
+  {
+   "texto": "tu",
+   "inicio": 21.304,
+   "fin": 21.385
+  },
+  {
+   "texto": "sangre",
+   "inicio": 21.432,
+   "fin": 21.838
+  },
+  {
+   "texto": "se",
+   "inicio": 21.908,
+   "fin": 22.012
+  },
+  {
+   "texto": "pega",
+   "inicio": 22.07,
+   "fin": 22.384
+  },
+  {
+   "texto": "a",
+   "inicio": 22.465,
+   "fin": 22.511
+  },
+  {
+   "texto": "la",
+   "inicio": 22.604,
+   "fin": 22.686
+  },
+  {
+   "texto": "hemoglobina,",
+   "inicio": 22.732,
+   "fin": 23.591
+  },
+  {
+   "texto": "y",
+   "inicio": 23.754,
+   "fin": 23.858
+  },
+  {
+   "texto": "ya",
+   "inicio": 23.963,
+   "fin": 24.102
+  },
+  {
+   "texto": "no",
+   "inicio": 24.16,
+   "fin": 24.253
+  },
+  {
+   "texto": "se",
+   "inicio": 24.311,
+   "fin": 24.392
+  },
+  {
+   "texto": "suelta.",
+   "inicio": 24.439,
+   "fin": 25.112
+  },
+  {
+   "texto": "Y",
+   "inicio": 25.379,
+   "fin": 25.449
+  },
+  {
+   "texto": "un",
+   "inicio": 25.542,
+   "fin": 25.6
+  },
+  {
+   "texto": "glóbulo",
+   "inicio": 25.646,
+   "fin": 26.087
+  },
+  {
+   "texto": "rojo",
+   "inicio": 26.18,
+   "fin": 26.633
+  },
+  {
+   "texto": "vive",
+   "inicio": 26.726,
+   "fin": 27.063
+  },
+  {
+   "texto": "unos",
+   "inicio": 27.155,
+   "fin": 27.446
+  },
+  {
+   "texto": "ciento",
+   "inicio": 27.469,
+   "fin": 27.98
+  },
+  {
+   "texto": "veinte",
+   "inicio": 28.061,
+   "fin": 28.456
+  },
+  {
+   "texto": "días.",
+   "inicio": 28.514,
+   "fin": 29.164
+  },
+  {
+   "texto": "Entre",
+   "inicio": 29.466,
+   "fin": 29.756
+  },
+  {
+   "texto": "más",
+   "inicio": 29.802,
+   "fin": 29.942
+  },
+  {
+   "texto": "azúcar",
+   "inicio": 30,
+   "fin": 30.348
+  },
+  {
+   "texto": "hubo",
+   "inicio": 30.395,
+   "fin": 30.65
+  },
+  {
+   "texto": "en",
+   "inicio": 30.708,
+   "fin": 30.789
+  },
+  {
+   "texto": "esos",
+   "inicio": 30.859,
+   "fin": 31.091
+  },
+  {
+   "texto": "meses,",
+   "inicio": 31.161,
+   "fin": 31.707
+  },
+  {
+   "texto": "más",
+   "inicio": 31.904,
+   "fin": 32.136
+  },
+  {
+   "texto": "hemoglobina",
+   "inicio": 32.159,
+   "fin": 32.763
+  },
+  {
+   "texto": "queda",
+   "inicio": 32.821,
+   "fin": 33.053
+  },
+  {
+   "texto": "endulzada.",
+   "inicio": 33.099,
+   "fin": 34.005
+  },
+  {
+   "texto": "Esa",
+   "inicio": 34.307,
+   "fin": 34.539
+  },
+  {
+   "texto": "marca",
+   "inicio": 34.597,
+   "fin": 34.876
+  },
+  {
+   "texto": "se",
+   "inicio": 34.934,
+   "fin": 35.015
+  },
+  {
+   "texto": "mide",
+   "inicio": 35.085,
+   "fin": 35.328
+  },
+  {
+   "texto": "con",
+   "inicio": 35.386,
+   "fin": 35.526
+  },
+  {
+   "texto": "un",
+   "inicio": 35.619,
+   "fin": 35.677
+  },
+  {
+   "texto": "análisis",
+   "inicio": 35.723,
+   "fin": 36.199
+  },
+  {
+   "texto": "llamado",
+   "inicio": 36.222,
+   "fin": 36.698
+  },
+  {
+   "texto": "hemoglobina",
+   "inicio": 36.791,
+   "fin": 37.616
+  },
+  {
+   "texto": "glicosilada,",
+   "inicio": 37.697,
+   "fin": 38.777
+  },
+  {
+   "texto": "o",
+   "inicio": 39.009,
+   "fin": 39.113
+  },
+  {
+   "texto": "HbA1c.",
+   "inicio": 39.148,
+   "fin": 41.133
+  },
+  {
+   "texto": "Menos",
+   "inicio": 41.435,
+   "fin": 41.737
+  },
+  {
+   "texto": "de",
+   "inicio": 41.784,
+   "fin": 41.853
+  },
+  {
+   "texto": "5.7 %",
+   "inicio": 41.911,
+   "fin": 43.537
+  },
+  {
+   "texto": "es",
+   "inicio": 43.63,
+   "fin": 43.804
+  },
+  {
+   "texto": "normal.",
+   "inicio": 43.897,
+   "fin": 44.512
+  },
+  {
+   "texto": "De",
+   "inicio": 44.814,
+   "fin": 44.965
+  },
+  {
+   "texto": "5.7",
+   "inicio": 45.023,
+   "fin": 46.195
+  },
+  {
+   "texto": "a",
+   "inicio": 46.3,
+   "fin": 46.381
+  },
+  {
+   "texto": "6.4 %,",
+   "inicio": 46.486,
+   "fin": 47.658
+  },
+  {
+   "texto": "prediabetes.",
+   "inicio": 47.798,
+   "fin": 48.819
+  },
+  {
+   "texto": "Y",
+   "inicio": 49.051,
+   "fin": 49.144
+  },
+  {
+   "texto": "6.5 %",
+   "inicio": 49.249,
+   "fin": 50.329
+  },
+  {
+   "texto": "o",
+   "inicio": 50.433,
+   "fin": 50.491
+  },
+  {
+   "texto": "más,",
+   "inicio": 50.584,
+   "fin": 51.106
+  },
+  {
+   "texto": "rango",
+   "inicio": 51.339,
+   "fin": 51.722
+  },
+  {
+   "texto": "de",
+   "inicio": 51.78,
+   "fin": 51.849
+  },
+  {
+   "texto": "diabetes.",
+   "inicio": 51.896,
+   "fin": 52.674
+  },
+  {
+   "texto": "Por",
+   "inicio": 52.976,
+   "fin": 53.161
+  },
+  {
+   "texto": "eso",
+   "inicio": 53.219,
+   "fin": 53.394
+  },
+  {
+   "texto": "puedes",
+   "inicio": 53.44,
+   "fin": 53.73
+  },
+  {
+   "texto": "salir",
+   "inicio": 53.753,
+   "fin": 54.044
+  },
+  {
+   "texto": "con",
+   "inicio": 54.09,
+   "fin": 54.195
+  },
+  {
+   "texto": "la",
+   "inicio": 54.229,
+   "fin": 54.288
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 54.322,
+   "fin": 54.74
+  },
+  {
+   "texto": "normal",
+   "inicio": 54.798,
+   "fin": 55.193
+  },
+  {
+   "texto": "hoy,",
+   "inicio": 55.251,
+   "fin": 55.692
+  },
+  {
+   "texto": "y",
+   "inicio": 55.925,
+   "fin": 55.994
+  },
+  {
+   "texto": "aun",
+   "inicio": 56.075,
+   "fin": 56.284
+  },
+  {
+   "texto": "así",
+   "inicio": 56.331,
+   "fin": 56.656
+  },
+  {
+   "texto": "venir",
+   "inicio": 56.749,
+   "fin": 57.051
+  },
+  {
+   "texto": "arrastrando",
+   "inicio": 57.086,
+   "fin": 57.701
+  },
+  {
+   "texto": "meses",
+   "inicio": 57.805,
+   "fin": 58.13
+  },
+  {
+   "texto": "de",
+   "inicio": 58.165,
+   "fin": 58.223
+  },
+  {
+   "texto": "azúcar",
+   "inicio": 58.247,
+   "fin": 58.583
+  },
+  {
+   "texto": "alta.",
+   "inicio": 58.641,
+   "fin": 59.152
+  },
+  {
+   "texto": "Juntas,",
+   "inicio": 59.384,
+   "fin": 59.849
+  },
+  {
+   "texto": "la",
+   "inicio": 59.895,
+   "fin": 59.965
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 60.011,
+   "fin": 60.522
+  },
+  {
+   "texto": "y",
+   "inicio": 60.58,
+   "fin": 60.627
+  },
+  {
+   "texto": "la",
+   "inicio": 60.708,
+   "fin": 60.777
+  },
+  {
+   "texto": "HbA1c",
+   "inicio": 60.824,
+   "fin": 62.484
+  },
+  {
+   "texto": "cuentan",
+   "inicio": 62.542,
+   "fin": 62.902
+  },
+  {
+   "texto": "la",
+   "inicio": 62.949,
+   "fin": 62.995
+  },
+  {
+   "texto": "historia",
+   "inicio": 63.018,
+   "fin": 63.378
+  },
+  {
+   "texto": "completa.",
+   "inicio": 63.425,
+   "fin": 64.098
+  },
+  {
+   "texto": "Esta",
+   "inicio": 64.458,
+   "fin": 64.841
+  },
+  {
+   "texto": "y",
+   "inicio": 64.945,
+   "fin": 64.969
+  },
+  {
+   "texto": "otras",
+   "inicio": 65.027,
+   "fin": 65.294
+  },
+  {
+   "texto": "pruebas",
+   "inicio": 65.352,
+   "fin": 65.7
+  },
+  {
+   "texto": "más",
+   "inicio": 65.758,
+   "fin": 65.979
+  },
+  {
+   "texto": "puedes",
+   "inicio": 66.06,
+   "fin": 66.327
+  },
+  {
+   "texto": "hacerlas",
+   "inicio": 66.373,
+   "fin": 66.826
+  },
+  {
+   "texto": "en",
+   "inicio": 66.896,
+   "fin": 66.942
+  },
+  {
+   "texto": "Laboratorio",
+   "inicio": 66.989,
+   "fin": 67.674
+  },
+  {
+   "texto": "LADI.",
+   "inicio": 67.767,
+   "fin": 68.452
+  }
+ ],
+ "escenas": [
+  {
+   "inicio": 0,
+   "fin": 8.440999999999999
+  },
+  {
+   "inicio": 8.440999999999999,
+   "fin": 15.837
+  },
+  {
+   "inicio": 15.837,
+   "fin": 25.229000000000003
+  },
+  {
+   "inicio": 25.229000000000003,
+   "fin": 34.157000000000004
+  },
+  {
+   "inicio": 34.157000000000004,
+   "fin": 41.285000000000004
+  },
+  {
+   "inicio": 41.285000000000004,
+   "fin": 52.826
+  },
+  {
+   "inicio": 52.826,
+   "fin": 64.30799999999999
+  },
+  {
+   "inicio": 64.30799999999999,
+   "fin": 69.693061
+  }
+ ],
+ "duracion": 69.693061
+}
