@@ -247,7 +247,30 @@ const Pastilla = ({color}: P) => (
   </g>
 );
 
+const Higado = ({frame, color}: P) => {
+  const p = 1 + Math.sin(frame / 12) * 0.015;
+  return (
+    <g transform={`translate(100 100) scale(${p}) translate(-100 -100)`}>
+      <path d="M18 78 C 20 40, 80 30, 130 38 C 170 44, 190 60, 184 84 C 178 110, 140 120, 112 136 C 84 152, 60 170, 40 150 C 22 132, 16 104, 18 78 Z" fill={color ?? '#B5523B'} stroke={T} strokeWidth={sw} strokeLinejoin="round" />
+      <path d="M112 44 C 104 80, 100 110, 104 136" stroke="#7A2E20" strokeWidth={5} fill="none" strokeLinecap="round" />
+      <path d="M48 70 q20 -14 44 -8" stroke="#E8957F" strokeWidth={7} fill="none" strokeLinecap="round" opacity={0.8} />
+      <ellipse cx={128} cy={128} rx={14} ry={10} fill="#4C9A52" stroke={T} strokeWidth={4} />
+    </g>
+  );
+};
+
+const Pancreas = ({color}: P) => (
+  <g>
+    <path d="M20 120 C 20 90, 60 80, 90 92 C 120 104, 150 70, 178 82 C 196 90, 190 118, 168 122 C 140 128, 120 140, 90 146 C 56 152, 20 150, 20 120 Z" fill={color ?? '#F4B860'} stroke={T} strokeWidth={sw} strokeLinejoin="round" />
+    {[40, 62, 84, 106, 128, 150].map((x, i) => (
+      <circle key={i} cx={x} cy={118 - (i % 2) * 8} r={5} fill="#D98E2B" />
+    ))}
+  </g>
+);
+
 const MAPA: Record<string, (p: P) => React.ReactElement> = {
+  higado: Higado,
+  pancreas: Pancreas,
   bebe: Bebe,
   feto: Bebe,
   mama: Mama,

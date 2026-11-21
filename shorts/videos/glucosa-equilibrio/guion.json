@@ -1,0 +1,58 @@
+{
+  "titulo": "El control glucémico no es solo no comer azúcar",
+  "escenas": [
+    {
+      "narracion": "Puedes no probar el azúcar… y aun así tener la glucosa alta.",
+      "visual": {"tipo": "gancho", "icono": "sangre", "tachado": "Solo no comer azúcar", "clave": "y aun así", "texto": "Y aun así, glucosa alta", "destacado": "glucosa alta", "color": "rosa"}
+    },
+    {
+      "narracion": "La tortilla, el pan, el arroz y la fruta también se convierten en glucosa.",
+      "visual": {"tipo": "lista", "titulo": "También se vuelven glucosa", "destacado": "glucosa", "items": [
+        {"texto": "Tortilla", "icono": "🫓", "estado": "si", "clave": "tortilla"},
+        {"texto": "Pan", "icono": "🍞", "estado": "si", "clave": "pan"},
+        {"texto": "Arroz", "icono": "🍚", "estado": "si", "clave": "arroz"},
+        {"texto": "Fruta", "icono": "🍎", "estado": "si", "clave": "fruta"}
+      ]}
+    },
+    {
+      "narracion": "Esa glucosa viaja por tu sangre, pero no puede entrar sola a tus células.",
+      "visual": {"tipo": "viaje", "desde": {"icono": "sangre", "etiqueta": "Sangre"}, "hasta": {"icono": "celula", "etiqueta": "Tu célula"}, "particula": {"etiqueta": "Glucosa", "color": "amarillo"}, "colorCamino": "#F4A3A8"}
+    },
+    {
+      "narracion": "Necesita una llave: la insulina, que fabrica tu páncreas. Cuando se une a la célula, la glucosa entra y se vuelve energía.",
+      "visual": {"tipo": "receptor", "clave": "se une", "molecula": {"etiqueta": "Insulina", "color": "morado"}, "receptor": {"etiqueta": "Receptor de insulina"}, "celula": {"etiqueta": "Tu célula"}, "efecto": {"icono": "rayo", "texto": "¡Entra la glucosa!"}}
+    },
+    {
+      "narracion": "Y lo que casi nadie sabe: tu hígado también fabrica glucosa y la suelta a la sangre, sobre todo en ayunas y de madrugada.",
+      "visual": {"tipo": "emision", "fuente": {"icono": "higado", "etiqueta": "Tu hígado fabrica glucosa"}, "particula": {"etiqueta": "Glucosa", "color": "amarillo"}}
+    },
+    {
+      "narracion": "Por eso el estrés, dormir mal o enfermarte pueden subirla… sin que comas nada.",
+      "visual": {"tipo": "lista", "titulo": "Suben tu glucosa sin comer", "destacado": "sin comer", "items": [
+        {"texto": "Estrés", "icono": "rayo", "clave": "estrés"},
+        {"texto": "Dormir mal", "icono": "😴", "clave": "dormir"},
+        {"texto": "Enfermarte", "icono": "🤒", "clave": "enfermarte"}
+      ]}
+    },
+    {
+      "narracion": "En cambio, cuando mueves los músculos, ellos jalan glucosa de la sangre.",
+      "visual": {"tipo": "foco", "icono": "💪", "etiqueta": "Músculo en movimiento", "color": "turquesa", "notas": [
+        {"texto": "Jala glucosa", "clave": "jalan", "color": "amarillo"},
+        {"texto": "La saca de la sangre", "clave": "sangre"}
+      ]}
+    },
+    {
+      "narracion": "Así que el control glucémico no es solo no comer azúcar: es el equilibrio entre tu insulina, tu hígado, tus músculos, tu sueño y tu estrés.",
+      "visual": {"tipo": "cierre", "icono": "celula", "texto": "No es solo el azúcar: es un equilibrio", "destacado": "un equilibrio", "cta": false}
+    },
+    {
+      "narracion": "Estas pruebas se pueden hacer en Laboratorio LADI.",
+      "visual": {"tipo": "laboratorio", "logo": "marcas/ladi.png", "anchoLogo": 680, "clave": "pruebas", "pruebas": ["Glucosa", "Hemoglobina glicosilada (HbA1c)", "Insulina", "Índice HOMA (resistencia a la insulina)", "Curva de tolerancia a la glucosa"]}
+    }
+  ],
+  "portada": {"arriba": "Control glucémico…", "destacado": "¡no es solo el azúcar!", "icono": "sangre", "logo": "marcas/ladi.png"},
+  "post": {
+    "texto": "🩸 Puedes no probar el azúcar… y aun así tener la glucosa alta.\n\nLa tortilla, el pan, el arroz y la fruta también se convierten en glucosa. Para entrar a tus células, esa glucosa necesita una llave: la insulina, que fabrica el páncreas.\n\nY lo que casi nadie sabe: tu hígado también fabrica glucosa y la suelta a la sangre, sobre todo en ayunas y de madrugada. Por eso el estrés, dormir mal o enfermarte pueden subirla sin que comas nada. En cambio, cuando mueves los músculos, ellos jalan glucosa de la sangre.\n\nEl control glucémico es un equilibrio entre tu insulina, tu hígado, tus músculos, tu sueño y tu estrés.\n\n🧪 Glucosa, hemoglobina glicosilada (HbA1c), insulina, índice HOMA y curva de tolerancia a la glucosa: estas pruebas se pueden hacer en Laboratorio LADI.\n\nContenido informativo, no es consejo médico: tus resultados siempre los interpreta tu médico.\n\n¿Sabías que tu hígado fabrica glucosa? 👇",
+    "hashtags": ["ciencia", "glucosa", "insulina", "diabetes", "cuerpohumano", "salud", "divulgacion", "laboratorioclinico", "sabiasque", "LaboratorioLADI"]
+  }
+}

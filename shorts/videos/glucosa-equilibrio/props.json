@@ -1,0 +1,971 @@
+{
+ "guion": {
+  "titulo": "El control glucémico no es solo no comer azúcar",
+  "escenas": [
+   {
+    "narracion": "Puedes no probar el azúcar… y aun así tener la glucosa alta.",
+    "visual": {
+     "tipo": "gancho",
+     "icono": "sangre",
+     "tachado": "Solo no comer azúcar",
+     "clave": "y aun así",
+     "texto": "Y aun así, glucosa alta",
+     "destacado": "glucosa alta",
+     "color": "rosa"
+    }
+   },
+   {
+    "narracion": "La tortilla, el pan, el arroz y la fruta también se convierten en glucosa.",
+    "visual": {
+     "tipo": "lista",
+     "titulo": "También se vuelven glucosa",
+     "destacado": "glucosa",
+     "items": [
+      {
+       "texto": "Tortilla",
+       "icono": "🫓",
+       "estado": "si",
+       "clave": "tortilla"
+      },
+      {
+       "texto": "Pan",
+       "icono": "🍞",
+       "estado": "si",
+       "clave": "pan"
+      },
+      {
+       "texto": "Arroz",
+       "icono": "🍚",
+       "estado": "si",
+       "clave": "arroz"
+      },
+      {
+       "texto": "Fruta",
+       "icono": "🍎",
+       "estado": "si",
+       "clave": "fruta"
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "Esa glucosa viaja por tu sangre, pero no puede entrar sola a tus células.",
+    "visual": {
+     "tipo": "viaje",
+     "desde": {
+      "icono": "sangre",
+      "etiqueta": "Sangre"
+     },
+     "hasta": {
+      "icono": "celula",
+      "etiqueta": "Tu célula"
+     },
+     "particula": {
+      "etiqueta": "Glucosa",
+      "color": "amarillo"
+     },
+     "colorCamino": "#F4A3A8"
+    }
+   },
+   {
+    "narracion": "Necesita una llave: la insulina, que fabrica tu páncreas. Cuando se une a la célula, la glucosa entra y se vuelve energía.",
+    "visual": {
+     "tipo": "receptor",
+     "clave": "se une",
+     "molecula": {
+      "etiqueta": "Insulina",
+      "color": "morado"
+     },
+     "receptor": {
+      "etiqueta": "Receptor de insulina"
+     },
+     "celula": {
+      "etiqueta": "Tu célula"
+     },
+     "efecto": {
+      "icono": "rayo",
+      "texto": "¡Entra la glucosa!"
+     }
+    }
+   },
+   {
+    "narracion": "Y lo que casi nadie sabe: tu hígado también fabrica glucosa y la suelta a la sangre, sobre todo en ayunas y de madrugada.",
+    "visual": {
+     "tipo": "emision",
+     "fuente": {
+      "icono": "higado",
+      "etiqueta": "Tu hígado fabrica glucosa"
+     },
+     "particula": {
+      "etiqueta": "Glucosa",
+      "color": "amarillo"
+     }
+    }
+   },
+   {
+    "narracion": "Por eso el estrés, dormir mal o enfermarte pueden subirla… sin que comas nada.",
+    "visual": {
+     "tipo": "lista",
+     "titulo": "Suben tu glucosa sin comer",
+     "destacado": "sin comer",
+     "items": [
+      {
+       "texto": "Estrés",
+       "icono": "rayo",
+       "clave": "estrés"
+      },
+      {
+       "texto": "Dormir mal",
+       "icono": "😴",
+       "clave": "dormir"
+      },
+      {
+       "texto": "Enfermarte",
+       "icono": "🤒",
+       "clave": "enfermarte"
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "En cambio, cuando mueves los músculos, ellos jalan glucosa de la sangre.",
+    "visual": {
+     "tipo": "foco",
+     "icono": "💪",
+     "etiqueta": "Músculo en movimiento",
+     "color": "turquesa",
+     "notas": [
+      {
+       "texto": "Jala glucosa",
+       "clave": "jalan",
+       "color": "amarillo"
+      },
+      {
+       "texto": "La saca de la sangre",
+       "clave": "sangre"
+      }
+     ]
+    }
+   },
+   {
+    "narracion": "Así que el control glucémico no es solo no comer azúcar: es el equilibrio entre tu insulina, tu hígado, tus músculos, tu sueño y tu estrés.",
+    "visual": {
+     "tipo": "cierre",
+     "icono": "celula",
+     "texto": "No es solo el azúcar: es un equilibrio",
+     "destacado": "un equilibrio",
+     "cta": false
+    }
+   },
+   {
+    "narracion": "Estas pruebas se pueden hacer en Laboratorio LADI.",
+    "visual": {
+     "tipo": "laboratorio",
+     "logo": "marcas/ladi.png",
+     "anchoLogo": 680,
+     "clave": "pruebas",
+     "pruebas": [
+      "Glucosa",
+      "Hemoglobina glicosilada (HbA1c)",
+      "Insulina",
+      "Índice HOMA (resistencia a la insulina)",
+      "Curva de tolerancia a la glucosa"
+     ]
+    }
+   }
+  ],
+  "portada": {
+   "arriba": "Control glucémico…",
+   "destacado": "¡no es solo el azúcar!",
+   "icono": "sangre",
+   "logo": "marcas/ladi.png"
+  },
+  "post": {
+   "texto": "🩸 Puedes no probar el azúcar… y aun así tener la glucosa alta.\n\nLa tortilla, el pan, el arroz y la fruta también se convierten en glucosa. Para entrar a tus células, esa glucosa necesita una llave: la insulina, que fabrica el páncreas.\n\nY lo que casi nadie sabe: tu hígado también fabrica glucosa y la suelta a la sangre, sobre todo en ayunas y de madrugada. Por eso el estrés, dormir mal o enfermarte pueden subirla sin que comas nada. En cambio, cuando mueves los músculos, ellos jalan glucosa de la sangre.\n\nEl control glucémico es un equilibrio entre tu insulina, tu hígado, tus músculos, tu sueño y tu estrés.\n\n🧪 Glucosa, hemoglobina glicosilada (HbA1c), insulina, índice HOMA y curva de tolerancia a la glucosa: estas pruebas se pueden hacer en Laboratorio LADI.\n\nContenido informativo, no es consejo médico: tus resultados siempre los interpreta tu médico.\n\n¿Sabías que tu hígado fabrica glucosa? 👇",
+   "hashtags": [
+    "ciencia",
+    "glucosa",
+    "insulina",
+    "diabetes",
+    "cuerpohumano",
+    "salud",
+    "divulgacion",
+    "laboratorioclinico",
+    "sabiasque",
+    "LaboratorioLADI"
+   ]
+  }
+ },
+ "audio": "audio/glucosa-equilibrio.mp3",
+ "palabras": [
+  {
+   "texto": "Puedes",
+   "inicio": 0,
+   "fin": 0.453
+  },
+  {
+   "texto": "no",
+   "inicio": 0.557,
+   "fin": 0.697
+  },
+  {
+   "texto": "probar",
+   "inicio": 0.743,
+   "fin": 1.103
+  },
+  {
+   "texto": "el",
+   "inicio": 1.149,
+   "fin": 1.207
+  },
+  {
+   "texto": "azúcar…",
+   "inicio": 1.277,
+   "fin": 1.962
+  },
+  {
+   "texto": "y",
+   "inicio": 2.125,
+   "fin": 2.218
+  },
+  {
+   "texto": "aun",
+   "inicio": 2.322,
+   "fin": 2.519
+  },
+  {
+   "texto": "así",
+   "inicio": 2.577,
+   "fin": 2.786
+  },
+  {
+   "texto": "tener",
+   "inicio": 2.856,
+   "fin": 3.135
+  },
+  {
+   "texto": "la",
+   "inicio": 3.193,
+   "fin": 3.251
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 3.297,
+   "fin": 3.75
+  },
+  {
+   "texto": "alta.",
+   "inicio": 3.796,
+   "fin": 4.319
+  },
+  {
+   "texto": "La",
+   "inicio": 4.679,
+   "fin": 4.83
+  },
+  {
+   "texto": "tortilla,",
+   "inicio": 4.888,
+   "fin": 5.596
+  },
+  {
+   "texto": "el",
+   "inicio": 5.642,
+   "fin": 5.793
+  },
+  {
+   "texto": "pan,",
+   "inicio": 5.863,
+   "fin": 6.316
+  },
+  {
+   "texto": "el",
+   "inicio": 6.362,
+   "fin": 6.502
+  },
+  {
+   "texto": "arroz",
+   "inicio": 6.583,
+   "fin": 7.001
+  },
+  {
+   "texto": "y",
+   "inicio": 7.082,
+   "fin": 7.129
+  },
+  {
+   "texto": "la",
+   "inicio": 7.21,
+   "fin": 7.279
+  },
+  {
+   "texto": "fruta",
+   "inicio": 7.338,
+   "fin": 7.814
+  },
+  {
+   "texto": "también",
+   "inicio": 8.011,
+   "fin": 8.44
+  },
+  {
+   "texto": "se",
+   "inicio": 8.499,
+   "fin": 8.568
+  },
+  {
+   "texto": "convierten",
+   "inicio": 8.615,
+   "fin": 9.056
+  },
+  {
+   "texto": "en",
+   "inicio": 9.102,
+   "fin": 9.149
+  },
+  {
+   "texto": "glucosa.",
+   "inicio": 9.183,
+   "fin": 9.88
+  },
+  {
+   "texto": "Esa",
+   "inicio": 10.147,
+   "fin": 10.356
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 10.403,
+   "fin": 10.925
+  },
+  {
+   "texto": "viaja",
+   "inicio": 10.995,
+   "fin": 11.273
+  },
+  {
+   "texto": "por",
+   "inicio": 11.32,
+   "fin": 11.436
+  },
+  {
+   "texto": "tu",
+   "inicio": 11.494,
+   "fin": 11.587
+  },
+  {
+   "texto": "sangre,",
+   "inicio": 11.656,
+   "fin": 12.26
+  },
+  {
+   "texto": "pero",
+   "inicio": 12.423,
+   "fin": 12.655
+  },
+  {
+   "texto": "no",
+   "inicio": 12.736,
+   "fin": 12.864
+  },
+  {
+   "texto": "puede",
+   "inicio": 12.922,
+   "fin": 13.201
+  },
+  {
+   "texto": "entrar",
+   "inicio": 13.259,
+   "fin": 13.607
+  },
+  {
+   "texto": "sola",
+   "inicio": 13.688,
+   "fin": 14.06
+  },
+  {
+   "texto": "a",
+   "inicio": 14.106,
+   "fin": 14.129
+  },
+  {
+   "texto": "tus",
+   "inicio": 14.187,
+   "fin": 14.327
+  },
+  {
+   "texto": "células.",
+   "inicio": 14.35,
+   "fin": 15.023
+  },
+  {
+   "texto": "Necesita",
+   "inicio": 15.256,
+   "fin": 15.848
+  },
+  {
+   "texto": "una",
+   "inicio": 15.952,
+   "fin": 16.149
+  },
+  {
+   "texto": "llave:",
+   "inicio": 16.173,
+   "fin": 16.765
+  },
+  {
+   "texto": "la",
+   "inicio": 17.032,
+   "fin": 17.148
+  },
+  {
+   "texto": "insulina,",
+   "inicio": 17.206,
+   "fin": 17.949
+  },
+  {
+   "texto": "que",
+   "inicio": 18.019,
+   "fin": 18.135
+  },
+  {
+   "texto": "fabrica",
+   "inicio": 18.204,
+   "fin": 18.646
+  },
+  {
+   "texto": "tu",
+   "inicio": 18.692,
+   "fin": 18.773
+  },
+  {
+   "texto": "páncreas.",
+   "inicio": 18.82,
+   "fin": 19.493
+  },
+  {
+   "texto": "Cuando",
+   "inicio": 19.795,
+   "fin": 20.085
+  },
+  {
+   "texto": "se",
+   "inicio": 20.155,
+   "fin": 20.248
+  },
+  {
+   "texto": "une",
+   "inicio": 20.352,
+   "fin": 20.561
+  },
+  {
+   "texto": "a",
+   "inicio": 20.596,
+   "fin": 20.619
+  },
+  {
+   "texto": "la",
+   "inicio": 20.666,
+   "fin": 20.735
+  },
+  {
+   "texto": "célula,",
+   "inicio": 20.793,
+   "fin": 21.281
+  },
+  {
+   "texto": "la",
+   "inicio": 21.351,
+   "fin": 21.444
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 21.502,
+   "fin": 22.082
+  },
+  {
+   "texto": "entra",
+   "inicio": 22.187,
+   "fin": 22.674
+  },
+  {
+   "texto": "y",
+   "inicio": 22.756,
+   "fin": 22.79
+  },
+  {
+   "texto": "se",
+   "inicio": 22.883,
+   "fin": 22.976
+  },
+  {
+   "texto": "vuelve",
+   "inicio": 23.034,
+   "fin": 23.371
+  },
+  {
+   "texto": "energía.",
+   "inicio": 23.406,
+   "fin": 24.114
+  },
+  {
+   "texto": "Y",
+   "inicio": 24.311,
+   "fin": 24.393
+  },
+  {
+   "texto": "lo",
+   "inicio": 24.474,
+   "fin": 24.555
+  },
+  {
+   "texto": "que",
+   "inicio": 24.602,
+   "fin": 24.683
+  },
+  {
+   "texto": "casi",
+   "inicio": 24.729,
+   "fin": 25.019
+  },
+  {
+   "texto": "nadie",
+   "inicio": 25.136,
+   "fin": 25.472
+  },
+  {
+   "texto": "sabe:",
+   "inicio": 25.53,
+   "fin": 26.053
+  },
+  {
+   "texto": "tu",
+   "inicio": 26.215,
+   "fin": 26.355
+  },
+  {
+   "texto": "hígado",
+   "inicio": 26.413,
+   "fin": 26.784
+  },
+  {
+   "texto": "también",
+   "inicio": 26.854,
+   "fin": 27.283
+  },
+  {
+   "texto": "fabrica",
+   "inicio": 27.341,
+   "fin": 27.725
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 27.771,
+   "fin": 28.328
+  },
+  {
+   "texto": "y",
+   "inicio": 28.398,
+   "fin": 28.444
+  },
+  {
+   "texto": "la",
+   "inicio": 28.537,
+   "fin": 28.607
+  },
+  {
+   "texto": "suelta",
+   "inicio": 28.665,
+   "fin": 29.013
+  },
+  {
+   "texto": "a",
+   "inicio": 29.083,
+   "fin": 29.118
+  },
+  {
+   "texto": "la",
+   "inicio": 29.176,
+   "fin": 29.257
+  },
+  {
+   "texto": "sangre,",
+   "inicio": 29.304,
+   "fin": 29.849
+  },
+  {
+   "texto": "sobre",
+   "inicio": 30.012,
+   "fin": 30.302
+  },
+  {
+   "texto": "todo",
+   "inicio": 30.36,
+   "fin": 30.65
+  },
+  {
+   "texto": "en",
+   "inicio": 30.72,
+   "fin": 30.778
+  },
+  {
+   "texto": "ayunas",
+   "inicio": 30.836,
+   "fin": 31.266
+  },
+  {
+   "texto": "y",
+   "inicio": 31.359,
+   "fin": 31.393
+  },
+  {
+   "texto": "de",
+   "inicio": 31.475,
+   "fin": 31.521
+  },
+  {
+   "texto": "madrugada.",
+   "inicio": 31.579,
+   "fin": 32.334
+  },
+  {
+   "texto": "Por",
+   "inicio": 32.532,
+   "fin": 32.717
+  },
+  {
+   "texto": "eso",
+   "inicio": 32.775,
+   "fin": 32.938
+  },
+  {
+   "texto": "el",
+   "inicio": 32.984,
+   "fin": 33.054
+  },
+  {
+   "texto": "estrés,",
+   "inicio": 33.124,
+   "fin": 33.797
+  },
+  {
+   "texto": "dormir",
+   "inicio": 33.867,
+   "fin": 34.261
+  },
+  {
+   "texto": "mal",
+   "inicio": 34.331,
+   "fin": 34.586
+  },
+  {
+   "texto": "o",
+   "inicio": 34.668,
+   "fin": 34.749
+  },
+  {
+   "texto": "enfermarte",
+   "inicio": 34.795,
+   "fin": 35.55
+  },
+  {
+   "texto": "pueden",
+   "inicio": 35.631,
+   "fin": 35.98
+  },
+  {
+   "texto": "subirla…",
+   "inicio": 36.049,
+   "fin": 36.85
+  },
+  {
+   "texto": "sin",
+   "inicio": 36.955,
+   "fin": 37.106
+  },
+  {
+   "texto": "que",
+   "inicio": 37.152,
+   "fin": 37.234
+  },
+  {
+   "texto": "comas",
+   "inicio": 37.292,
+   "fin": 37.768
+  },
+  {
+   "texto": "nada.",
+   "inicio": 37.884,
+   "fin": 38.418
+  },
+  {
+   "texto": "En",
+   "inicio": 38.72,
+   "fin": 38.871
+  },
+  {
+   "texto": "cambio,",
+   "inicio": 38.929,
+   "fin": 39.416
+  },
+  {
+   "texto": "cuando",
+   "inicio": 39.486,
+   "fin": 39.811
+  },
+  {
+   "texto": "mueves",
+   "inicio": 39.892,
+   "fin": 40.229
+  },
+  {
+   "texto": "los",
+   "inicio": 40.287,
+   "fin": 40.426
+  },
+  {
+   "texto": "músculos,",
+   "inicio": 40.484,
+   "fin": 41.204
+  },
+  {
+   "texto": "ellos",
+   "inicio": 41.367,
+   "fin": 41.68
+  },
+  {
+   "texto": "jalan",
+   "inicio": 41.738,
+   "fin": 42.017
+  },
+  {
+   "texto": "glucosa",
+   "inicio": 42.063,
+   "fin": 42.539
+  },
+  {
+   "texto": "de",
+   "inicio": 42.597,
+   "fin": 42.655
+  },
+  {
+   "texto": "la",
+   "inicio": 42.702,
+   "fin": 42.783
+  },
+  {
+   "texto": "sangre.",
+   "inicio": 42.83,
+   "fin": 43.422
+  },
+  {
+   "texto": "Así",
+   "inicio": 43.689,
+   "fin": 43.956
+  },
+  {
+   "texto": "que",
+   "inicio": 44.014,
+   "fin": 44.153
+  },
+  {
+   "texto": "el",
+   "inicio": 44.234,
+   "fin": 44.362
+  },
+  {
+   "texto": "control",
+   "inicio": 44.432,
+   "fin": 44.85
+  },
+  {
+   "texto": "glucémico",
+   "inicio": 44.908,
+   "fin": 45.709
+  },
+  {
+   "texto": "no",
+   "inicio": 45.976,
+   "fin": 46.185
+  },
+  {
+   "texto": "es",
+   "inicio": 46.266,
+   "fin": 46.371
+  },
+  {
+   "texto": "solo",
+   "inicio": 46.394,
+   "fin": 46.823
+  },
+  {
+   "texto": "no",
+   "inicio": 46.986,
+   "fin": 47.207
+  },
+  {
+   "texto": "comer",
+   "inicio": 47.299,
+   "fin": 47.706
+  },
+  {
+   "texto": "azúcar:",
+   "inicio": 47.799,
+   "fin": 48.611
+  },
+  {
+   "texto": "es",
+   "inicio": 48.878,
+   "fin": 49.006
+  },
+  {
+   "texto": "el",
+   "inicio": 49.064,
+   "fin": 49.134
+  },
+  {
+   "texto": "equilibrio",
+   "inicio": 49.18,
+   "fin": 49.714
+  },
+  {
+   "texto": "entre",
+   "inicio": 49.749,
+   "fin": 49.97
+  },
+  {
+   "texto": "tu",
+   "inicio": 50.016,
+   "fin": 50.086
+  },
+  {
+   "texto": "insulina,",
+   "inicio": 50.144,
+   "fin": 50.98
+  },
+  {
+   "texto": "tu",
+   "inicio": 51.119,
+   "fin": 51.259
+  },
+  {
+   "texto": "hígado,",
+   "inicio": 51.328,
+   "fin": 51.99
+  },
+  {
+   "texto": "tus",
+   "inicio": 52.129,
+   "fin": 52.304
+  },
+  {
+   "texto": "músculos,",
+   "inicio": 52.373,
+   "fin": 53.151
+  },
+  {
+   "texto": "tu",
+   "inicio": 53.174,
+   "fin": 53.29
+  },
+  {
+   "texto": "sueño",
+   "inicio": 53.36,
+   "fin": 53.836
+  },
+  {
+   "texto": "y",
+   "inicio": 53.929,
+   "fin": 53.987
+  },
+  {
+   "texto": "tu",
+   "inicio": 54.08,
+   "fin": 54.161
+  },
+  {
+   "texto": "estrés.",
+   "inicio": 54.208,
+   "fin": 54.823
+  },
+  {
+   "texto": "Estas",
+   "inicio": 55.183,
+   "fin": 55.496
+  },
+  {
+   "texto": "pruebas",
+   "inicio": 55.543,
+   "fin": 55.856
+  },
+  {
+   "texto": "se",
+   "inicio": 55.879,
+   "fin": 55.949
+  },
+  {
+   "texto": "pueden",
+   "inicio": 55.995,
+   "fin": 56.263
+  },
+  {
+   "texto": "hacer",
+   "inicio": 56.309,
+   "fin": 56.588
+  },
+  {
+   "texto": "en",
+   "inicio": 56.657,
+   "fin": 56.773
+  },
+  {
+   "texto": "Laboratorio",
+   "inicio": 56.843,
+   "fin": 57.563
+  },
+  {
+   "texto": "LADI.",
+   "inicio": 57.621,
+   "fin": 58.283
+  }
+ ],
+ "escenas": [
+  {
+   "inicio": 0,
+   "fin": 4.529
+  },
+  {
+   "inicio": 4.529,
+   "fin": 9.997
+  },
+  {
+   "inicio": 9.997,
+   "fin": 15.106
+  },
+  {
+   "inicio": 15.106,
+   "fin": 24.161
+  },
+  {
+   "inicio": 24.161,
+   "fin": 32.382
+  },
+  {
+   "inicio": 32.382,
+   "fin": 38.57
+  },
+  {
+   "inicio": 38.57,
+   "fin": 43.539
+  },
+  {
+   "inicio": 43.539,
+   "fin": 55.033
+  },
+  {
+   "inicio": 55.033,
+   "fin": 59.531429
+  }
+ ],
+ "duracion": 59.531429
+}
