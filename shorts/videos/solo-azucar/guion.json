@@ -3,60 +3,191 @@
   "escenas": [
     {
       "narracion": "Dejar el azúcar no basta para controlar tu glucosa.",
-      "visual": {"tipo": "gancho", "icono": "azucar", "sello": "no", "retrasoSello": 6, "texto": "¿SOLO EL AZÚCAR?", "destacado": "AZÚCAR", "tam": 120}
+      "visual": {
+        "tipo": "gancho",
+        "icono": "azucar",
+        "sello": "no",
+        "retrasoSello": 6,
+        "texto": "¿SOLO EL AZÚCAR?",
+        "destacado": "AZÚCAR",
+        "tam": 120
+      }
     },
     {
       "narracion": "La razón está en tu sangre.",
-      "visual": {"tipo": "vaso", "etiqueta": "TU SANGRE"}
+      "visual": {
+        "tipo": "vaso",
+        "etiqueta": "TU SANGRE"
+      }
     },
     {
       "narracion": "La glucosa es el combustible de tus células. Viaja por la sangre… pero no puede entrar sola.",
-      "visual": {"tipo": "puerta", "llave": false, "glucosa": "GLUCOSA", "celula": "CÉLULA"}
+      "visual": {
+        "tipo": "puerta",
+        "llave": false,
+        "glucosa": "GLUCOSA",
+        "celula": "CÉLULA"
+      }
     },
     {
       "narracion": "Necesita una llave: la insulina, que abre la puerta de la célula.",
-      "visual": {"tipo": "puerta", "claveLlave": "llave", "claveAbre": "abre", "insulina": "INSULINA"}
+      "visual": {
+        "tipo": "puerta",
+        "claveLlave": "llave",
+        "claveAbre": "abre",
+        "insulina": "INSULINA"
+      }
     },
     {
       "narracion": "Ahora lo sorprendente: tu glucosa no solo sube con el azúcar.",
-      "visual": {"tipo": "grafica", "titulo": "No solo sube con el azúcar", "destacado": "No solo", "eventos": [{"clave": "azúcar", "icono": "azucar", "sube": 0.1, "hex": false}]}
+      "visual": {
+        "tipo": "grafica",
+        "titulo": "No solo sube con el azúcar",
+        "destacado": "No solo",
+        "eventos": [
+          {
+            "clave": "azúcar",
+            "icono": "azucar",
+            "sube": 0.1,
+            "hex": false
+          }
+        ]
+      }
     },
     {
       "narracion": "Sube con el pan, la tortilla, el arroz o la fruta, porque tu cuerpo convierte esos carbohidratos en glucosa.",
-      "visual": {"tipo": "grafica", "acumula": true, "base": 0.18, "eventos": [
-        {"clave": "pan", "icono": "🍞", "sube": 0.14},
-        {"clave": "tortilla", "icono": "🫓", "sube": 0.14},
-        {"clave": "arroz", "icono": "🍚", "sube": 0.14},
-        {"clave": "fruta", "icono": "🍎", "sube": 0.14}
-      ]}
+      "visual": {
+        "tipo": "grafica",
+        "acumula": true,
+        "base": 0.18,
+        "eventos": [
+          {
+            "clave": "pan",
+            "icono": "🍞",
+            "sube": 0.14
+          },
+          {
+            "clave": "tortilla",
+            "icono": "🫓",
+            "sube": 0.14
+          },
+          {
+            "clave": "arroz",
+            "icono": "🍚",
+            "sube": 0.14
+          },
+          {
+            "clave": "fruta",
+            "icono": "🍎",
+            "sube": 0.14
+          }
+        ]
+      }
     },
     {
       "narracion": "También sube con el estrés… y cuando duermes mal.",
-      "visual": {"tipo": "grafica", "titulo": "ESTRÉS y MAL SUEÑO", "destacado": "MAL SUEÑO", "base": 0.25, "eventos": [
-        {"clave": "estrés", "icono": "rayo", "sube": 0.22, "etiqueta": "ESTRÉS", "hex": false},
-        {"clave": "duermes", "icono": "luna", "sube": 0.22, "etiqueta": "DORMIR MAL", "hex": false}
-      ]}
+      "visual": {
+        "tipo": "grafica",
+        "titulo": "ESTRÉS y MAL SUEÑO",
+        "destacado": "MAL SUEÑO",
+        "base": 0.25,
+        "eventos": [
+          {
+            "clave": "estrés",
+            "icono": "rayo",
+            "sube": 0.22,
+            "etiqueta": "ESTRÉS",
+            "hex": false
+          },
+          {
+            "clave": "duermes",
+            "icono": "luna",
+            "sube": 0.22,
+            "etiqueta": "DORMIR MAL",
+            "hex": false
+          }
+        ]
+      }
     },
     {
       "narracion": "Y tu hígado libera glucosa por su cuenta, aunque no hayas comido.",
-      "visual": {"tipo": "emision", "forma": "hex", "fuente": {"icono": "higado", "etiqueta": "HÍGADO"}, "particula": {"etiqueta": "GLUCOSA", "color": "amarillo"}, "nota": {"icono": "🍽️", "texto": "Plato vacío", "retraso": 40}}
+      "visual": {
+        "tipo": "emision",
+        "forma": "hex",
+        "fuente": {
+          "icono": "higado",
+          "etiqueta": "HÍGADO"
+        },
+        "particula": {
+          "etiqueta": "GLUCOSA",
+          "color": "amarillo"
+        },
+        "nota": {
+          "icono": "🍽️",
+          "texto": "Plato vacío",
+          "retraso": 40
+        }
+      }
     },
     {
       "narracion": "Si tus células dejan de responder bien a la insulina, la glucosa se acumula en la sangre.",
-      "visual": {"tipo": "puerta", "resistencia": true, "claveLlave": "responder", "insulina": "INSULINA", "aviso": "La glucosa se acumula"}
+      "visual": {
+        "tipo": "puerta",
+        "resistencia": true,
+        "claveLlave": "responder",
+        "insulina": "INSULINA",
+        "aviso": "La glucosa se acumula"
+      }
     },
     {
       "narracion": "Entonces, el control glucémico no es solo \"no comer azúcar\". Es cómo tu cuerpo entero maneja su energía… todo el día.",
-      "visual": {"tipo": "grafica", "estable": true, "icono": "reloj", "titulo": "NO ES SOLO AZÚCAR. ES EQUILIBRIO.", "destacado": "EQUILIBRIO.", "tamTitulo": 58, "etiqueta": "GLUCOSA · 24 h"}
+      "visual": {
+        "tipo": "grafica",
+        "estable": true,
+        "icono": "reloj",
+        "titulo": "NO ES SOLO AZÚCAR. ES EQUILIBRIO.",
+        "destacado": "EQUILIBRIO.",
+        "tamTitulo": 58,
+        "etiqueta": "GLUCOSA · 24 h"
+      }
     },
     {
       "narracion": "Las pruebas de control glucémico se hacen en Laboratorio Ladi.",
-      "visual": {"tipo": "laboratorio", "icono": "tubo", "tamIcono": 200, "logo": "marcas/ladi.png", "anchoLogo": 600, "texto": "Pruebas de control glucémico", "destacado": "control glucémico", "tam": 60, "nota": "Contenido informativo. No sustituye la consulta médica."}
+      "visual": {
+        "tipo": "laboratorio",
+        "icono": "tubo",
+        "tamIcono": 200,
+        "logo": "marcas/ladi.png",
+        "anchoLogo": 600,
+        "texto": "Pruebas de control glucémico",
+        "destacado": "control glucémico",
+        "tam": 60,
+        "nota": "Contenido informativo. No sustituye la consulta médica."
+      }
     }
   ],
-  "portada": {"arriba": "Control glucémico…", "destacado": "¿SOLO EL AZÚCAR?", "icono": "azucar", "logo": "marcas/ladi.png"},
+  "portada": {
+    "arriba": "Control glucémico…",
+    "destacado": "¿SOLO EL AZÚCAR?",
+    "icono": "azucar",
+    "logo": "marcas/ladi.png"
+  },
   "post": {
     "texto": "🍬❌ Dejar el azúcar no basta para controlar tu glucosa.\n\nLa glucosa es el combustible de tus células, pero no puede entrar sola: necesita una llave, la insulina. Y tu glucosa no solo sube con el azúcar: también con el pan, la tortilla, el arroz o la fruta (los carbohidratos se convierten en glucosa), con el estrés y cuando duermes mal. Además, tu hígado libera glucosa por su cuenta, aunque no hayas comido.\n\nSi tus células dejan de responder bien a la insulina, la glucosa se acumula en la sangre.\n\nEl control glucémico no es solo \"no comer azúcar\": es cómo tu cuerpo entero maneja su energía, todo el día.\n\n🧪 Las pruebas de control glucémico se hacen en Laboratorio Ladi.\n\nContenido informativo. No sustituye la consulta médica.",
-    "hashtags": ["glucosa", "insulina", "diabetes", "controlglucemico", "salud", "ciencia", "cuerpohumano", "laboratorioclinico", "LaboratorioLadi"]
+    "hashtags": [
+      "glucosa",
+      "insulina",
+      "diabetes",
+      "controlglucemico",
+      "salud",
+      "ciencia",
+      "cuerpohumano",
+      "laboratorioclinico",
+      "LaboratorioLadi"
+    ]
+  },
+  "voz": {
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "velocidad": 0.94
   }
 }

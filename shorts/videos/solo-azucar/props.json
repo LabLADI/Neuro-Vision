@@ -186,6 +186,10 @@
     "laboratorioclinico",
     "LaboratorioLadi"
    ]
+  },
+  "voz": {
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "velocidad": 0.94
   }
  },
  "audio": "audio/solo-azucar.mp3",
@@ -193,764 +197,764 @@
   {
    "texto": "Dejar",
    "inicio": 0,
-   "fin": 0.43
+   "fin": 0.372
   },
   {
    "texto": "el",
-   "inicio": 0.476,
-   "fin": 0.546
+   "inicio": 0.418,
+   "fin": 0.476
   },
   {
    "texto": "azúcar",
-   "inicio": 0.604,
-   "fin": 1.126
+   "inicio": 0.534,
+   "fin": 0.952
   },
   {
    "texto": "no",
-   "inicio": 1.231,
-   "fin": 1.416
+   "inicio": 1.033,
+   "fin": 1.126
   },
   {
    "texto": "basta",
-   "inicio": 1.486,
-   "fin": 1.939
+   "inicio": 1.173,
+   "fin": 1.474
   },
   {
    "texto": "para",
-   "inicio": 1.997,
-   "fin": 2.194
+   "inicio": 1.533,
+   "fin": 1.718
   },
   {
    "texto": "controlar",
-   "inicio": 2.252,
-   "fin": 2.705
+   "inicio": 1.776,
+   "fin": 2.218
   },
   {
    "texto": "tu",
-   "inicio": 2.775,
-   "fin": 2.856
+   "inicio": 2.276,
+   "fin": 2.345
   },
   {
    "texto": "glucosa.",
-   "inicio": 2.902,
-   "fin": 3.646
+   "inicio": 2.38,
+   "fin": 3.077
   },
   {
    "texto": "La",
-   "inicio": 3.947,
-   "fin": 4.087
+   "inicio": 3.483,
+   "fin": 3.576
   },
   {
    "texto": "razón",
-   "inicio": 4.156,
-   "fin": 4.609
+   "inicio": 3.657,
+   "fin": 4.063
   },
   {
    "texto": "está",
-   "inicio": 4.69,
-   "fin": 5.132
+   "inicio": 4.122,
+   "fin": 4.284
   },
   {
    "texto": "en",
-   "inicio": 5.213,
-   "fin": 5.329
+   "inicio": 4.307,
+   "fin": 4.354
   },
   {
    "texto": "tu",
-   "inicio": 5.399,
-   "fin": 5.503
+   "inicio": 4.4,
+   "fin": 4.47
   },
   {
    "texto": "sangre.",
-   "inicio": 5.584,
-   "fin": 6.269
+   "inicio": 4.528,
+   "fin": 5.039
   },
   {
    "texto": "La",
-   "inicio": 6.629,
-   "fin": 6.745
+   "inicio": 5.503,
+   "fin": 5.619
   },
   {
    "texto": "glucosa",
-   "inicio": 6.792,
-   "fin": 7.314
+   "inicio": 5.666,
+   "fin": 6.397
   },
   {
    "texto": "es",
-   "inicio": 7.407,
-   "fin": 7.512
+   "inicio": 6.502,
+   "fin": 6.653
   },
   {
    "texto": "el",
+   "inicio": 6.722,
+   "fin": 6.792
+  },
+  {
+   "texto": "combustible",
+   "inicio": 6.861,
+   "fin": 7.546
+  },
+  {
+   "texto": "de",
    "inicio": 7.581,
    "fin": 7.639
   },
   {
-   "texto": "combustible",
-   "inicio": 7.697,
-   "fin": 8.336
-  },
-  {
-   "texto": "de",
-   "inicio": 8.394,
-   "fin": 8.464
-  },
-  {
    "texto": "tus",
-   "inicio": 8.51,
-   "fin": 8.661
+   "inicio": 7.697,
+   "fin": 7.848
   },
   {
    "texto": "células.",
-   "inicio": 8.684,
-   "fin": 9.369
+   "inicio": 7.872,
+   "fin": 8.58
   },
   {
    "texto": "Viaja",
-   "inicio": 9.601,
-   "fin": 9.915
+   "inicio": 9.044,
+   "fin": 9.497
   },
   {
    "texto": "por",
-   "inicio": 9.961,
-   "fin": 10.101
+   "inicio": 9.555,
+   "fin": 9.694
   },
   {
    "texto": "la",
-   "inicio": 10.17,
-   "fin": 10.252
+   "inicio": 9.741,
+   "fin": 9.81
   },
   {
    "texto": "sangre…",
-   "inicio": 10.31,
-   "fin": 10.971
+   "inicio": 9.892,
+   "fin": 10.519
   },
   {
    "texto": "pero",
-   "inicio": 11.273,
-   "fin": 11.482
+   "inicio": 10.739,
+   "fin": 10.948
   },
   {
    "texto": "no",
-   "inicio": 11.552,
-   "fin": 11.656
+   "inicio": 11.006,
+   "fin": 11.088
   },
   {
    "texto": "puede",
-   "inicio": 11.726,
-   "fin": 12.063
+   "inicio": 11.157,
+   "fin": 11.447
   },
   {
    "texto": "entrar",
-   "inicio": 12.144,
-   "fin": 12.562
+   "inicio": 11.471,
+   "fin": 11.842
   },
   {
    "texto": "sola.",
-   "inicio": 12.643,
-   "fin": 13.189
+   "inicio": 11.923,
+   "fin": 12.458
   },
   {
    "texto": "Necesita",
-   "inicio": 13.491,
-   "fin": 14.095
+   "inicio": 12.864,
+   "fin": 13.41
   },
   {
    "texto": "una",
-   "inicio": 14.187,
-   "fin": 14.385
+   "inicio": 13.444,
+   "fin": 13.56
   },
   {
    "texto": "llave:",
-   "inicio": 14.42,
-   "fin": 15.023
+   "inicio": 13.584,
+   "fin": 14.187
   },
   {
    "texto": "la",
-   "inicio": 15.325,
-   "fin": 15.488
+   "inicio": 14.443,
+   "fin": 14.524
   },
   {
    "texto": "insulina,",
-   "inicio": 15.557,
-   "fin": 16.312
+   "inicio": 14.571,
+   "fin": 15.43
   },
   {
    "texto": "que",
-   "inicio": 16.417,
-   "fin": 16.533
+   "inicio": 15.685,
+   "fin": 15.801
   },
   {
    "texto": "abre",
-   "inicio": 16.591,
-   "fin": 16.765
+   "inicio": 15.871,
+   "fin": 16.08
   },
   {
    "texto": "la",
-   "inicio": 16.811,
-   "fin": 16.881
+   "inicio": 16.126,
+   "fin": 16.196
   },
   {
    "texto": "puerta",
-   "inicio": 16.927,
-   "fin": 17.252
+   "inicio": 16.254,
+   "fin": 16.579
   },
   {
    "texto": "de",
-   "inicio": 17.299,
-   "fin": 17.357
+   "inicio": 16.625,
+   "fin": 16.683
   },
   {
    "texto": "la",
-   "inicio": 17.415,
-   "fin": 17.496
+   "inicio": 16.73,
+   "fin": 16.8
   },
   {
    "texto": "célula.",
-   "inicio": 17.543,
-   "fin": 18.321
+   "inicio": 16.846,
+   "fin": 17.461
   },
   {
    "texto": "Ahora",
-   "inicio": 18.622,
-   "fin": 19.064
+   "inicio": 17.926,
+   "fin": 18.297
   },
   {
    "texto": "lo",
-   "inicio": 19.156,
-   "fin": 19.284
+   "inicio": 18.355,
+   "fin": 18.425
   },
   {
    "texto": "sorprendente:",
-   "inicio": 19.342,
-   "fin": 20.283
+   "inicio": 18.483,
+   "fin": 19.435
   },
   {
    "texto": "tu",
-   "inicio": 20.701,
-   "fin": 20.828
+   "inicio": 19.621,
+   "fin": 19.749
   },
   {
    "texto": "glucosa",
-   "inicio": 20.875,
-   "fin": 21.444
+   "inicio": 19.807,
+   "fin": 20.41
   },
   {
    "texto": "no",
-   "inicio": 21.548,
-   "fin": 21.722
+   "inicio": 20.538,
+   "fin": 20.642
   },
   {
    "texto": "solo",
-   "inicio": 21.804,
-   "fin": 22.094
+   "inicio": 20.712,
+   "fin": 20.991
   },
   {
    "texto": "sube",
-   "inicio": 22.175,
-   "fin": 22.465
+   "inicio": 21.049,
+   "fin": 21.351
   },
   {
    "texto": "con",
-   "inicio": 22.512,
-   "fin": 22.639
+   "inicio": 21.397,
+   "fin": 21.513
   },
   {
    "texto": "el",
-   "inicio": 22.686,
-   "fin": 22.756
+   "inicio": 21.56,
+   "fin": 21.618
   },
   {
    "texto": "azúcar.",
-   "inicio": 22.802,
-   "fin": 23.533
+   "inicio": 21.664,
+   "fin": 22.256
   },
   {
    "texto": "Sube",
-   "inicio": 23.835,
-   "fin": 24.137
+   "inicio": 22.663,
+   "fin": 23.011
   },
   {
    "texto": "con",
-   "inicio": 24.184,
-   "fin": 24.3
+   "inicio": 23.069,
+   "fin": 23.197
   },
   {
    "texto": "el",
-   "inicio": 24.358,
-   "fin": 24.427
+   "inicio": 23.255,
+   "fin": 23.324
   },
   {
    "texto": "pan,",
-   "inicio": 24.497,
-   "fin": 25.008
+   "inicio": 23.406,
+   "fin": 23.998
   },
   {
    "texto": "la",
-   "inicio": 25.147,
-   "fin": 25.24
+   "inicio": 24.253,
+   "fin": 24.369
   },
   {
    "texto": "tortilla,",
-   "inicio": 25.298,
-   "fin": 26.041
+   "inicio": 24.439,
+   "fin": 25.333
   },
   {
    "texto": "el",
-   "inicio": 26.204,
-   "fin": 26.355
+   "inicio": 25.681,
+   "fin": 25.844
   },
   {
    "texto": "arroz",
-   "inicio": 26.436,
-   "fin": 26.889
+   "inicio": 25.913,
+   "fin": 26.413
   },
   {
    "texto": "o",
-   "inicio": 27.156,
-   "fin": 27.249
+   "inicio": 26.552,
+   "fin": 26.61
   },
   {
    "texto": "la",
-   "inicio": 27.307,
-   "fin": 27.376
+   "inicio": 26.668,
+   "fin": 26.738
   },
   {
    "texto": "fruta,",
-   "inicio": 27.423,
-   "fin": 28.015
+   "inicio": 26.807,
+   "fin": 27.481
   },
   {
    "texto": "porque",
-   "inicio": 28.119,
-   "fin": 28.375
+   "inicio": 27.736,
+   "fin": 28.015
   },
   {
    "texto": "tu",
-   "inicio": 28.41,
-   "fin": 28.491
+   "inicio": 28.084,
+   "fin": 28.177
   },
   {
    "texto": "cuerpo",
-   "inicio": 28.526,
-   "fin": 28.816
+   "inicio": 28.235,
+   "fin": 28.63
   },
   {
    "texto": "convierte",
-   "inicio": 28.874,
-   "fin": 29.513
+   "inicio": 28.677,
+   "fin": 29.245
   },
   {
    "texto": "esos",
-   "inicio": 29.594,
-   "fin": 29.919
+   "inicio": 29.292,
+   "fin": 29.524
   },
   {
    "texto": "carbohidratos",
-   "inicio": 29.965,
-   "fin": 30.755
+   "inicio": 29.582,
+   "fin": 30.383
   },
   {
    "texto": "en",
-   "inicio": 30.824,
-   "fin": 30.883
+   "inicio": 30.453,
+   "fin": 30.511
   },
   {
    "texto": "glucosa.",
-   "inicio": 30.917,
-   "fin": 31.73
+   "inicio": 30.534,
+   "fin": 31.266
   },
   {
    "texto": "También",
-   "inicio": 32.09,
-   "fin": 32.543
+   "inicio": 31.73,
+   "fin": 32.311
   },
   {
    "texto": "sube",
-   "inicio": 32.612,
-   "fin": 32.856
+   "inicio": 32.415,
+   "fin": 32.728
   },
   {
    "texto": "con",
-   "inicio": 32.891,
-   "fin": 33.007
+   "inicio": 32.775,
+   "fin": 32.891
   },
   {
    "texto": "el",
-   "inicio": 33.065,
-   "fin": 33.135
+   "inicio": 32.937,
+   "fin": 32.996
   },
   {
    "texto": "estrés…",
-   "inicio": 33.193,
-   "fin": 33.855
+   "inicio": 33.054,
+   "fin": 33.773
   },
   {
    "texto": "y",
-   "inicio": 34.087,
-   "fin": 34.157
+   "inicio": 34.122,
+   "fin": 34.226
   },
   {
    "texto": "cuando",
-   "inicio": 34.226,
-   "fin": 34.447
+   "inicio": 34.307,
+   "fin": 34.574
   },
   {
    "texto": "duermes",
-   "inicio": 34.482,
-   "fin": 34.795
+   "inicio": 34.621,
+   "fin": 34.911
   },
   {
    "texto": "mal.",
-   "inicio": 34.842,
-   "fin": 35.248
+   "inicio": 34.969,
+   "fin": 35.364
   },
   {
    "texto": "Y",
-   "inicio": 35.48,
-   "fin": 35.585
+   "inicio": 35.91,
+   "fin": 36.037
   },
   {
    "texto": "tu",
-   "inicio": 35.666,
-   "fin": 35.759
+   "inicio": 36.165,
+   "fin": 36.269
   },
   {
    "texto": "hígado",
-   "inicio": 35.817,
-   "fin": 36.177
+   "inicio": 36.316,
+   "fin": 36.641
   },
   {
    "texto": "libera",
-   "inicio": 36.235,
-   "fin": 36.571
+   "inicio": 36.699,
+   "fin": 36.978
   },
   {
    "texto": "glucosa",
-   "inicio": 36.63,
-   "fin": 37.21
+   "inicio": 37.024,
+   "fin": 37.465
   },
   {
    "texto": "por",
-   "inicio": 37.268,
-   "fin": 37.454
-  },
-  {
-   "texto": "su",
-   "inicio": 37.523,
+   "inicio": 37.512,
    "fin": 37.616
   },
   {
+   "texto": "su",
+   "inicio": 37.663,
+   "fin": 37.744
+  },
+  {
    "texto": "cuenta,",
-   "inicio": 37.674,
-   "fin": 38.313
+   "inicio": 37.79,
+   "fin": 38.371
   },
   {
    "texto": "aunque",
-   "inicio": 38.452,
-   "fin": 38.684
+   "inicio": 38.673,
+   "fin": 38.951
   },
   {
    "texto": "no",
-   "inicio": 38.743,
-   "fin": 38.824
+   "inicio": 39.009,
+   "fin": 39.068
   },
   {
    "texto": "hayas",
-   "inicio": 38.87,
-   "fin": 39.091
+   "inicio": 39.102,
+   "fin": 39.311
   },
   {
    "texto": "comido.",
-   "inicio": 39.137,
-   "fin": 39.741
+   "inicio": 39.369,
+   "fin": 39.915
   },
   {
    "texto": "Si",
-   "inicio": 40.043,
-   "fin": 40.194
+   "inicio": 40.554,
+   "fin": 40.763
   },
   {
    "texto": "tus",
-   "inicio": 40.24,
-   "fin": 40.38
+   "inicio": 40.832,
+   "fin": 41.03
   },
   {
    "texto": "células",
-   "inicio": 40.403,
-   "fin": 40.902
+   "inicio": 41.053,
+   "fin": 41.552
   },
   {
    "texto": "dejan",
-   "inicio": 40.972,
-   "fin": 41.273
+   "inicio": 41.61,
+   "fin": 41.877
   },
   {
    "texto": "de",
-   "inicio": 41.32,
-   "fin": 41.378
+   "inicio": 41.924,
+   "fin": 41.982
   },
   {
    "texto": "responder",
-   "inicio": 41.436,
-   "fin": 41.935
+   "inicio": 42.051,
+   "fin": 42.516
   },
   {
    "texto": "bien",
-   "inicio": 42.005,
-   "fin": 42.237
+   "inicio": 42.574,
+   "fin": 42.771
   },
   {
    "texto": "a",
-   "inicio": 42.295,
-   "fin": 42.318
+   "inicio": 42.829,
+   "fin": 42.852
   },
   {
    "texto": "la",
-   "inicio": 42.365,
-   "fin": 42.423
+   "inicio": 42.887,
+   "fin": 42.934
   },
   {
    "texto": "insulina,",
-   "inicio": 42.481,
-   "fin": 43.247
+   "inicio": 42.957,
+   "fin": 43.735
   },
   {
    "texto": "la",
-   "inicio": 43.479,
-   "fin": 43.561
+   "inicio": 43.99,
+   "fin": 44.083
   },
   {
    "texto": "glucosa",
-   "inicio": 43.607,
-   "fin": 44.06
+   "inicio": 44.129,
+   "fin": 44.582
   },
   {
    "texto": "se",
-   "inicio": 44.106,
-   "fin": 44.164
+   "inicio": 44.629,
+   "fin": 44.687
   },
   {
    "texto": "acumula",
-   "inicio": 44.188,
-   "fin": 44.64
+   "inicio": 44.71,
+   "fin": 45.116
   },
   {
    "texto": "en",
-   "inicio": 44.722,
-   "fin": 44.815
+   "inicio": 45.14,
+   "fin": 45.186
   },
   {
    "texto": "la",
-   "inicio": 44.884,
-   "fin": 44.965
+   "inicio": 45.232,
+   "fin": 45.302
   },
   {
    "texto": "sangre.",
-   "inicio": 45.024,
-   "fin": 45.592
+   "inicio": 45.372,
+   "fin": 45.952
   },
   {
    "texto": "Entonces,",
-   "inicio": 45.825,
-   "fin": 46.544
+   "inicio": 46.359,
+   "fin": 47.357
   },
   {
    "texto": "el",
-   "inicio": 46.591,
-   "fin": 46.719
+   "inicio": 47.52,
+   "fin": 47.682
   },
   {
    "texto": "control",
-   "inicio": 46.788,
-   "fin": 47.183
+   "inicio": 47.752,
+   "fin": 48.123
   },
   {
    "texto": "glucémico",
-   "inicio": 47.253,
-   "fin": 48.089
+   "inicio": 48.181,
+   "fin": 49.04
   },
   {
    "texto": "no",
-   "inicio": 48.321,
-   "fin": 48.507
+   "inicio": 49.203,
+   "fin": 49.377
   },
   {
    "texto": "es",
-   "inicio": 48.576,
-   "fin": 48.704
+   "inicio": 49.435,
+   "fin": 49.505
   },
   {
    "texto": "solo",
-   "inicio": 48.808,
-   "fin": 49.284
+   "inicio": 49.551,
+   "fin": 49.853
   },
   {
    "texto": "\"no",
-   "inicio": 49.389,
-   "fin": 49.726
+   "inicio": 49.876,
+   "fin": 49.992
   },
   {
    "texto": "comer",
-   "inicio": 49.795,
-   "fin": 50.05
+   "inicio": 50.051,
+   "fin": 50.271
   },
   {
    "texto": "azúcar\".",
-   "inicio": 50.097,
-   "fin": 50.7
+   "inicio": 50.318,
+   "fin": 50.956
   },
   {
    "texto": "Es",
-   "inicio": 51.002,
-   "fin": 51.211
+   "inicio": 51.363,
+   "fin": 51.583
   },
   {
    "texto": "cómo",
-   "inicio": 51.281,
-   "fin": 51.571
+   "inicio": 51.711,
+   "fin": 51.989
   },
   {
    "texto": "tu",
-   "inicio": 51.629,
-   "fin": 51.699
+   "inicio": 52.048,
+   "fin": 52.117
   },
   {
    "texto": "cuerpo",
-   "inicio": 51.745,
-   "fin": 52.14
+   "inicio": 52.175,
+   "fin": 52.466
   },
   {
    "texto": "entero",
-   "inicio": 52.21,
-   "fin": 52.709
+   "inicio": 52.489,
+   "fin": 52.849
   },
   {
    "texto": "maneja",
-   "inicio": 52.779,
-   "fin": 53.173
+   "inicio": 52.907,
+   "fin": 53.197
   },
   {
    "texto": "su",
-   "inicio": 53.22,
-   "fin": 53.301
+   "inicio": 53.232,
+   "fin": 53.325
   },
   {
    "texto": "energía…",
    "inicio": 53.348,
-   "fin": 54.021
+   "fin": 54.079
   },
   {
    "texto": "todo",
-   "inicio": 54.288,
-   "fin": 54.567
+   "inicio": 54.486,
+   "fin": 54.788
   },
   {
    "texto": "el",
-   "inicio": 54.613,
-   "fin": 54.671
+   "inicio": 54.811,
+   "fin": 54.869
   },
   {
    "texto": "día.",
-   "inicio": 54.706,
-   "fin": 55.112
+   "inicio": 54.927,
+   "fin": 55.449
   },
   {
    "texto": "Las",
-   "inicio": 55.414,
-   "fin": 55.611
+   "inicio": 55.751,
+   "fin": 55.914
   },
   {
    "texto": "pruebas",
-   "inicio": 55.681,
-   "fin": 55.995
+   "inicio": 55.972,
+   "fin": 56.274
   },
   {
    "texto": "de",
-   "inicio": 56.018,
-   "fin": 56.064
+   "inicio": 56.297,
+   "fin": 56.355
   },
   {
    "texto": "control",
-   "inicio": 56.111,
-   "fin": 56.436
+   "inicio": 56.413,
+   "fin": 56.715
   },
   {
    "texto": "glucémico",
-   "inicio": 56.482,
-   "fin": 57.156
+   "inicio": 56.773,
+   "fin": 57.469
   },
   {
    "texto": "se",
-   "inicio": 57.237,
-   "fin": 57.365
+   "inicio": 57.527,
+   "fin": 57.609
   },
   {
    "texto": "hacen",
-   "inicio": 57.411,
-   "fin": 57.678
+   "inicio": 57.655,
+   "fin": 57.864
   },
   {
    "texto": "en",
-   "inicio": 57.759,
-   "fin": 57.841
+   "inicio": 57.922,
+   "fin": 57.969
   },
   {
    "texto": "Laboratorio",
-   "inicio": 57.91,
-   "fin": 58.572
+   "inicio": 58.027,
+   "fin": 58.63
   },
   {
    "texto": "Ladi.",
-   "inicio": 58.653,
-   "fin": 59.303
+   "inicio": 58.677,
+   "fin": 59.35
   }
  ],
  "escenas": [
   {
    "inicio": 0,
-   "fin": 3.797
+   "fin": 3.333
   },
   {
-   "inicio": 3.797,
-   "fin": 6.478999999999999
+   "inicio": 3.333,
+   "fin": 5.353
   },
   {
-   "inicio": 6.478999999999999,
-   "fin": 13.341
+   "inicio": 5.353,
+   "fin": 12.714
   },
   {
-   "inicio": 13.341,
-   "fin": 18.472
+   "inicio": 12.714,
+   "fin": 17.776
   },
   {
-   "inicio": 18.472,
-   "fin": 23.685000000000002
+   "inicio": 17.776,
+   "fin": 22.513
   },
   {
-   "inicio": 23.685000000000002,
-   "fin": 31.940000000000005
+   "inicio": 22.513,
+   "fin": 31.580000000000002
   },
   {
-   "inicio": 31.940000000000005,
-   "fin": 35.33
+   "inicio": 31.580000000000002,
+   "fin": 35.76
   },
   {
-   "inicio": 35.33,
-   "fin": 39.893
+   "inicio": 35.76,
+   "fin": 40.404
   },
   {
-   "inicio": 39.893,
-   "fin": 45.675000000000004
+   "inicio": 40.404,
+   "fin": 46.209
   },
   {
-   "inicio": 45.675000000000004,
-   "fin": 55.264
+   "inicio": 46.209,
+   "fin": 55.601
   },
   {
-   "inicio": 55.264,
-   "fin": 60.550204
+   "inicio": 55.601,
+   "fin": 60.576327000000006
   }
  ],
- "duracion": 60.550204
+ "duracion": 60.576327000000006
 }
