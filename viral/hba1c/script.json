@@ -1,0 +1,110 @@
+{
+ "title": "Tu sangre tiene memoria",
+ "language": "es",
+ "label": "UN DÍA VS 3 MESES",
+ "lead": "Hook 3: es un contraste con objetos (glucómetro vs. sangre), lo que este paquete dibuja mejor, y se entiende sin sonido.",
+ "style": {
+  "accent": "#12B38A"
+ },
+ "hooks": [
+  {
+   "shape": "I'll prove it",
+   "label": "TU SANGRE TIENE MEMORIA",
+   "say": "Tu análisis de glucosa de hoy es solo una foto. Te lo demuestro."
+  },
+  {
+   "shape": "The question nobody asked",
+   "label": "3 MESES DE AZÚCAR, GUARDADOS",
+   "say": "¿Sabías que tu sangre lleva la cuenta de tu azúcar de tres meses?"
+  },
+  {
+   "shape": "The object truth",
+   "label": "UN DÍA VS 3 MESES",
+   "say": "Tu glucómetro ve un solo día. Tu sangre guarda *tres meses*."
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "say": "Tu glucómetro ve un solo día. Tu sangre guarda *tres meses*.",
+   "scene": "A glucose meter on a white table showing 98, and behind it a tall wall calendar whose pages flip back three months."
+  },
+  {
+   "id": "b2",
+   "say": "Cada vez que comes, la glucosa viaja por tu sangre, y una parte se le *pega* a la hemoglobina.",
+   "scene": "Small yellow sugar cubes drifting through a dark red tunnel, then sticking onto round red discs floating by."
+  },
+  {
+   "id": "b3",
+   "say": "Y ya no se suelta, se queda ahí como un sello.",
+   "scene": "Close on one red disc as a yellow stamp presses onto it with a soft thud."
+  },
+  {
+   "id": "b4",
+   "say": "Lo curioso es que un glóbulo rojo vive unos *120 días*.",
+   "tts": "Lo curioso es que un glóbulo rojo vive unos ciento-veinte días.",
+   "scene": "A big flip counter rolling up to 120 DÍAS in front of a single red disc."
+  },
+  {
+   "id": "b5",
+   "say": "Entonces, entre más azúcar hubo en esos meses, más hemoglobina queda endulzada.",
+   "scene": "A row of red discs on a shelf, each one carrying more yellow stamps than the last, a bar filling beside them."
+  },
+  {
+   "id": "b6",
+   "say": "Eso mide la hemoglobina glicosilada, la *HbA1c*, tu promedio de casi tres meses.",
+   "tts": "Eso mide la hemoglobina glicosilada, la a-uno-ce, tu promedio de casi tres meses.",
+   "scene": "A lab tube labelled HbA1c rises into frame and a soft green line averages a jagged sugar graph."
+  },
+  {
+   "id": "b7",
+   "say": "Por eso tu glucosa de hoy puede salir bien, y tu sangre contar otra historia.",
+   "scene": "The glucose meter still reads 98 in front, while the calendar behind it fills with three months of orange shading."
+  },
+  {
+   "id": "b8",
+   "say": "Esta prueba se puede hacer en *Laboratorio LADI*.",
+   "scene": "A clean rack of blood tubes on a white counter, one tube glowing green, with the words LABORATORIO LADI in large type."
+  }
+ ],
+ "sources": [
+  {
+   "claim": "La HbA1c refleja la glucosa promedio de los últimos 2 a 3 meses",
+   "where": "American Diabetes Association, Standards of Care in Diabetes, sección 2 (Diagnóstico); MedlinePlus (NIH), 'A1C test'. Referencias establecidas, no abiertas en esta sesión."
+  },
+  {
+   "claim": "Un glóbulo rojo vive unos 120 días",
+   "where": "Referencia fisiológica estándar (p. ej. NCBI Bookshelf, 'Physiology, Erythrocyte'). No abierta en esta sesión."
+  },
+  {
+   "claim": "La glucosa se une a la hemoglobina de forma no enzimática y queda unida (glicación)",
+   "where": "Química clínica estándar; misma referencia de la ADA."
+  }
+ ],
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "pega",
+   "kind": "pop",
+   "db": -16
+  },
+  {
+   "beat": "b3",
+   "word": "sello",
+   "kind": "stamp",
+   "db": -12
+  },
+  {
+   "beat": "b4",
+   "word": "120",
+   "kind": "tick",
+   "db": -14
+  },
+  {
+   "beat": "b8",
+   "word": "Laboratorio",
+   "kind": "pop",
+   "db": -14
+  }
+ ]
+}
