@@ -1,0 +1,76 @@
+{
+ "video": "viral/hba1c/final.mp4",
+ "duration": 34.95,
+ "checks": [
+  {
+   "level": "pass",
+   "check": "Frame size",
+   "detail": "1080x1920 (want 1080x1920)"
+  },
+  {
+   "level": "pass",
+   "check": "Frame rate",
+   "detail": "30 fps"
+  },
+  {
+   "level": "pass",
+   "check": "Video format",
+   "detail": "h264 yuv420p"
+  },
+  {
+   "level": "pass",
+   "check": "Length",
+   "detail": "35.0 s"
+  },
+  {
+   "level": "pass",
+   "check": "Loudness",
+   "detail": "-14.5 LUFS (want about -14)"
+  },
+  {
+   "level": "pass",
+   "check": "Peak",
+   "detail": "-4.4 dB (want under -1)"
+  },
+  {
+   "level": "pass",
+   "check": "First sound",
+   "detail": "0.00 s in"
+  },
+  {
+   "level": "pass",
+   "check": "Dead air",
+   "detail": "None over 1.2 s"
+  },
+  {
+   "level": "pass",
+   "check": "Movement in first 3 s",
+   "detail": "score 0.0020"
+  },
+  {
+   "level": "pass",
+   "check": "Too dark for a phone",
+   "detail": "No long dark stretch"
+  },
+  {
+   "level": "pass",
+   "check": "Frozen picture",
+   "detail": "None over 2.5 s"
+  },
+  {
+   "level": "pass",
+   "check": "Hook length",
+   "detail": "First sentence is 6 words"
+  },
+  {
+   "level": "pass",
+   "check": "On-screen hook",
+   "detail": "UN DÍA VS 3 MESES"
+  },
+  {
+   "level": "pass",
+   "check": "Script wording",
+   "detail": "Clean"
+  }
+ ]
+}
